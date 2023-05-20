@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - CPaaS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <nav>
+        <ul>
+          <li>Início</li>
+          <li>Cadastro</li>
+        </ul>
+      </nav>
+      <div
+        class="flex justify-center items-center bg-gray-100 shadow-lg mx-auto w-1/2 p-3 gap-3"
+      >
+        <figure class="max-w-[330px]">
+          <img src="/assets/img/undraw_mobile_user_re_xta4.svg" alt="#" />
+        </figure>
+        <section class="flex flex-col p-5 rounded-lg flex">
+          <form class="flex flex-col gap-5">
+            <fieldset class="flex flex-col gap-2">
+              <label for="login">Login</label>
+              <input
+                class="border border-blue-500 rounded-md py-1 px-2"
+                id="login"
+                name="login"
+                type="text"
+              />
+            </fieldset>
+            <fieldset class="flex flex-col gap-2">
+              <label for="senha">Senha</label>
+              <input
+                class="border border-blue-500 rounded-md py-1 px-2"
+                id="senha"
+                name="senha"
+                type="text"
+              />
+            </fieldset>
+            <span id="mensagen_erro"></span>
+            <button
+              id="enviar-btn"
+              class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-800 duration-150"
+              type="submit"
+            >
+              Entrar
+            </button>
+          </form>
+          <p class="mt-2">
+            Ainda não é cadastrado?
+            <a class="text-blue-500 font-semibold" href="./cadastro-1.html"
+              >cadastre-se</a
+            >
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

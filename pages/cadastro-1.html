@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - CPaaS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header></header>
+
+    <main>
+      <nav>
+        <ul>
+          <li>Início</li>
+          <li>Cadastro</li>
+        </ul>
+      </nav>
+
+      <figure></figure>
+
+      <form
+        class="flex flex-col gap-2 w-4/5 mx-auto justify-center items-center"
+      >
+        <fieldset class="flex flex-col gap-2 w-1/2 gap-1">
+          <label for="nome">Nome</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Ex: Hemiliano da Silva Figueiredo"
+            minlength="15"
+            maxlength="60"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <div class="grid grid-cols-2 gap-20 w-1/2">
+          <fieldset class="flex flex-col gap-2 w-1/2">
+            <label for="nascinemnto">Nascimento</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+              id="nascimento"
+              name="nascimento"
+              type="date"
+              required
+            />
+            <span></span>
+          </fieldset>
+
+          <fieldset class="flex items-center gap-2 w-1/2">
+            <legend>Sexo</legend>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              id="feminino"
+              name="sexo"
+              value="feminino"
+              type="radio"
+              required
+            />
+            <label for="feminino">Feminino</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              id="masculino"
+              name="sexo"
+              value="feminino"
+              type="radio"
+              required
+            />
+            <label for="masculino">Masculino</label>
+            <span></span>
+          </fieldset>
+        </div>
+        <fieldset class="flex flex-col gap-2 w-1/2">
+          <label for="nome_materno">Nome Materno</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="nome_materno"
+            name="nome_materno"
+            type="text"
+            placeholder="Ex: Maria das Dores da Silva"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <fieldset class="flex flex-col gap-2 w-1/2">
+          <label for="cpf">CPF</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="cpf"
+            name="cpf"
+            type="text"
+            placeholder="000.000.000-00"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <div class="grid grid-cols-2 gap-20 w-1/2">
+          <fieldset class="flex flex-col gap-2 w-1/2">
+            <label for="celular">Celular</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+              id="celular"
+              name="celular"
+              type="text"
+              placeholder="(+55) xx-xxxxxxxxx"
+              required
+            />
+            <span></span>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-1/2">
+            <label for="telefone">Telefone</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+              id="telefone"
+              name="telefone"
+              type="text"
+              placeholder="(+55) xx-xxxxxxxx"
+              required
+            />
+            <span></span>
+          </fieldset>
+        </div>
+        <fieldset class="flex flex-col gap-2 w-1/2">
+          <label for="login">Login</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="login"
+            name="login"
+            type="text"
+            minlength="6"
+            maxlength="6"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <fieldset class="flex flex-col gap-2 w-1/2">
+          <label for="senha">Senha</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="senha"
+            name="senha"
+            type="text"
+            minlength="8"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <fieldset class="flex flex-col gap-2 w-1/2">
+          <label for="confima_senha">Confirmar Senha</label>
+          <input
+            class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+            id="confima_senha"
+            name="confima_senha"
+            type="text"
+            minlength="8"
+            required
+          />
+          <span></span>
+        </fieldset>
+        <div>
+          <button
+            id="enviar-btn"
+            class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150"
+            type="submit"
+          >
+            Avançar
+          </button>
+          <span></span>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
