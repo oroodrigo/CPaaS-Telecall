@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CPaaS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9945e62804.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="flex flex-col h-screen">
     <header></header>
-    <main>
+    <main class="flex-1 py-10">
       <nav>
         <ul>
           <li>Início</li>
@@ -63,6 +67,70 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="bg-zinc-800 flex justify-between py-4 px-12">
+      <section class="flex flex-col gap-2">
+        <h2 class="text-white text-xl font-semibold">Serviços</h2>
+        <ul>
+          <li>
+            <a class="text-white/80 text-lg hover:text-white" href="">2FA</a>
+          </li>
+          <li>
+            <a class="text-white/80 text-lg hover:text-white" href=""
+              >Numero Máscara</a
+            >
+          </li>
+          <li>
+            <a class="text-white/80 text-lg hover:text-white" href=""
+              >Google Verified Calls</a
+            >
+          </li>
+          <li>
+            <a class="text-white/80 text-lg hover:text-white" href=""
+              >SMS Programável</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="flex flex-col gap-2">
+        <h2 class="text-white text-xl font-semibold">Contato</h2>
+        <ul>
+          <li class="text-white/80 text-lg hover:text-white">(21) 3030-1010</li>
+          <li class="text-white/80 text-lg hover:text-white">0800 030 2016</li>
+          <li class="text-white/80 text-lg hover:text-white">
+            suporte@telecall.com
+          </li>
+        </ul>
+      </section>
+      <section class="flex flex-col gap-2">
+        <h2 class="text-white text-xl font-semibold">Redes Sociais</h2>
+        <ul class="flex gap-5">
+          <li>
+            <a
+              class="text-white/80 text-3xl hover:text-blue-700 duration-150"
+              href="https://www.facebook.com/TelecallBr"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="text-white/80 text-3xl hover:text-fuchsia-700 duration-150"
+              href="https://www.instagram.com/telecallbr/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="text-white/80 text-3xl hover:text-sky-600 duration-150"
+              href=""
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>
