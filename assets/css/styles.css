@@ -1,0 +1,9 @@
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: #0f87ff;
+  content: ">";
+}

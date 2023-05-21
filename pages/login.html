@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CPaaS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/9945e62804.js"
@@ -14,10 +15,14 @@
   <body class="flex flex-col h-screen">
     <header></header>
     <main class="flex-1 py-10">
-      <nav>
-        <ul>
-          <li>Início</li>
-          <li>Cadastro</li>
+      <nav class="p-5">
+        <ul class="breadcrumb">
+          <li class="text-md text-blue-500">
+            <a href="../index.html">Início</a>
+          </li>
+          <li class="text-md text-blue-500 font-semibold cursor-pointer">
+            Login
+          </li>
         </ul>
       </nav>
       <div
@@ -67,7 +72,7 @@
         </section>
       </div>
     </main>
-    <footer class="bg-zinc-800 flex justify-between py-4 px-12">
+    <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5">
       <section class="flex flex-col gap-2">
         <h2 class="text-white text-xl font-semibold">Serviços</h2>
         <ul>
