@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - CPaaS</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/9945e62804.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="flex flex-col h-screen">
+  <body class="bg-slate-200 flex flex-col h-screen">
     <header class="bg-zinc-800 flex justify-between py-3 px-10 items-center">
       <figure class="max-w-[200px]">
         <img
@@ -36,7 +35,8 @@
         <a class="text-white" href="./cadastro-1.html">Cadastro</a>
       </div>
     </header>
-    <main class="flex-1 pb-10">
+
+    <main class="flex-1 flex flex-col pb-10">
       <nav class="p-5">
         <ul class="breadcrumb">
           <li class="text-md text-blue-500">
@@ -47,16 +47,22 @@
           </li>
         </ul>
       </nav>
+
       <div
-        class="flex justify-center items-center bg-gray-100 shadow-lg mx-auto w-1/2 p-3 gap-3 rounded-md"
+        class="flex justify-center items-center bg-gray-100 shadow-lg mx-auto w-1/2 p-3 gap-3 rounded-md my-auto"
       >
-        <figure class="max-w-[330px]">
-          <img
-            src="../assets/img/undraw_mobile_user_re_xta4.svg"
-            alt="menina sentada olhando celular"
-          />
-        </figure>
-        <section class="flex flex-col p-5 rounded-lg flex">
+        <section class="w-1/2 flex flex-col items-center">
+          <h1 class="text-center text-xl font-semibold p-10">
+            Preencha os campos para acessar sua conta!
+          </h1>
+          <figure class="max-w-[330px]">
+            <img
+              src="../assets/img/undraw_mobile_user_re_xta4.svg"
+              alt="menina sentada olhando celular"
+            />
+          </figure>
+        </section>
+        <section class="flex flex-col p-5 rounded-lg">
           <form class="flex flex-col gap-5">
             <fieldset class="flex flex-col gap-2">
               <label for="login">Login</label>
@@ -94,6 +100,7 @@
         </section>
       </div>
     </main>
+
     <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3">
       <section class="flex flex-col gap-2">
         <h2 class="text-white text-xl font-semibold">Serviços</h2>

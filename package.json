@@ -1,0 +1,22 @@
+{
+  "name": "cpaas-telecall",
+  "version": "1.0.0",
+  "description": "Projeto CPaaS para a empresa Telecall",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./assets/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oroodrigo/CPaaS-Telecall.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oroodrigo/CPaaS-Telecall/issues"
+  },
+  "homepage": "https://github.com/oroodrigo/CPaaS-Telecall#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
