@@ -13,7 +13,29 @@
     ></script>
   </head>
   <body>
-    <header></header>
+    <header class="bg-zinc-800 flex justify-between py-3 px-10 items-center">
+      <figure class="max-w-[200px]">
+        <img
+          src="../assets/img/logo_telecall_branco_vermelho_p.png"
+          alt="Logo da Telecall"
+        />
+      </figure>
+      <nav>
+        <ul class="flex justify-around gap-5">
+          <li class="mr-3"><a class="text-white" href="">2FA</a></li>
+          <li class="mr-3"><a class="text-white" href="">Número Máscara</a></li>
+          <li class="mr-3">
+            <a class="text-white" href="">Google Verified Calls</a>
+          </li>
+          <li><a class="text-white" href="">SMS Programável</a></li>
+        </ul>
+      </nav>
+      <div class="flex justify-between gap-5">
+        <a class="text-white mr-4"><i class="fa-solid fa-moon"></i></a>
+        <a class="text-white" href="./login.html"> Login</a>
+        <a class="text-white" href="./cadastro-1.html">Cadastro</a>
+      </div>
+    </header>
 
     <main>
       <nav class="p-5">
@@ -182,7 +204,7 @@
       </form>
     </main>
 
-    <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5">
+    <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3">
       <section class="flex flex-col gap-2">
         <h2 class="text-white text-xl font-semibold">Serviços</h2>
         <ul>
@@ -209,14 +231,12 @@
       <section class="flex flex-col gap-2">
         <h2 class="text-white text-xl font-semibold">Contato</h2>
         <ul>
-          <li class="text-white/80 text-lg hover:text-white">(21) 3030-1010</li>
-          <li class="text-white/80 text-lg hover:text-white">0800 030 2016</li>
-          <li class="text-white/80 text-lg hover:text-white">
-            suporte@telecall.com
-          </li>
+          <li class="text-white/80 text-lg">(21) 3030-1010</li>
+          <li class="text-white/80 text-lg">0800 030 2016</li>
+          <li class="text-white/80 text-lg">suporte@telecall.com</li>
         </ul>
       </section>
-      <section class="flex flex-col gap-2">
+      <section class="flex flex-col gap-4">
         <h2 class="text-white text-xl font-semibold">Redes Sociais</h2>
         <ul class="flex gap-5">
           <li>
@@ -238,13 +258,19 @@
           <li>
             <a
               class="text-white/80 text-3xl hover:text-sky-600 duration-150"
-              href=""
+              href="https://www.linkedin.com/company/telecall/"
               target="_blank"
             >
               <i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
         </ul>
+        <figure class="w-[150px]">
+          <img
+            src="../assets/img/logo_telecall_branco_vermelho_p.png"
+            alt="logo da telecall"
+          />
+        </figure>
       </section>
     </footer>
   </body>
