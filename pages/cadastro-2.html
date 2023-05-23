@@ -89,7 +89,7 @@
               placeholder="Digite seu CEP"
               required
             />
-            <span></span>
+            <span id="mensagem_erro"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="endereco">Endereço</label>
@@ -148,7 +148,7 @@
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
                 id="cidade"
                 name="cidade"
-                type="number"
+                type="text"
                 placeholder="Digite a sua cidade"
                 required
               />
@@ -158,8 +158,8 @@
               <label for="estado">Estado</label>
               <select
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
-                id="endereco_complemento"
-                name="endereco_complemento"
+                id="estado"
+                name="estado"
                 type="text"
                 placeholder="Complemento"
                 required
@@ -278,5 +278,9 @@
         </figure>
       </section>
     </footer>
+    <script
+      type="application/javascript"
+      src="../assets/js/busca-cep.js"
+    ></script>
   </body>
 </html>
