@@ -69,8 +69,8 @@
         <figure>
           <img
             class="mt-5 mx-auto"
-            src="../assets/img/status-1.png"
-            alt="barra de estagio 1"
+            src="../assets/img/status-2.png"
+            alt="barra de estagio 2"
           />
         </figure>
         <h1 class="text-center text-3xl font-semibold p-10">
@@ -80,141 +80,121 @@
           class="flex flex-col gap-2 w-full mx-auto justify-center items-center"
         >
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="nome">Nome</label>
+            <label for="cep">CEP</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="nome"
-              name="nome"
+              id="cep"
+              name="cep"
               type="text"
-              placeholder="Ex: Hemiliano da Silva Figueiredo"
-              minlength="15"
-              maxlength="60"
+              placeholder="Digite seu CEP"
+              required
+            />
+            <span></span>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label for="endereco">Endereço</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              id="endereco"
+              name="endereco"
+              type="text"
+              placeholder="Digite seu endereço"
               required
             />
             <span></span>
           </fieldset>
           <div class="grid grid-cols-2 gap-20 w-3/4">
             <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="nascinemnto">Nascimento</label>
+              <label for="endereco_numero">Número</label>
               <input
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
-                id="nascimento"
-                name="nascimento"
-                type="date"
+                id="endereco_numero"
+                name="endereco_numero"
+                type="number"
+                placeholder="Número"
                 required
               />
               <span></span>
             </fieldset>
-            <fieldset class="flex items-center gap-2 w-3/4">
-              <legend>Sexo</legend>
+            <fieldset class="flex flex-col gap-2 w-3/4">
+              <label for="endereco_complemento">Complemento</label>
               <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-                id="feminino"
-                name="sexo"
-                value="feminino"
-                type="radio"
+                class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+                id="endereco_complemento"
+                name="endereco_complemento"
+                type="text"
+                placeholder="Complemento"
                 required
               />
-              <label for="feminino">Feminino</label>
-              <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-                id="masculino"
-                name="sexo"
-                value="feminino"
-                type="radio"
-                required
-              />
-              <label for="masculino">Masculino</label>
               <span></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="nome_materno">Nome Materno</label>
+            <label for="bairro">Bairro</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="nome_materno"
-              name="nome_materno"
+              id="bairro"
+              name="bairro"
               type="text"
-              placeholder="Ex: Maria das Dores da Silva"
-              required
-            />
-            <span></span>
-          </fieldset>
-          <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="cpf">CPF</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="cpf"
-              name="cpf"
-              type="text"
-              placeholder="000.000.000-00"
+              placeholder="Digite o seu bairro"
               required
             />
             <span></span>
           </fieldset>
           <div class="grid grid-cols-2 gap-20 w-3/4">
             <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="celular">Celular</label>
+              <label for="cidade">Cidade</label>
               <input
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
-                id="celular"
-                name="celular"
-                type="text"
-                placeholder="(+55) xx-xxxxxxxxx"
+                id="cidade"
+                name="cidade"
+                type="number"
+                placeholder="Digite a sua cidade"
                 required
               />
               <span></span>
             </fieldset>
             <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="telefone">Telefone</label>
-              <input
+              <label for="estado">Estado</label>
+              <select
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
-                id="telefone"
-                name="telefone"
+                id="endereco_complemento"
+                name="endereco_complemento"
                 type="text"
-                placeholder="(+55) xx-xxxxxxxx"
+                placeholder="Complemento"
                 required
-              />
-              <span></span>
+              >
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
             </fieldset>
           </div>
-          <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="login">Login</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="login"
-              name="login"
-              type="text"
-              minlength="6"
-              maxlength="6"
-              required
-            />
-            <span></span>
-          </fieldset>
-          <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="senha">Senha</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="senha"
-              name="senha"
-              type="text"
-              minlength="8"
-              required
-            />
-            <span></span>
-          </fieldset>
-          <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="confima_senha">Confirmar Senha</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="confima_senha"
-              name="confima_senha"
-              type="text"
-              minlength="8"
-              required
-            />
-            <span></span>
-          </fieldset>
           <div>
             <button
               id="enviar-btn"
