@@ -28,30 +28,37 @@
           alt="Logo da Telecall"
         />
       </figure>
-      <nav>
-        <ul class="flex justify-around gap-5">
-          <li class="mr-3"><a class="text-white" href="">2FA</a></li>
-          <li class="mr-3"><a class="text-white" href="">Número Máscara</a></li>
-          <li class="mr-3">
-            <a class="text-white" href="">Google Verified Calls</a>
-          </li>
-          <li><a class="text-white" href="">SMS Programável</a></li>
-        </ul>
-      </nav>
-      <div class="flex justify-between gap-5 items-center">
-        <a class="text-white mr-4"><i class="fa-solid fa-moon"></i></a>
-        <a
-          class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-          href="./login.html"
-        >
-          Login</a
-        >
-        <a
+      <section class="flex justify-between w-1/5 items-center">
+        <nav>
+          <ul class="flex justify-around gap-5">
+            <li class="mr-3">
+              <a class="text-white" href="">Serviços</a>
+              <i class="fa-solid fa-chevron-down text-white"></i>
+            </li>
+            <li class="mr-3">
+              <a class="text-white" href="">Sobre</a>
+            </li>
+            <!-- <li class="mr-3">
+              <a class="text-white" href="">Google Verified Calls</a>
+            </li>
+            <li><a class="text-white" href="">SMS Programável</a></li> -->
+          </ul>
+        </nav>
+        <div class="flex justify-between gap-5 items-center">
+          <a class="text-white mr-4"><i class="fa-solid fa-moon"></i></a>
+          <a
+            class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
+            href="./login.html"
+          >
+            Entrar</a
+          >
+          <!-- <a
           class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
           href="./cadastro-1.html"
           >Cadastro</a
-        >
-      </div>
+        > -->
+        </div>
+      </section>
     </header>
 
     <main class="flex-1 flex flex-col pb-10">
@@ -67,13 +74,15 @@
       </nav>
 
       <div
-        class="flex justify-evenly items-center bg-gray-100 shadow-lg mx-auto w-1/2 p-3 gap-3 rounded-md my-auto"
+        class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2"
       >
-        <section class="w-1/2 flex flex-col items-center">
-          <h1 class="text-center text-xl font-semibold p-10">
+        <section
+          class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/2"
+        >
+          <h1 class="text-lg font-semibold pt-5 lg:mx-auto lg:text-xl">
             Preencha os campos para acessar sua conta!
           </h1>
-          <figure class="max-w-[330px]">
+          <figure class="hidden lg:block">
             <img
               src="../assets/img/undraw_mobile_user_re_xta4.svg"
               alt="menina sentada olhando celular"
@@ -111,7 +120,9 @@
           </form>
           <p class="mt-2">
             Ainda não é cadastrado?
-            <a class="text-blue-500 font-semibold" href="./cadastro-1.html"
+            <a
+              class="text-blue-500 font-semibold block md:inline"
+              href="./cadastro-1.html"
               >cadastre-se</a
             >
           </p>
@@ -119,44 +130,58 @@
       </div>
     </main>
 
-    <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3">
-      <section class="flex flex-col gap-2">
-        <h2 class="text-white text-xl font-semibold">Serviços</h2>
+    <footer
+      class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3 flex-wrap"
+    >
+      <section
+        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
+      >
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Serviços
+        </h2>
         <ul>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href="">2FA</a>
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
+              >2FA</a
+            >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >Número Máscara</a
             >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >Google Verified Calls</a
             >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >SMS Programável</a
             >
           </li>
         </ul>
       </section>
-      <section class="flex flex-col gap-2">
-        <h2 class="text-white text-xl font-semibold">Contato</h2>
+      <section
+        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
+      >
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Contato
+        </h2>
         <ul>
-          <li class="text-white/80 text-lg">(21) 3030-1010</li>
-          <li class="text-white/80 text-lg">0800 030 2016</li>
-          <li class="text-white/80 text-lg">suporte@telecall.com</li>
+          <li class="text-white/80 text-sm sm:text-md">(21) 3030-1010</li>
+          <li class="text-white/80 text-sm sm:text-md">0800 030 2016</li>
+          <li class="text-white/80 text-sm sm:text-md">suporte@telecall.com</li>
         </ul>
       </section>
-      <section class="flex flex-col gap-4">
-        <h2 class="text-white text-xl font-semibold">Redes Sociais</h2>
-        <ul class="flex gap-5">
+      <section class="flex flex-col w-full items-center gap-3 xs:w-auto">
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Redes Sociais
+        </h2>
+        <ul class="flex justify-between w-2/4 xs:w-full">
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-blue-700 duration-150"
+              class="text-white/80 text-2xl hover:text-blue-700 duration-150"
               href="https://www.facebook.com/TelecallBr"
               target="_blank"
               ><i class="fa-brands fa-square-facebook"></i
@@ -164,7 +189,7 @@
           </li>
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-fuchsia-700 duration-150"
+              class="text-white/80 text-2xl hover:text-fuchsia-700 duration-150"
               href="https://www.instagram.com/telecallbr/"
               target="_blank"
               ><i class="fa-brands fa-instagram"></i
@@ -172,7 +197,7 @@
           </li>
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-sky-600 duration-150"
+              class="text-white/80 text-2xl hover:text-sky-600 duration-150"
               href="https://www.linkedin.com/company/telecall/"
               target="_blank"
             >
@@ -180,7 +205,7 @@
             ></a>
           </li>
         </ul>
-        <figure class="w-[150px]">
+        <figure class="max-w-[130px]">
           <img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="logo da telecall"
