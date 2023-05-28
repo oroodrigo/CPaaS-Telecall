@@ -28,36 +28,28 @@
           alt="Logo da Telecall"
         />
       </figure>
-      <section class="flex justify-between w-1/5 items-center">
+      <section class="flex gap-5 items-center">
         <nav>
           <ul class="flex justify-around gap-5">
-            <li class="mr-3">
-              <a class="text-white" href="">Serviços</a>
-              <i class="fa-solid fa-chevron-down text-white"></i>
+            <li>
+              <a class="text-white text-lg" href="">Serviços</a>
+              <i class="fa-solid fa-chevron-down text-white text-lg"></i>
             </li>
-            <li class="mr-3">
-              <a class="text-white" href="">Sobre</a>
+            <li>
+              <a class="text-white text-lg" href="">Sobre</a>
             </li>
-            <!-- <li class="mr-3">
-              <a class="text-white" href="">Google Verified Calls</a>
-            </li>
-            <li><a class="text-white" href="">SMS Programável</a></li> -->
           </ul>
         </nav>
-        <div class="flex justify-between gap-5 items-center">
-          <a class="text-white mr-4"><i class="fa-solid fa-moon"></i></a>
+        <section class="flex gap-5 items-center">
+          <i class="fa-solid fa-moon text-white text-lg"></i>
           <a
-            class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
+            class="text-white text-lg bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
             href="./login.html"
           >
-            Entrar</a
-          >
-          <!-- <a
-          class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-          href="./cadastro-1.html"
-          >Cadastro</a
-        > -->
-        </div>
+            Entrar
+            <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
+          ></a>
+        </section>
       </section>
     </header>
 
@@ -92,7 +84,7 @@
         <section class="flex flex-col p-5 rounded-lg">
           <form class="flex flex-col gap-5">
             <fieldset class="flex flex-col gap-2">
-              <label for="login">Login</label>
+              <label class="font-medium" for="login">Login</label>
               <input
                 class="border border-blue-500 rounded-md py-1 px-2"
                 id="login"
@@ -101,7 +93,7 @@
               />
             </fieldset>
             <fieldset class="flex flex-col gap-2">
-              <label for="senha">Senha</label>
+              <label class="font-medium" for="senha">Senha</label>
               <input
                 class="border border-blue-500 rounded-md py-1 px-2"
                 id="senha"
@@ -109,7 +101,7 @@
                 type="text"
               />
             </fieldset>
-            <span id="mensagen_erro"></span>
+            <span id="mensagem_erro"></span>
             <button
               id="enviar-btn"
               class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-800 duration-150"
@@ -118,7 +110,7 @@
               Entrar
             </button>
           </form>
-          <p class="mt-2">
+          <p class="mt-2 font-medium">
             Ainda não é cadastrado?
             <a
               class="text-blue-500 font-semibold block md:inline"
