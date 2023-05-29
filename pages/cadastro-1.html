@@ -28,31 +28,31 @@
           alt="Logo da Telecall"
         />
       </figure>
-      <nav>
-        <ul class="flex justify-around gap-5">
-          <li class="mr-3"><a class="text-white" href="">2FA</a></li>
-          <li class="mr-3"><a class="text-white" href="">Número Máscara</a></li>
-          <li class="mr-3">
-            <a class="text-white" href="">Google Verified Calls</a>
-          </li>
-          <li><a class="text-white" href="">SMS Programável</a></li>
-        </ul>
-      </nav>
-      <div class="flex justify-between gap-5 items-center">
-        <a class="text-white mr-4"><i class="fa-solid fa-moon"></i></a>
-        <a
-          class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-          href="./login.html"
-        >
-          Login</a
-        >
-        <a
-          class="text-white bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-          href="./cadastro-1.html"
-          >Cadastro</a
-        >
-      </div>
+      <section class="flex gap-7 items-center">
+        <nav>
+          <ul class="flex justify-around gap-5">
+            <li>
+              <a class="text-white text-lg" href="">Serviços</a>
+              <i class="fa-solid fa-chevron-down text-white text-lg"></i>
+            </li>
+            <li>
+              <a class="text-white text-lg" href="">Sobre</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="flex gap-7 items-center">
+          <i class="fa-solid fa-moon text-white text-lg"></i>
+          <a
+            class="text-white text-lg bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
+            href="./login.html"
+          >
+            Entrar
+            <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
+          ></a>
+        </section>
+      </section>
     </header>
+
     <main>
       <nav class="p-5">
         <ul class="breadcrumb">
@@ -65,7 +65,7 @@
         </ul>
       </nav>
       <div
-        class="flex flex-col justify-center items-center bg-gray-100 shadow-lg mx-auto w-1/2 p-3 gap-3 rounded-md mb-10"
+        class="flex flex-col justify-center items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md mb-10 sm:w-1/2"
       >
         <figure>
           <img
@@ -82,7 +82,7 @@
           id="form"
         >
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="nome">Nome</label>
+            <label class="font-medium text-md" for="nome">Nome</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="nome"
@@ -95,9 +95,13 @@
             />
             <span></span>
           </fieldset>
-          <div class="grid grid-cols-2 gap-20 w-3/4">
-            <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="nascinemnto">Nascimento</label>
+          <div
+            class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32"
+          >
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="nascinemnto"
+                >Nascimento</label
+              >
               <input
                 class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
                 id="nascimento"
@@ -107,31 +111,39 @@
               />
               <span></span>
             </fieldset>
-            <fieldset class="flex items-center gap-2 w-3/4">
-              <legend>Sexo</legend>
-              <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-                id="feminino"
-                name="sexo"
-                value="feminino"
-                type="radio"
-                required
-              />
-              <label for="feminino">Feminino</label>
-              <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-                id="masculino"
-                name="sexo"
-                value="feminino"
-                type="radio"
-                required
-              />
-              <label for="masculino">Masculino</label>
+            <fieldset
+              class="flex flex-col items-start gap-2 xl:w-3/4 xl:flex-row xl:items-center"
+            >
+              <legend class="font-medium text-md">Sexo</legend>
+              <div class="flex gap-1">
+                <input
+                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                  id="feminino"
+                  name="sexo"
+                  value="feminino"
+                  type="radio"
+                  required
+                />
+                <label class="font-normal" for="feminino">Feminino</label>
+              </div>
+              <div class="flex gap-1">
+                <input
+                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                  id="masculino"
+                  name="sexo"
+                  value="feminino"
+                  type="radio"
+                  required
+                />
+                <label class="font-normal" for="masculino">Masculino</label>
+              </div>
               <span></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="nome_materno">Nome Materno</label>
+            <label class="font-medium text-md" for="nome_materno"
+              >Nome Materno</label
+            >
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="nome_materno"
@@ -143,7 +155,7 @@
             <span></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="cpf">CPF</label>
+            <label class="font-medium text-md" for="cpf">CPF</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="cpf"
@@ -154,11 +166,13 @@
             />
             <span></span>
           </fieldset>
-          <div class="grid grid-cols-2 gap-20 w-3/4">
-            <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="celular">Celular</label>
+          <div
+            class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32"
+          >
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="celular">Celular</label>
               <input
-                class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
                 id="celular"
                 name="celular"
                 type="text"
@@ -167,10 +181,10 @@
               />
               <span></span>
             </fieldset>
-            <fieldset class="flex flex-col gap-2 w-3/4">
-              <label for="telefone">Telefone</label>
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="telefone">Telefone</label>
               <input
-                class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
                 id="telefone"
                 name="telefone"
                 type="text"
@@ -181,7 +195,7 @@
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="login">Login</label>
+            <label class="font-medium text-md" for="login">Login</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="login"
@@ -194,7 +208,7 @@
             <span></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="senha">Senha</label>
+            <label class="font-medium text-md" for="senha">Senha</label>
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="senha"
@@ -206,7 +220,9 @@
             <span></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label for="confima_senha">Confirmar Senha</label>
+            <label class="font-medium text-md" for="confima_senha"
+              >Confirmar Senha</label
+            >
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
               id="confima_senha"
@@ -220,7 +236,7 @@
           <div>
             <button
               id="enviar-btn"
-              class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150"
+              class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150"
               type="submit"
             >
               Avançar
@@ -231,44 +247,58 @@
       </div>
     </main>
 
-    <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3">
-      <section class="flex flex-col gap-2">
-        <h2 class="text-white text-xl font-semibold">Serviços</h2>
+    <footer
+      class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3 flex-wrap"
+    >
+      <section
+        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
+      >
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Serviços
+        </h2>
         <ul>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href="">2FA</a>
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
+              >2FA</a
+            >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >Número Máscara</a
             >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >Google Verified Calls</a
             >
           </li>
           <li>
-            <a class="text-white/80 text-lg hover:text-white" href=""
+            <a class="text-white/80 text-sm sm:text-md hover:text-white" href=""
               >SMS Programável</a
             >
           </li>
         </ul>
       </section>
-      <section class="flex flex-col gap-2">
-        <h2 class="text-white text-xl font-semibold">Contato</h2>
+      <section
+        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
+      >
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Contato
+        </h2>
         <ul>
-          <li class="text-white/80 text-lg">(21) 3030-1010</li>
-          <li class="text-white/80 text-lg">0800 030 2016</li>
-          <li class="text-white/80 text-lg">suporte@telecall.com</li>
+          <li class="text-white/80 text-sm sm:text-md">(21) 3030-1010</li>
+          <li class="text-white/80 text-sm sm:text-md">0800 030 2016</li>
+          <li class="text-white/80 text-sm sm:text-md">suporte@telecall.com</li>
         </ul>
       </section>
-      <section class="flex flex-col gap-4">
-        <h2 class="text-white text-xl font-semibold">Redes Sociais</h2>
-        <ul class="flex gap-5">
+      <section class="flex flex-col w-full items-center gap-3 xs:w-auto">
+        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+          Redes Sociais
+        </h2>
+        <ul class="flex justify-between w-2/4 xs:w-full">
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-blue-700 duration-150"
+              class="text-white/80 text-2xl hover:text-blue-700 duration-150"
               href="https://www.facebook.com/TelecallBr"
               target="_blank"
               ><i class="fa-brands fa-square-facebook"></i
@@ -276,7 +306,7 @@
           </li>
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-fuchsia-700 duration-150"
+              class="text-white/80 text-2xl hover:text-fuchsia-700 duration-150"
               href="https://www.instagram.com/telecallbr/"
               target="_blank"
               ><i class="fa-brands fa-instagram"></i
@@ -284,7 +314,7 @@
           </li>
           <li>
             <a
-              class="text-white/80 text-3xl hover:text-sky-600 duration-150"
+              class="text-white/80 text-2xl hover:text-sky-600 duration-150"
               href="https://www.linkedin.com/company/telecall/"
               target="_blank"
             >
@@ -292,7 +322,7 @@
             ></a>
           </li>
         </ul>
-        <figure class="w-[150px]">
+        <figure class="max-w-[130px]">
           <img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="logo da telecall"
