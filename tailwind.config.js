@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         telecall: {
           azul: "#0e4e7c",
+          "azul-hover":"#083759",
           vemelho: "#ca1c3a",
           "vemelho-hover": "#99121f",
         },

@@ -31,9 +31,50 @@
       <section class="flex gap-5 items-center">
         <nav>
           <ul class="flex justify-around gap-5">
-            <li>
-              <a class="text-white text-lg" href="">Serviços</a>
-              <i class="fa-solid fa-chevron-down text-white text-lg"></i>
+            <li class="relative flex flex-col items-center">
+              <p
+                id="dropdown"
+                class="text-white text-lg cursor-pointer select-none"
+                href=""
+              >
+                Serviços
+                <i class="fa-solid fa-chevron-down text-white text-lg"></i>
+              </p>
+              <div
+                id="menudropdown"
+                class="w-[250px] top-10 absolute hidden bg-telecall-azul rounded"
+              >
+                <ul class="w-full p-2">
+                  <li class="w-full">
+                    <a
+                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
+                      href=""
+                      >2FA</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
+                      href=""
+                      >Número Máscara</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
+                      href=""
+                      >Google Verified Calls</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
+                      href=""
+                      >SMS Programável</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <a class="text-white text-lg" href="">Sobre</a>
@@ -160,7 +201,7 @@
         <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
           Contato
         </h2>
-        <ul>
+        <ul class="flex flex-col gap-1">
           <li class="text-white/80 text-sm sm:text-md">(21) 3030-1010</li>
           <li class="text-white/80 text-sm sm:text-md">0800 030 2016</li>
           <li class="text-white/80 text-sm sm:text-md">suporte@telecall.com</li>
@@ -205,5 +246,7 @@
         </figure>
       </section>
     </footer>
+
+    <script type="application/javascript" src="../assets/js/script.js"></script>
   </body>
 </html>
