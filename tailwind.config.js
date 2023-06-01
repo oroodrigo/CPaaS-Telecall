@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html", "./pages/*.html"],
+  darkMode: "class",
   theme: {
     screens: {
       xs: "370px",
@@ -17,7 +18,7 @@ module.exports = {
       colors: {
         telecall: {
           azul: "#0e4e7c",
-          "azul-hover":"#083759",
+          "azul-hover": "#083759",
           vemelho: "#ca1c3a",
           "vemelho-hover": "#99121f",
         },

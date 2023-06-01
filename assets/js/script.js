@@ -1,13 +1,18 @@
-const dropdown = document.getElementById("dropdown")
-const menudropdown = document.getElementById("menudropdown")
-console.log(menudropdown.classList)
+import { verificacaoInicial, trocarTema } from "./dark-mode.js";
 
-dropdown.addEventListener("click",() => {
-  if(menudropdown.classList.contains("hidden")){
-    menudropdown.classList.remove("hidden")
-    return
+verificacaoInicial();
+const btn = document.getElementById("dark-btn");
+const dropdown = document.getElementById("dropdown");
+const menudropdown = document.getElementById("menudropdown");
+
+dropdown.addEventListener("click", () => {
+  if (menudropdown.classList.contains("hidden")) {
+    menudropdown.classList.remove("hidden");
+    return;
   }
-  menudropdown.classList.add("hidden")
-})
+  menudropdown.classList.add("hidden");
+});
 
-dropdown.addEventListener("mous")
+btn.addEventListener("click", () => {
+  trocarTema();
+});

@@ -18,7 +18,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-200 flex flex-col h-screen font-Poppins">
+  <body
+    class="bg-slate-200 flex flex-col h-screen font-Poppins dark:bg-blue-950"
+  >
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
@@ -82,7 +84,10 @@
           </ul>
         </nav>
         <section class="flex gap-5 items-center">
-          <i class="fa-solid fa-moon text-white text-lg"></i>
+          <i
+            id="dark-btn"
+            class="fa-solid fa-moon text-white text-lg cursor-pointer"
+          ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
             href="./login.html"
@@ -97,17 +102,19 @@
     <main class="flex-1 flex flex-col pb-10">
       <nav class="p-5">
         <ul class="breadcrumb">
-          <li class="text-md text-blue-500">
+          <li class="text-md text-blue-500 dark:text-white">
             <a href="../index.html">Início</a>
           </li>
-          <li class="text-md text-blue-500 font-semibold cursor-pointer">
+          <li
+            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-white"
+          >
             Login
           </li>
         </ul>
       </nav>
 
       <div
-        class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2"
+        class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2 dark:bg-slate-400"
       >
         <section
           class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/2"
@@ -127,25 +134,27 @@
             <fieldset class="flex flex-col gap-2">
               <label class="font-medium" for="login">Login</label>
               <input
-                class="border border-blue-500 rounded-md py-1 px-2"
+                class="border border-blue-500 rounded-md py-1 px-2 dark:border-blue-800 dark:bg-white/75"
                 id="login"
                 name="login"
                 type="text"
+                required
               />
             </fieldset>
             <fieldset class="flex flex-col gap-2">
               <label class="font-medium" for="senha">Senha</label>
               <input
-                class="border border-blue-500 rounded-md py-1 px-2"
+                class="border border-blue-500 rounded-md py-1 px-2 dark:border-blue-800 dark:bg-white/75"
                 id="senha"
                 name="senha"
                 type="text"
+                required
               />
             </fieldset>
             <span id="mensagem_erro"></span>
             <button
               id="enviar-btn"
-              class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-800 duration-150"
+              class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-600 duration-150 dark:bg-blue-600 dark:hover:bg-blue-700"
               type="submit"
             >
               Entrar
@@ -154,7 +163,7 @@
           <p class="mt-2 font-medium">
             Ainda não é cadastrado?
             <a
-              class="text-blue-500 font-semibold block md:inline"
+              class="text-blue-500 font-semibold block md:inline dark:text-blue-700"
               href="./cadastro-1.html"
               >cadastre-se</a
             >
@@ -247,6 +256,6 @@
       </section>
     </footer>
 
-    <script type="application/javascript" src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/script.js"></script>
   </body>
 </html>
