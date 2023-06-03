@@ -26,6 +26,6 @@ form.addEventListener("submit", (e) => {
 });
 
 camposDoFormulario.forEach((campo) => {
-  campo.addEventListener("input", () => verificaCampo(campo));
+  campo.addEventListener("focusout", () => verificaCampo(campo));
   campo.addEventListener("invalid", (evento) => evento.preventDefault());
 });
