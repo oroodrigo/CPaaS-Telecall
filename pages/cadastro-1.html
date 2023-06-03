@@ -137,7 +137,7 @@
               maxlength="60"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <div
             class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32"
@@ -153,10 +153,10 @@
                 type="date"
                 required
               />
-              <span></span>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
             <fieldset
-              class="flex flex-col items-start gap-2 xl:w-3/4 xl:flex-row xl:items-center"
+              class="flex flex-col items-start gap-2 xl:w-3/4 2xl:flex-row 2xl:items-center"
             >
               <legend class="font-medium text-md">Sexo</legend>
               <div class="flex gap-1">
@@ -181,7 +181,7 @@
                 />
                 <label class="font-normal" for="masculino">Masculino</label>
               </div>
-              <span></span>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
@@ -196,19 +196,22 @@
               placeholder="Ex: Maria das Dores da Silva"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="cpf">CPF</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              minlength="11"
               id="cpf"
               name="cpf"
               type="text"
+              data-mask="cpf"
               placeholder="000.000.000-00"
+              pattern="\d{3}\.?\d{3}\.?\d{3}\.?-?\d{2}"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <div
             class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32"
@@ -216,26 +219,28 @@
             <fieldset class="flex flex-col xl:w-3/4 gap-2">
               <label class="font-medium text-md" for="celular">Celular</label>
               <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
                 id="celular"
                 name="celular"
                 type="text"
-                placeholder="(+55) xx-xxxxxxxxx"
+                data-mask="phone"
+                placeholder="xx-xxxxxxxxx"
                 required
               />
-              <span></span>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
             <fieldset class="flex flex-col xl:w-3/4 gap-2">
               <label class="font-medium text-md" for="telefone">Telefone</label>
               <input
-                class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
                 id="telefone"
                 name="telefone"
                 type="text"
-                placeholder="(+55) xx-xxxxxxxx"
+                data-mask="phone"
+                placeholder="xx-xxxxxxxx"
                 required
               />
-              <span></span>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
@@ -249,7 +254,7 @@
               maxlength="6"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="senha">Senha</label>
@@ -261,21 +266,21 @@
               minlength="8"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
-            <label class="font-medium text-md" for="confima_senha"
+            <label class="font-medium text-md" for="confirma_senha"
               >Confirmar Senha</label
             >
             <input
               class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-              id="confima_senha"
+              id="confirma_senha"
               name="confirma_senha"
               type="text"
               minlength="8"
               required
             />
-            <span></span>
+            <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <div>
             <button
@@ -375,6 +380,6 @@
     </footer>
 
     <script type="module" src="../assets/js/script.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
   </body>
 </html>

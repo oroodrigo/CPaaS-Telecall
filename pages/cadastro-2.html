@@ -132,9 +132,10 @@
               name="cep"
               type="text"
               placeholder="Digite seu CEP"
+              minlength="8"
               required
             />
-            <span class="text-red-600 ml-2" id="mensagem_erro"></span>
+            <span class="text-red-600 ml-2 mensagem_erro"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="endereco">Endereço</label>
@@ -168,8 +169,7 @@
                 id="endereco_complemento"
                 name="endereco_complemento"
                 type="text"
-                placeholder="Complemento"
-                required
+                placeholder="(opcional)"
               />
               <span></span>
             </fieldset>
@@ -339,9 +339,6 @@
     </footer>
 
     <script type="module" src="../assets/js/script.js"></script>
-    <script
-      type="application/javascript"
-      src="../assets/js/busca-cep.js"
-    ></script>
+    <script type="module" src="../assets/js/validations/busca-cep.js"></script>
   </body>
 </html>
