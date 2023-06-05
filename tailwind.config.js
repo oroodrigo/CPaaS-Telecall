@@ -30,6 +30,11 @@ module.exports = {
             border: "#1E40AF",
             bg: "#E4E8ED",
           },
+          btn:{
+            azul: "#2563EB",
+            "azul-hover":"#1D4ED8"
+          },
+          link:"#1D4ED8"
         },
       },
     },

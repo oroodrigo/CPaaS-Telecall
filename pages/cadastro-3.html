@@ -18,7 +18,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="h-screen flex flex-col bg-slate-200 font-Poppins">
+  <body
+    class="h-screen flex flex-col bg-slate-200 font-Poppins dark:bg-dark-bg"
+  >
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
@@ -100,16 +102,18 @@
     <main class="flex-1 flex flex-col">
       <nav class="p-5">
         <ul class="breadcrumb">
-          <li class="text-md text-blue-500">
+          <li class="text-md text-blue-500 dark:text-dark-text">
             <a href="../index.html"> Início</a>
           </li>
-          <li class="text-md text-blue-500 font-semibold cursor-pointer">
+          <li
+            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
+          >
             Cadastro
           </li>
         </ul>
       </nav>
       <div
-        class="bg-gray-100 shadow-lg mx-auto w-1/2 p-3 rounded-md mb-24 mt-auto"
+        class="bg-gray-100 shadow-lg mx-auto w-1/2 p-3 rounded-md mb-24 mt-auto dark:bg-dark-container"
       >
         <figure>
           <img
@@ -129,7 +133,7 @@
         </figure>
         <a
           href="./login.html"
-          class="block mx-auto text-center text-white bg-blue-500 rounded-md p-3 w-4/5 my-12 hover:bg-blue-800 duration-150 md:w-1/3"
+          class="block mx-auto text-center text-white bg-blue-500 rounded-md p-3 w-4/5 my-12 hover:bg-blue-800 duration-150 md:w-1/3 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
         >
           Login
           <i class="fa-solid fa-arrow-right ml-2 md:ml-5 text-white"></i>

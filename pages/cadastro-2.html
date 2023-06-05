@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-200 font-Poppins">
+  <body class="bg-slate-200 font-Poppins dark:bg-dark-bg">
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
@@ -100,16 +100,18 @@
     <main>
       <nav class="p-5">
         <ul class="breadcrumb">
-          <li class="text-md text-blue-500">
+          <li class="text-md text-blue-500 dark:text-dark-text">
             <a href="../index.html"> Início</a>
           </li>
-          <li class="text-md text-blue-500 font-semibold cursor-pointer">
+          <li
+            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
+          >
             Cadastro
           </li>
         </ul>
       </nav>
       <div
-        class="flex flex-col justify-center items-center w-3/4 bg-gray-100 shadow-lg mx-auto p-3 gap-3 rounded-md mb-10 sm:w-1/2"
+        class="flex flex-col justify-center items-center w-3/4 bg-gray-100 shadow-lg mx-auto p-3 gap-3 rounded-md mb-10 sm:w-1/2 dark:bg-dark-container"
       >
         <figure>
           <img
@@ -127,7 +129,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="cep">CEP</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="cep"
               name="cep"
               type="text"
@@ -140,7 +142,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="endereco">Endereço</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="endereco"
               name="endereco"
               type="text"
@@ -153,7 +155,7 @@
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="endereco_numero">Número</label>
               <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="endereco_numero"
                 name="endereco_numero"
                 type="number"
@@ -165,7 +167,7 @@
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="endereco_complemento">Complemento</label>
               <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="endereco_complemento"
                 name="endereco_complemento"
                 type="text"
@@ -177,7 +179,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="bairro">Bairro</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="bairro"
               name="bairro"
               type="text"
@@ -190,7 +192,7 @@
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="cidade">Cidade</label>
               <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="cidade"
                 name="cidade"
                 type="text"
@@ -202,7 +204,7 @@
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="estado">Estado</label>
               <select
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="estado"
                 name="estado"
                 type="text"
@@ -243,7 +245,7 @@
           <div>
             <button
               id="enviar-btn"
-              class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150"
+              class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
               type="submit"
             >
               Avançar

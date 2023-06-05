@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-slate-200 font-Poppins">
+  <body class="bg-slate-200 font-Poppins dark:bg-dark-bg">
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
@@ -100,16 +100,18 @@
     <main>
       <nav class="p-5">
         <ul class="breadcrumb">
-          <li class="text-md text-blue-500">
+          <li class="text-md text-blue-500 dark:text-dark-text">
             <a href="../index.html"> Início</a>
           </li>
-          <li class="text-md text-blue-500 font-semibold cursor-pointer">
+          <li
+            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
+          >
             Cadastro
           </li>
         </ul>
       </nav>
       <div
-        class="flex flex-col justify-center items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md mb-10 sm:w-1/2"
+        class="flex flex-col justify-center items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md mb-10 sm:w-1/2 dark:bg-dark-container"
       >
         <figure>
           <img
@@ -128,7 +130,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="nome">Nome</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="nome"
               name="nome"
               type="text"
@@ -147,7 +149,7 @@
                 >Nascimento</label
               >
               <input
-                class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2"
+                class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="nascimento"
                 name="nascimento"
                 type="date"
@@ -161,7 +163,7 @@
               <legend class="font-medium text-md">Sexo</legend>
               <div class="flex gap-1">
                 <input
-                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                   id="feminino"
                   name="sexo"
                   value="feminino"
@@ -189,7 +191,7 @@
               >Nome Materno</label
             >
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="nome_materno"
               name="nome_materno"
               type="text"
@@ -201,7 +203,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="cpf">CPF</label>
             <input
-              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               minlength="11"
               id="cpf"
               name="cpf"
@@ -219,7 +221,7 @@
             <fieldset class="flex flex-col xl:w-3/4 gap-2">
               <label class="font-medium text-md" for="celular">Celular</label>
               <input
-                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="celular"
                 name="celular"
                 type="text"
@@ -232,7 +234,7 @@
             <fieldset class="flex flex-col xl:w-3/4 gap-2">
               <label class="font-medium text-md" for="telefone">Telefone</label>
               <input
-                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+                class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
                 id="telefone"
                 name="telefone"
                 type="text"
@@ -246,7 +248,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="login">Login</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="login"
               name="login"
               type="text"
@@ -259,7 +261,7 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="senha">Senha</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="senha"
               name="senha"
               type="text"
@@ -273,7 +275,7 @@
               >Confirmar Senha</label
             >
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="confirma_senha"
               name="confirma_senha"
               type="text"
@@ -285,7 +287,7 @@
           <div>
             <button
               id="enviar-btn"
-              class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150"
+              class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
               type="submit"
             >
               Avançar
