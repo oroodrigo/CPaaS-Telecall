@@ -22,6 +22,15 @@ module.exports = {
           vemelho: "#ca1c3a",
           "vemelho-hover": "#99121f",
         },
+        dark: {
+          bg: "#0a1b2e",
+          container: "#94A3B8",
+          text: "#fff",
+          input: {
+            border: "#1E40AF",
+            bg: "#E4E8ED",
+          },
+        },
       },
     },
   },

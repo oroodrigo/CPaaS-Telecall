@@ -14,7 +14,7 @@ export const mensagens = {
     tooShort: "O campo de nome deve ter no mínimo 15 caractéres.",
     tooLong: "Por favor, preencha um nome válido",
   },
-  aniversario: {
+  nascimento: {
     valueMissing: "O campo de data de nascimento não pode estar vazio.",
   },
   sexo: {
