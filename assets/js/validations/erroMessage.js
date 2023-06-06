@@ -5,6 +5,7 @@ export const tiposDeErro = [
   "typeMissmatch",
   "patternMissmatch",
   "tooLong",
+  "badInput",
 ];
 
 export const mensagens = {
@@ -16,6 +17,7 @@ export const mensagens = {
   },
   nascimento: {
     valueMissing: "O campo de data de nascimento não pode estar vazio.",
+    badInput: "A data selecionada é inválida.",
   },
   sexo: {
     valueMissing: "O campo de sexo não pode estar vazio.",

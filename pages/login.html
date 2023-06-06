@@ -130,7 +130,7 @@
           </figure>
         </section>
         <section class="flex flex-col p-5 rounded-lg">
-          <form class="flex flex-col gap-5">
+          <form class="flex flex-col gap-5" id="form_login">
             <fieldset class="flex flex-col gap-2">
               <label class="font-medium" for="login">Login</label>
               <input
@@ -140,6 +140,7 @@
                 type="text"
                 required
               />
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
             <fieldset class="flex flex-col gap-2">
               <label class="font-medium" for="senha">Senha</label>
@@ -150,8 +151,9 @@
                 type="text"
                 required
               />
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
-            <span id="mensagem_erro"></span>
+            <span class="text-red-600" id="login_result"></span>
             <button
               id="enviar-btn"
               class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
@@ -257,5 +259,6 @@
     </footer>
 
     <script type="module" src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/login.js"></script>
   </body>
 </html>
