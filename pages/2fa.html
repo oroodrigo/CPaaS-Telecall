@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - CPaas</title>
+    <title>2FA - CPaas</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
     <link type="text/css" rel="stylesheet" href="../assets/css/styles.css" />
     <script
@@ -25,10 +25,12 @@
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
       <figure class="max-w-[200px]">
-        <img
-          src="../assets/img/logo_telecall_branco_vermelho_p.png"
-          alt="Logo da Telecall"
-        />
+        <a href="../index.html"
+          ><img
+            src="../assets/img/logo_telecall_branco_vermelho_p.png"
+            alt="Logo da Telecall"
+          />
+        </a>
       </figure>
       <section class="flex gap-5 items-center">
         <nav>
@@ -37,7 +39,6 @@
               <p
                 id="dropdown"
                 class="text-white text-lg cursor-pointer select-none"
-                href=""
               >
                 Serviços
                 <i class="fa-solid fa-chevron-down text-white text-lg"></i>
@@ -50,7 +51,7 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./2fa.html"
                       >2FA</a
                     >
                   </li>
@@ -90,7 +91,7 @@
           ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./pages/login.html"
+            href="./login.html"
           >
             Entrar
             <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
@@ -100,7 +101,7 @@
     </header>
 
     <main>
-      <article class="flex flex-col gap-8">
+      <article class="flex flex-col gap-10">
         <section class="flex justify-around py-6 w-full">
           <section
             class="flex flex-col items-center justify-center gap-5 w-1/2"
@@ -122,7 +123,9 @@
         </section>
 
         <section class="flex flex-col gap-7 px-4 w-full">
-          <h2 class="text-2xl text-telecall-azul font-bold titulo">
+          <h2
+            class="text-2xl text-telecall-azul font-bold titulo relative w-1/4"
+          >
             Como funciona?
           </h2>
           <section class="flex justify-between px-12 items-center">
@@ -181,56 +184,80 @@
           </section>
         </section>
 
-        <section class="flex flex-col gap-7 px-4 w-full">
-          <h2 class="text-2xl text-telecall-azul font-bold titulo">
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+          <h2
+            class="text-2xl text-telecall-azul font-bold titulo relative w-1/5"
+          >
             Benefícios
           </h2>
+          <section class="flex mt-5">
+            <figure class="w-1/2 flex justify-center">
+              <img
+                class="max-w-[350px]"
+                src="../assets/img/2fa/undraw_security_re_a2rk.svg"
+                alt="imagem para simbolizar segurança"
+              />
+            </figure>
+            <section class="w-1/2">
+              <ul class="flex flex-col justify-between h-full">
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Ofereça segurança aprimorada para seus clientes.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Reduza casos de fraude e invasões e evite o acesso a dados
+                    por invasores.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Envio de OTP por meio de vários canais, incluindo SMS, voz
+                    ou e-mail.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Flexibilidade de canais garante que o usuário conseguirá
+                    completar a tarefa desejada mesmo quando tiver problema com
+                    um deles.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    API simples e de rápida implementação.
+                  </p>
+                </li>
 
-          <ul class="flex flex-col gap-2">
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                Ofereça segurança aprimorada para seus clientes.
-              </p>
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                Reduza casos de fraude e invasões e evite o acesso a dados por
-                invasores.
-              </p>
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                Envio de OTP por meio de vários canais, incluindo SMS, voz ou
-                e-mail.
-              </p>
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                Flexibilidade de canais garante que o usuário conseguirá
-                completar a tarefa desejada mesmo quando tiver problema com um
-                deles.
-              </p>
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                API simples e de rápida implementação.
-              </p>
-            </li>
-
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
-              <p class="text-md font-medium">
-                Plataforma intuitiva que permite visualizar relatórios de uso
-                por dia, mês ou ano e pesquisar usando diversos critérios de
-                filtro
-              </p>
-            </li>
-          </ul>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Plataforma intuitiva que permite visualizar relatórios de
+                    uso por dia, mês ou ano e pesquisar usando diversos
+                    critérios de filtro
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </section>
         </section>
       </article>
     </main>
