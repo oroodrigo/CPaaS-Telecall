@@ -26,15 +26,16 @@ module.exports = {
           bg: "#0a1b2e",
           container: "#94A3B8",
           text: "#fff",
+          title: "#cccbcb",
           input: {
             border: "#1E40AF",
             bg: "#E4E8ED",
           },
-          btn:{
+          btn: {
             azul: "#2563EB",
-            "azul-hover":"#1D4ED8"
+            "azul-hover": "#1D4ED8",
           },
-          link:"#1D4ED8"
+          link: "#1D4ED8",
         },
       },
     },

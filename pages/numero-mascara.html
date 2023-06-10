@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro - CPaaS</title>
+    <title>Número Máscara - CPaas</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/9945e62804.js"
       crossorigin="anonymous"
@@ -19,16 +19,18 @@
     />
   </head>
   <body
-    class="h-screen flex flex-col bg-slate-200 font-Poppins dark:bg-dark-bg"
+    class="bg-slate-200 flex flex-col h-screen font-Poppins dark:bg-dark-bg"
   >
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
       <figure class="max-w-[200px]">
-        <img
-          src="../assets/img/logo_telecall_branco_vermelho_p.png"
-          alt="Logo da Telecall"
-        />
+        <a href="../index.html"
+          ><img
+            src="../assets/img/logo_telecall_branco_vermelho_p.png"
+            alt="Logo da Telecall"
+          />
+        </a>
       </figure>
       <section class="flex gap-5 items-center">
         <nav>
@@ -56,21 +58,21 @@
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./numero-mascara.html"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./google-calls.html"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./sms-programavel.html"
                       >SMS Programável</a
                     >
                   </li>
@@ -98,46 +100,147 @@
       </section>
     </header>
 
-    <main class="flex-1 flex flex-col">
-      <nav class="p-5">
-        <ul class="breadcrumb">
-          <li class="text-md text-blue-500 dark:text-dark-text">
-            <a href="../index.html"> Início</a>
-          </li>
-          <li
-            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
+    <main>
+      <article class="flex flex-col gap-10 m-5">
+        <section class="flex justify-around py-6 w-full">
+          <section
+            class="flex flex-col items-center justify-center gap-5 w-1/2 px-5"
           >
-            Cadastro
-          </li>
-        </ul>
-      </nav>
-      <div
-        class="bg-gray-100 shadow-lg mx-auto w-1/2 p-3 rounded-md mb-24 mt-auto dark:bg-dark-container"
-      >
-        <figure>
-          <img
-            class="my-5 mx-auto"
-            src="../assets/img/status-3.png"
-            alt="barra de estagio 3"
-          />
-        </figure>
-        <h1 class="text-lg md:text-2xl text-black font-semibold ml-3 my-2">
-          Sucesso!
-        </h1>
-        <p class="tex-md text-black font-semibold text-lg md:2xl ml-3 mb-10">
-          Você finalizou seu cadastro!
-        </p>
-        <figure class="hidden max-w-[250px] mx-auto sm:block">
-          <img src="../assets/img/imagem_cadastro_3" alt="imagem cadatro 3" />
-        </figure>
-        <a
-          href="./login.html"
-          class="block mx-auto text-center text-white bg-blue-500 rounded-md p-3 w-4/5 my-12 hover:bg-blue-800 duration-150 md:w-1/3 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-        >
-          Login
-          <i class="fa-solid fa-arrow-right ml-2 md:ml-5 text-white"></i>
-        </a>
-      </div>
+            <h1 class="text-3xl text-telecall-azul-hover font-bold">
+              Número Máscara
+            </h1>
+            <h2 class="text-xl text-telecall-azul font-semibold text-center">
+              Garanta aos seus clientes a capacidade de fazer chamadas e enviar
+              mensagens sem expor seus números de telefone pessoais.
+            </h2>
+          </section>
+          <figure class="w-1/2 flex justify-center">
+            <img
+              class="max-w-[375px]"
+              src="../assets/img/undraw_two_factor_authentication_namy.svg"
+              alt=""
+            />
+          </figure>
+        </section>
+
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+          <h2
+            class="text-3xl text-telecall-azul font-bold titulo relative w-1/5"
+          >
+            Como funciona?
+          </h2>
+          <section class="flex mt-5">
+            <figure class="w-1/2 flex justify-center">
+              <img
+                class="max-w-[350px]"
+                src="../assets/img/numero-mascara/numero-mascara.png"
+                alt="imagem para simbolizar segurança"
+              />
+            </figure>
+            <section class="w-1/2">
+              <ul class="flex flex-col justify-evenly h-full">
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Usuário faz uma chamada através de um aplicativo.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Plataforma mascara o número original.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium">
+                    Ambas as partes são conectadas.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+          <h2
+            class="text-3xl text-telecall-azul font-bold titulo relative w-1/5"
+          >
+            Quem usa?
+          </h2>
+          <section>
+            <ul class="flex justify-between px-6">
+              <li class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-car text-5xl"></i>
+                <p class="text-xl font-medium">Transporte</p>
+                <figure>
+                  <img
+                    src="../assets/img/icons/uber.png"
+                    alt="icone do app uber"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    class="max-w-[100px]"
+                    src="../assets/img/icons/99.png"
+                    alt="icone do app 99"
+                  />
+                </figure>
+              </li>
+              <li class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-heart text-5xl"></i>
+                <p class="text-xl font-medium">App de Relacionamento</p>
+                <figure>
+                  <img
+                    src="../assets/img/icons/happn.png"
+                    alt="icone do app happn.png"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/tinder.png"
+                    alt="icone do app tinder.png"
+                  />
+                </figure>
+              </li>
+
+              <li class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-cart-shopping text-5xl"></i>
+                <p class="text-xl font-medium">Varejo</p>
+                <figure>
+                  <img
+                    class="max-w-[100px]"
+                    src="../assets/img/icons/ebay.png"
+                    alt="icone do app ebay.png"
+                  />
+                </figure>
+              </li>
+              <li class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-box text-5xl"></i>
+                <p class="text-xl font-medium">Logistica</p>
+                <figure>
+                  <img
+                    src="../assets/img/icons/ifood.png"
+                    alt="icone do app ifood"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/rappi.png"
+                    alt="icone do app rappi"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </article>
     </main>
 
     <footer
