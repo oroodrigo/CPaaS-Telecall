@@ -47,6 +47,7 @@ export const mensagens = {
   login: {
     valueMissing: "O campo de login não pode estar vazio.",
     tooShort: "O campo de login deve ter 6 caractéres.",
+    customError:"O login escolhido ja está em uso."
   },
   senha: {
     valueMissing: "O campo de senha não pode estar vazio.",
