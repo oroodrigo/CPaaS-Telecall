@@ -19,7 +19,6 @@ form.addEventListener("submit", (e) => {
       loginInfo.senha == dataBase[i].senha
     ) {
       loginResult.style.color = "green";
-      loginResult.textContent = "Login concluido!";
       sessionStorage.setItem("isLogged", true);
       window.location.assign("../index.html");
       break;
@@ -29,12 +28,10 @@ form.addEventListener("submit", (e) => {
       loginInfo.senha == dataBase[i].senha
     ) {
       loginResult.style.color = "red";
-      loginResult.textContent = "Login ou senha incorreto.";
       sessionStorage.setItem("isLogged", false);
       break;
     }
     loginResult.style.color = "red";
-    loginResult.textContent = "Login não encontrado.";
     sessionStorage.setItem("isLogged", false);
   }
 });

@@ -15,4 +15,7 @@ export default {
       .replace(/(\d{4})-(\d)(\d{4})/, "$1$2-$3")
       .replace(/(-\d{4})(\d+?$)/, "$1");
   },
+  password(input) {
+    return input.replace(/\d/g, "");
+  },
 };

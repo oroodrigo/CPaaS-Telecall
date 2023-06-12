@@ -266,11 +266,13 @@
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="senha">Senha</label>
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="senha"
               name="senha"
-              type="text"
+              type="password"
               minlength="8"
+              autocomplete="off"
+              data-mask="password"
               required
             />
             <span class="mensagem_erro text-red-600 ml-2"></span>
@@ -280,11 +282,13 @@
               >Confirmar Senha</label
             >
             <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               id="confirma_senha"
               name="confirma_senha"
-              type="text"
+              type="password"
               minlength="8"
+              autocomplete="off"
+              data-mask="password"
               required
             />
             <span class="mensagem_erro text-red-600 ml-2"></span>
