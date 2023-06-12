@@ -13,11 +13,6 @@ form.addEventListener("submit", (e) => {
     senha: e.target.elements["senha"].value,
   };
 
-  // if (dataBase.length == 0) {
-  //   loginResult.style.color = 'red';
-  //   loginResult.textContent = "Login não encontrado"
-  //   sessionStorage.setItem("isLogged")
-  // }
 
   for (let i = 0; i <= dataBase.length; i++) {
     if (
