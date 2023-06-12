@@ -32,7 +32,8 @@
           />
         </a>
       </figure>
-      <section class="flex gap-5 items-center">
+
+      <section class="gap-5 items-center hidden md:flex">
         <nav>
           <ul class="flex justify-around gap-5">
             <li class="relative flex flex-col items-center">
@@ -98,6 +99,9 @@
           ></a>
         </section>
       </section>
+      <div class="block md:hidden">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
     </header>
 
     <main>
@@ -117,7 +121,7 @@
               Identifique chamadas spam com esse recurso inovador do Google.
             </h2>
           </section>
-          <figure class="w-1/2 flex justify-center">
+          <figure class="w-1/2 hidden md:flex justify-center">
             <img
               class="max-w-[300px]"
               src="../assets/img/google-verified-calls/undraw_verified_re_4io7.svg"
@@ -149,7 +153,9 @@
           >
             Como funciona?
           </h2>
-          <section class="flex justify-between px-12 items-center">
+          <section
+            class="flex flex-wrap gap-8 justify-center px-12 sm:justify-between w-full mx-auto"
+          >
             <div class="w-60 flex flex-col items-center gap-5">
               <figure>
                 <img
@@ -200,20 +206,22 @@
             Benefícios
           </h2>
           <section class="flex mt-5">
-            <figure class="w-1/2 flex justify-center">
+            <figure class="w-1/2 hidden md:flex justify-center">
               <img
                 class="max-w-[350px]"
                 src="../assets/img/google-verified-calls/undraw_cloud_sync_re_02p1.svg"
                 alt="imagem para simbolizar segurança"
               />
             </figure>
-            <section class="w-1/2">
-              <ul class="flex flex-col justify-between h-full">
+            <section class="md:w-1/2">
+              <ul class="flex flex-col justify-between h-full gap-3">
                 <li class="flex gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p class="text-md font-medium dark:text-dark-text">
+                  <p
+                    class="text-md font-medium text-justify dark:text-dark-text"
+                  >
                     Estabeleça confiança, clientes são mais propensos a atender
                     chamadas de organizações com os quais estão familiarizadas e
                     com as quais já tem relação.
@@ -223,7 +231,9 @@
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p class="text-md font-medium dark:text-dark-text">
+                  <p
+                    class="text-md font-medium text-justify dark:text-dark-text"
+                  >
                     Melhore a experiência do cliente, clientes são mais
                     propensos a atender chamadas de organizações com os quais
                     estão familiarizadas e com as quais já tem relação.
@@ -233,7 +243,9 @@
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p class="text-md font-medium dark:text-dark-text">
+                  <p
+                    class="text-md font-medium text-justify dark:text-dark-text"
+                  >
                     Agiliza a conexão, quando o motivo da chamada é claro, a
                     chance de o cliente atender é muito maior e a conexão com
                     ele mais rápida e eficiente.
@@ -251,7 +263,7 @@
             Casos de uso
           </h2>
           <section class="flex justify-between w-full">
-            <ul class="flex flex-col gap-5 w-1/2">
+            <ul class="flex flex-col gap-5 md:w-1/2">
               <li>
                 <p class="text-lg font-medium dark:text-dark-text">
                   Aviso de problemas de fraude de cartão de crédito.
@@ -278,7 +290,7 @@
                 </p>
               </li>
             </ul>
-            <figure class="w-1/2 flex justify-end">
+            <figure class="w-1/2 hidden md:flex justify-end">
               <img
                 class="max-w-[300px]"
                 src="../assets/img/google-verified-calls/Picture1.png"

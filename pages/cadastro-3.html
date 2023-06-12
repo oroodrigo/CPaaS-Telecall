@@ -25,12 +25,15 @@
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
       <figure class="max-w-[200px]">
-        <img
-          src="../assets/img/logo_telecall_branco_vermelho_p.png"
-          alt="Logo da Telecall"
-        />
+        <a href="../index.html"
+          ><img
+            src="../assets/img/logo_telecall_branco_vermelho_p.png"
+            alt="Logo da Telecall"
+          />
+        </a>
       </figure>
-      <section class="flex gap-5 items-center">
+
+      <section class="gap-5 items-center hidden md:flex">
         <nav>
           <ul class="flex justify-around gap-5">
             <li class="relative flex flex-col items-center">
@@ -56,21 +59,21 @@
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./numero-mascara.html"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./google-calls.html"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href=""
+                      href="./sms-programavel.html"
                       >SMS Programável</a
                     >
                   </li>
@@ -96,6 +99,9 @@
           ></a>
         </section>
       </section>
+      <div class="block md:hidden">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
     </header>
 
     <main class="flex-1 flex flex-col">

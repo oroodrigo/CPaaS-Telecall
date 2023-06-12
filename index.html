@@ -33,7 +33,7 @@
         </a>
       </figure>
 
-      <section class="flex gap-5 items-center">
+      <section class="gap-5 items-center hidden md:flex">
         <nav>
           <ul class="flex justify-around gap-5">
             <li class="relative flex flex-col items-center">
@@ -99,15 +99,16 @@
           ></a>
         </section>
       </section>
+      <div class="block md:hidden">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
     </header>
 
-    <main class="">
+    <main>
       <article class="flex flex-col gap-16">
         <section class="flex justify-around py-6 mt-6 w-full">
           <section class="flex flex-col gap-5">
-            <h1
-              class="text-5xl font-bold text-telecall-azul titulo relative h-12"
-            >
+            <h1 class="text-5xl font-bold text-telecall-azul titulo relative">
               Plataforma CPaaS
             </h1>
             <div class="flex flex-col gap-3">
@@ -126,7 +127,7 @@
               </a>
             </div>
           </section>
-          <figure>
+          <figure class="hidden md:block">
             <img
               src="./assets/img/foto_index_1-removebg-preview.png"
               alt="imagem com serviços dos CPaaS"
@@ -139,7 +140,9 @@
           class="flex flex-col w-full items-center gap-8 mt-6"
         >
           <h2 class="text-3xl font-bold text-telecall-azul-hover">Serviços</h2>
-          <section class="flex justify-between w-4/5">
+          <section
+            class="flex flex-wrap gap-10 justify-center lg:justify-between w-4/5"
+          >
             <div
               class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px]"
             >
@@ -212,30 +215,30 @@
         </section>
 
         <section id="cpaas" class="flex justify-around py-6 mt-6 w-full">
-          <figure class="flex w-3/5 items-center justify-center">
+          <figure class="hidden w-3/5 items-center justify-center lg:flex">
             <img
               class="max-w-[400px]"
               src="/assets/img/foto_cpaas_2-removebg-preview.png"
               alt="imagem servicos CPaaS 2"
             />
           </figure>
-          <section class="flex flex-col gap-5 w-1/2">
+          <section class="flex flex-col gap-5 items-center lg:w-1/2">
             <h2 class="text-3xl font-bold text-telecall-azul">
               CPaaS: O que é?
             </h2>
 
             <div class="text-xl font-medium flex flex-col gap-6 w-4/5">
-              <p class="text-justify">
+              <p class="sm:text-justify">
                 É uma solução de software de comunicação que atua como uma base
                 sobre a qual desenvolvedores podem integrar uma variedade de
                 aplicativos.
               </p>
-              <p class="text-justify">
+              <p class="sm:text-justify">
                 Métodos de comunicação típicos, como voz, chamadas de vídeo ou
                 mensagens de texto SMS, podem ser incorporados em outros
                 sistemas por meio de APIs que se conectam à plataforma CPaaS.
               </p>
-              <p class="text-justify">
+              <p class="sm:text-justify">
                 O CPaaS, com sua escalabilidade, flexibilidade, autenticação e
                 segurança aprimoradas, está revolucionando o modo como as
                 empresas habilitadas em nuvem implementam comunicações de voz,
@@ -245,22 +248,22 @@
           </section>
         </section>
 
-        <section class="flex justify-between">
-          <div class="w-1/2">
+        <section class="flex flex-col justify-between lg:flex-row p-5 gap-5">
+          <div class="w-full lg:w-1/2">
             <h2 class="text-3xl font-bold text-telecall-azul">Sobre</h2>
-            <p>
-              Quem Somos A Telecall é uma operadora de telecomunicações
-              brasileira que oferece a seus clientes o mais alto padrão de
-              qualidade, velocidade e acessibilidade em soluções de comunicação.
-              Serviços que incluem uma ampla gama de valores agregados,
-              oferecendo aos clientes operações mais produtivas, inovadoras e
-              eficazes. Com mais de 20 anos de experiência na indústria global,
-              a Telecall hoje é sinônimo de qualidade e eficiência.
+            <p class="w-full">
+              A Telecall é uma operadora de telecomunicações brasileira que
+              oferece a seus clientes o mais alto padrão de qualidade,
+              velocidade e acessibilidade em soluções de comunicação. Serviços
+              que incluem uma ampla gama de valores agregados, oferecendo aos
+              clientes operações mais produtivas, inovadoras e eficazes. Com
+              mais de 20 anos de experiência na indústria global, a Telecall
+              hoje é sinônimo de qualidade e eficiência.
             </p>
           </div>
           <div>
             <h2 class="text-3xl font-bold text-telecall-azul">
-              POR QUE A TELECALL?
+              Por que a Telecall?
             </h2>
             <ul class="text-xl font-medium">
               <li class="flex gap-2">

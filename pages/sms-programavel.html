@@ -32,7 +32,8 @@
           />
         </a>
       </figure>
-      <section class="flex gap-5 items-center">
+
+      <section class="gap-5 items-center hidden md:flex">
         <nav>
           <ul class="flex justify-around gap-5">
             <li class="relative flex flex-col items-center">
@@ -98,6 +99,9 @@
           ></a>
         </section>
       </section>
+      <div class="block md:hidden">
+        <i class="fa-solid fa-bars text-white text-2xl"></i>
+      </div>
     </header>
 
     <main>
@@ -126,75 +130,66 @@
           </figure>
         </section>
 
-        <section class="flex flex-col gap-5 px-4 w-full">
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
           <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-2/5 dark:text-dark-title"
-          >
-            O que é?
-          </h2>
-          <p class="text-xl font-medium dark:text-dark-text">
-            É muito provável que você já tenha recebido uma mensagem de texto de
-            uma empresa ou organização.
-          </p>
-          <p class="text-xl font-medium dark:text-dark-text">
-            Com uma API, qualquer empresa pode enviar mensagens de texto e
-            impactar clientes, prospects ou fornecedores como parte de seu
-            processo comercial.
-          </p>
-          <p class="text-xl font-medium dark:text-dark-text">
-            Com essa ferramenta você envia mensagens de SMS com as informações
-            que o seu cliente precisa e com a segurança, a velocidade e a
-            confiabilidade que você espera.
-          </p>
-        </section>
-
-        <section class="flex flex-col gap-7 px-4 w-full">
-          <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-1/4 dark:text-dark-title"
+            class="text-3xl text-telecall-azul font-bold w-full text-center dark:text-dark-title"
           >
             Como funciona?
           </h2>
-          <section class="flex justify-between px-12 items-center">
-            <div class="w-60 flex flex-col items-center gap-5">
-              <figure>
-                <img
-                  class="max-w-[200px]"
-                  src="../assets/img/google-verified-calls/atendente.png"
-                  alt="icone de atendente"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                Uma chamada telefônica de uma empresa assinante é feita para um
-                cliente potencial ou existente.
-              </p>
-            </div>
-            <div class="w-60 flex flex-col items-center gap-5 mt-10">
-              <figure>
-                <img
-                  class="max-w-[500px]"
-                  src="../assets/img/google-verified-calls/engrenagem.png"
-                  alt="icone de engrenagem"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                A solicitação é encaminhada para a Telecall, a chamada é
-                processada e é adicionado as informações verificadas antes de
-                encaminhá-la ao destinatário.
-              </p>
-            </div>
-            <div class="w-60 flex flex-col items-center gap-5">
-              <figure>
-                <img
-                  class="max-w-[200px]"
-                  src="../assets/img/google-verified-calls/celular.png"
-                  alt="icone de celular"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                As informações aparecem na tela do celular do recipiente que
-                atenderá a ligação com uma chamada de voz normal.
-              </p>
-            </div>
+          <section class="flex mt-5">
+            <section class="md:w-1/2">
+              <ul class="flex flex-col justify-between h-full gap-3">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O cliente abre o aplicativo e faz o pedido.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O entregador chega ao restaurante e o cliente ja é avisado.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Assim que o entregador inicia a rota o cliente recebe um
+                    SMS.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O cliente vai sendo atualizado sobre cada status do seu
+                    pedido.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Assim que o pedido é entregue é enviado um recibo.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <figure class="w-1/2 hidden md:flex justify-center">
+              <img
+                class="max-w-[300px]"
+                src="../assets/img/sms-programavel/undraw_online_groceries_a02y.svg"
+                alt="imagem para simbolizar segurança"
+              />
+            </figure>
           </section>
         </section>
 
@@ -205,15 +200,15 @@
             Benefícios
           </h2>
           <section class="flex mt-5">
-            <figure class="w-1/2 flex justify-center">
+            <figure class="w-1/2 hidden md:flex justify-center">
               <img
                 class="max-w-[350px]"
-                src="../assets/img/google-verified-calls/undraw_cloud_sync_re_02p1.svg"
+                src="../assets/img/sms-programavel/undraw_messages_re_qy9x.svg"
                 alt="imagem para simbolizar segurança"
               />
             </figure>
-            <section class="w-1/2">
-              <ul class="flex flex-col justify-between h-full">
+            <section class="md:w-1/2">
+              <ul class="flex flex-col justify-between h-full gap-3">
                 <li class="flex gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
