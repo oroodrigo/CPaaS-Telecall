@@ -5,6 +5,7 @@ import validaLogin from "./valida-login.js";
 
 export default function verificaCampo(campo, erro) {
   let mensagem = "";
+  console.log(campo.validity);
   campo.setCustomValidity("");
 
   if (campo.name == "cpf" && campo.value.length >= 11) {
@@ -16,7 +17,7 @@ export default function verificaCampo(campo, erro) {
   if (campo.name == "cep" && campo.value.length >= 1 && erro) {
     campo.setCustomValidity("CEP inválido. Tente novamente.");
   }
-  if (campo.name == "login" ){
+  if (campo.name == "login") {
     validaLogin(campo);
   }
 
@@ -26,9 +27,15 @@ export default function verificaCampo(campo, erro) {
     }
   });
 
-  const mensagemErro = campo.parentNode.querySelector(".mensagem_erro");
+  const mensagemErro =
+    campo.parentNode.querySelector(".mensagem_erro") ||
+    campo.parentNode.parentNode.querySelector(".mensagem_erro");
   const validador = campo.checkValidity();
 
+  if (campo.name == "senha" || campo.name == "confirma_senha") {
+    console.log("sla");
+    campo = campo.parentNode;
+  }
   if (!validador) {
     mensagemErro.textContent = mensagem;
     campo.style.border = "2px solid red";

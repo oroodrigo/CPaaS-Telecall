@@ -265,32 +265,42 @@
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="senha">Senha</label>
-            <input
-              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-              id="senha"
-              name="senha"
-              type="password"
-              minlength="8"
-              autocomplete="off"
-              data-mask="password"
-              required
-            />
+            <div
+              class="flex items-center border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+            >
+              <input
+                class="mask w-full bg-transparent border-none focus:outline-none"
+                id="senha"
+                name="senha"
+                type="password"
+                minlength="8"
+                autocomplete="off"
+                data-mask="password"
+                required
+              />
+              <i class="fa-solid fa-eye text-lg cursor-pointer"></i>
+            </div>
             <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label class="font-medium text-md" for="confirma_senha"
               >Confirmar Senha</label
             >
-            <input
-              class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-              id="confirma_senha"
-              name="confirma_senha"
-              type="password"
-              minlength="8"
-              autocomplete="off"
-              data-mask="password"
-              required
-            />
+            <div
+              class="flex items-center border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+            >
+              <input
+                class="mask w-full bg-transparent border-none focus:outline-none"
+                id="confirma_senha"
+                name="confirma_senha"
+                type="password"
+                minlength="8"
+                autocomplete="off"
+                data-mask="password"
+                required
+              />
+              <i class="fa-solid fa-eye text-lg cursor-pointer"></i>
+            </div>
             <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
           <div>
