@@ -1,5 +1,6 @@
 import { verificacaoInicial, trocarTema } from "./dark-mode.js";
 import mask from "./mask.js";
+import showHide from "./show-hide.js";
 
 verificacaoInicial();
 
@@ -29,3 +30,14 @@ document.querySelectorAll(".mask").forEach((input) => {
     e.target.value = mask[field](e.target.value);
   });
 });
+
+//show-hide password 
+const iconeOlho = document.querySelectorAll(".show-btn")
+iconeOlho.forEach((element => {
+
+  element.addEventListener("click",() =>{
+    showHide(element)
+  })
+}))
+
+console.log(iconeOlho)
