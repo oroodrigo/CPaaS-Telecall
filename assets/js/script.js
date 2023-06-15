@@ -1,5 +1,6 @@
 import { verificacaoInicial, trocarTema } from "./dark-mode.js";
 import mask from "./mask.js";
+import toggleMenu from "./menu-mobile.js";
 import showHide from "./show-hide.js";
 
 verificacaoInicial();
@@ -31,13 +32,20 @@ document.querySelectorAll(".mask").forEach((input) => {
   });
 });
 
-//show-hide password 
-const iconeOlho = document.querySelectorAll(".show-btn")
-iconeOlho.forEach((element => {
+//show-hide password
+document.querySelectorAll(".show-btn").forEach((element) => {
+  element.addEventListener("click", () => {
+    showHide(element);
+  });
+});
 
-  element.addEventListener("click",() =>{
-    showHide(element)
-  })
-}))
+//menu-moble
+const closeBtn = document.getElementById("close-menu-mobile");
+const openBtn = document.getElementById("open-menu-mobile");
+const mobileButtons = [closeBtn, openBtn];
 
-console.log(iconeOlho)
+mobileButtons.forEach((element) => {
+  element.addEventListener("click", () => {
+    toggleMenu();
+  });
+});

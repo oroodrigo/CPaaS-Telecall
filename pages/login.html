@@ -33,9 +33,19 @@
         </a>
       </figure>
 
-      <section class="gap-5 items-center hidden md:flex">
+      <section
+        class="gap-10 items-center justify-center hidden md:flex md:justify-around menu-mobile"
+      >
+        <div class="md:hidden">
+          <i
+            class="fa-solid fa-xmark self-end text-white text-2xl absolute top-5 right-7"
+            id="close-menu-mobile"
+          ></i>
+        </div>
         <nav>
-          <ul class="flex justify-around gap-5">
+          <ul
+            class="flex flex-col items-center justify-around gap-10 md:flex-row"
+          >
             <li class="relative flex flex-col items-center">
               <p
                 id="dropdown"
@@ -46,9 +56,9 @@
               </p>
               <div
                 id="menudropdown"
-                class="w-[250px] top-10 absolute hidden bg-telecall-azul rounded"
+                class="w-[170px] top-10 static md:absolute hidden bg-telecall-azul rounded"
               >
-                <ul class="w-full p-2">
+                <ul class="w-full p-2 mx-2">
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
@@ -81,11 +91,11 @@
               </div>
             </li>
             <li>
-              <a class="text-white text-lg" href="">Sobre</a>
+              <a class="text-white text-lg" href="../index.html#sobre">Sobre</a>
             </li>
           </ul>
         </nav>
-        <section class="flex gap-5 items-center">
+        <section class="flex flex-col gap-10 items-center md:flex-row">
           <i
             id="dark-btn"
             class="fa-solid fa-moon text-white text-lg cursor-pointer"
@@ -100,7 +110,10 @@
         </section>
       </section>
       <div class="block md:hidden">
-        <i class="fa-solid fa-bars text-white text-2xl"></i>
+        <i
+          class="fa-solid fa-bars text-white text-2xl"
+          id="open-menu-mobile"
+        ></i>
       </div>
     </header>
 
@@ -153,7 +166,7 @@
                 class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg"
               >
                 <input
-                  class="border-none w-full focus:outline-none"
+                  class="border-none bg-transparent w-full focus:outline-none"
                   id="senha"
                   name="senha"
                   type="password"

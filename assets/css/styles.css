@@ -554,6 +554,41 @@ input::-webkit-outer-spin-button,
   margin-top: 4px;
 }
 
+.menu-mobile {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  padding-top: 2rem;
+  align-items: center;
+  inset: 0 0 0 35%;
+  background-color: #083759;
+}
+
+@media (min-width: 375px) {
+  .menu-mobile {
+    inset: 0 0 0 50%;
+  }
+}
+
+@media (min-width: 500px) {
+  .menu-mobile {
+    inset: 0 0 0 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-mobile {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background-color: #0e4e7c;
+  }
+}
+
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -562,12 +597,25 @@ input::-webkit-outer-spin-button,
   position: relative;
 }
 
+.right-7 {
+  right: 1.75rem;
+}
+
 .top-10 {
   top: 2.5rem;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .m-5 {
   margin: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto {
@@ -706,6 +754,10 @@ input::-webkit-outer-spin-button,
 
 .w-60 {
   width: 15rem;
+}
+
+.w-\[170px\] {
+  width: 170px;
 }
 
 .w-\[250px\] {
@@ -877,6 +929,10 @@ input::-webkit-outer-spin-button,
 
 .gap-8 {
   gap: 2rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .rounded {
@@ -1307,6 +1363,10 @@ input::-webkit-outer-spin-button,
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:ml-5 {
     margin-left: 1.25rem;
   }
@@ -1335,8 +1395,16 @@ input::-webkit-outer-spin-button,
     width: 33.333333%;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:text-2xl {

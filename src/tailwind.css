@@ -33,4 +33,33 @@
     bottom: 0;
     margin-top: 4px;
   }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    inset: 0 0 0 35%;
+    background-color: #083759;
+  }
+
+  @media (min-width: 375px) {
+    .menu-mobile {
+      inset: 0 0 0 50%;
+    }
+  }
+  @media (min-width: 500px) {
+    .menu-mobile {
+      inset: 0 0 0 60%;
+    }
+  }
+  @media (min-width: 768px) {
+    .menu-mobile {
+      position: static;
+      flex-direction: row;
+      padding: 0;
+      background-color: #0e4e7c;
+    }
+  }
 }

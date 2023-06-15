@@ -13,7 +13,6 @@ form.addEventListener("submit", (e) => {
     senha: e.target.elements["senha"].value,
   };
 
-
   for (let i = 0; i <= dataBase.length; i++) {
     if (
       loginInfo.login == dataBase[i]?.login &&
@@ -35,7 +34,7 @@ form.addEventListener("submit", (e) => {
       break;
     }
     loginResult.style.color = "red";
-    loginResult.textContent = "Login não encontrado.";
+    loginResult.textContent = "Cadastro não encontrado.";
     sessionStorage.setItem("isLogged", false);
   }
 });
