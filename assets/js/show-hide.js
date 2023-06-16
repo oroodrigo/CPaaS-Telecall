@@ -2,6 +2,7 @@ export default function showHide(btn){
   trocarIcon(btn)
 
   const input = btn.parentNode.querySelector("input")
+
   if (input.type == "password"){
     return input.type = "text"
   }

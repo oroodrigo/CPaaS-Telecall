@@ -21,8 +21,8 @@ dropdown.addEventListener("click", () => {
 });
 
 //dark-mode
-const btn = document.getElementById("dark-btn");
-btn.addEventListener("click", () => {
+const darkBtn = document.getElementById("dark-btn");
+darkBtn.addEventListener("click", () => {
   trocarTema();
 });
 
@@ -52,3 +52,34 @@ mobileButtons.forEach((element) => {
     toggleMenu();
   });
 });
+
+// change login/logout
+const loginBtn = document.getElementById("login-btn");
+const logoutBtn = document.getElementById("logout-btn");
+
+let loginState = JSON.parse(sessionStorage.getItem("isLogged")) || "false";
+
+logoutBtn.addEventListener("click", () => {
+  sessionStorage.setItem("isLogged", JSON.stringify(false));
+  loginState = sessionStorage.getItem("isLogged");
+
+  trocarLoginButton(loginState);
+});
+
+function trocarLoginButton(loginState) {
+  if (loginState == "false") {
+    loginBtn.classList.remove("hidden");
+    loginBtn.classList.add("block");
+
+    logoutBtn.classList.remove("block");
+    logoutBtn.classList.add("hidden");
+  } else {
+    logoutBtn.classList.remove("hidden");
+    logoutBtn.classList.add("block");
+
+    loginBtn.classList.remove("block");
+    loginBtn.classList.add("hidden");
+  }
+}
+
+trocarLoginButton(loginState);

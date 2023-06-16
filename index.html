@@ -32,7 +32,7 @@
       </figure>
 
       <section
-        class="gap-10 items-center justify-center hidden md:flex md:justify-around menu-mobile"
+        class="gap-10 items-center justify-center hidden md:flex md:justify-around menu-mobile z-10"
       >
         <div class="md:hidden">
           <i
@@ -63,28 +63,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./2fa.html"
+                      href="./pages/2fa.html"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./numero-mascara.html"
+                      href="./pages/numero-mascara.html"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./google-calls.html"
+                      href="./pages/google-calls.html"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./sms-programavel.html"
+                      href="./pages/sms-programavel.html"
                       >SMS Programável</a
                     >
                   </li>
@@ -102,12 +102,21 @@
             class="fa-solid fa-moon text-white text-lg cursor-pointer"
           ></i>
           <a
-            class="text-white text-lg bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./login.html"
+            class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
+            href="./pages/login.html"
+            id="login-btn"
           >
             Entrar
-            <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
+            <i class="fa-solid fa-arrow-right ml-1 text-lg"></i
           ></a>
+
+          <button
+            class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
+            id="logout-btn"
+          >
+            Sair
+            <i class="fa-solid fa-arrow-right-to-bracket ml-1 text-lg"></i>
+          </button>
         </section>
       </section>
       <div class="block md:hidden">
