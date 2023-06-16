@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
       .replace(/(\d{2})/, "(+55)$1")
       .replace(/(\)\d{2})(\d)/, "$1-")
       .replace(/(-\d{8,9})(\d+?$)/, "$1"),
-    login: e.target.elements["login"].value,
+    login: e.target.elements["login_cadastro"].value,
     senha: e.target.elements["senha"].value,
   };
 
