@@ -5,6 +5,7 @@ const form = document.getElementById("form_userInfo");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   const userInfo = {
     nome: e.target.elements["nome"].value,
     nascimento: e.target.elements["nascimento"].value,
@@ -32,5 +33,8 @@ form.addEventListener("submit", (e) => {
 
 camposDoFormulario.forEach((campo) => {
   campo.addEventListener("focusout", () => verificaCampo(campo));
-  campo.addEventListener("invalid", (evento) => evento.preventDefault());
+  campo.addEventListener("invalid", (evento) => {
+    evento.preventDefault();
+    // verificaCampo(campo);
+  });
 });

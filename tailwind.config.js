@@ -36,6 +36,7 @@ module.exports = {
             "azul-hover": "#1D4ED8",
           },
           link: "#1D4ED8",
+          span: "#08bfdf",
         },
       },
     },

@@ -29,7 +29,8 @@ export default function verificaCampo(campo, erro) {
 
   const mensagemErro =
     campo.parentNode.querySelector(".mensagem_erro") ||
-    campo.parentNode.parentNode.querySelector(".mensagem_erro");
+    campo.parentNode.parentNode.querySelector(".mensagem_erro") ||
+    campo.parentNode.parentNode.parentNode.querySelector(".mensagem_erro");
   const validador = campo.checkValidity();
 
   if (campo.name == "senha" || campo.name == "confirma_senha") {

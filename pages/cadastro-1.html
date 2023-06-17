@@ -22,7 +22,7 @@
     <header
       class="bg-telecall-azul flex justify-between py-3 px-10 items-center"
     >
-      <figure class="max-w-[200px]">
+      <figure class="max-w-[150px] md:max-w-[200px]">
         <a href="../index.html"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
@@ -56,7 +56,7 @@
                 id="menudropdown"
                 class="w-[170px] top-10 static md:absolute hidden bg-telecall-azul rounded"
               >
-                <ul class="w-full p-2 mx-2">
+                <ul class="w-full p-2">
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
@@ -162,6 +162,7 @@
               name="nome"
               type="text"
               placeholder="Ex: Hemiliano da Silva Figueiredo"
+              pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
               minlength="15"
               maxlength="60"
               required
@@ -185,32 +186,32 @@
               <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
             <fieldset
-              class="flex flex-col items-start gap-2 xl:w-3/4 2xl:flex-row 2xl:items-center"
+              class="flex flex-col items-start gap-2 xl:w-3/4 2xl:items-center"
             >
               <legend class="font-medium text-md">Sexo</legend>
-              <div class="flex gap-1">
-                <input
-                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-                  id="feminino"
-                  name="sexo"
-                  value="feminino"
-                  type="radio"
-                  required
-                />
-                <label class="font-normal" for="feminino">Feminino</label>
+              <div class="flex flex-col gap-2 self-start ml-2 2xl:flex-row">
+                <div class="flex gap-1">
+                  <input
+                    id="feminino"
+                    name="sexo"
+                    value="feminino"
+                    type="radio"
+                    required
+                  />
+                  <label class="font-normal" for="feminino">Feminino</label>
+                </div>
+                <div class="flex gap-1">
+                  <input
+                    id="masculino"
+                    name="sexo"
+                    value="feminino"
+                    type="radio"
+                    required
+                  />
+                  <label class="font-normal" for="masculino">Masculino</label>
+                </div>
               </div>
-              <div class="flex gap-1">
-                <input
-                  class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2"
-                  id="masculino"
-                  name="sexo"
-                  value="feminino"
-                  type="radio"
-                  required
-                />
-                <span class="mensagem_erro text-red-600 ml-2"></span>
-                <label class="font-normal" for="masculino">Masculino</label>
-              </div>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
@@ -223,6 +224,7 @@
               name="nome_materno"
               type="text"
               placeholder="Ex: Maria das Dores da Silva"
+              pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
               required
             />
             <span class="mensagem_erro text-red-600 ml-2"></span>
@@ -238,6 +240,7 @@
               data-mask="cpf"
               placeholder="000.000.000-00"
               pattern="\d{3}\.?\d{3}\.?\d{3}\.?-?\d{2}"
+              autocomplete="off"
               required
             />
             <span class="mensagem_erro text-red-600 ml-2"></span>
@@ -279,6 +282,7 @@
               id="login_cadastro"
               name="login_cadastro"
               type="text"
+              pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
               minlength="6"
               maxlength="6"
               required
@@ -298,6 +302,7 @@
                 minlength="8"
                 autocomplete="off"
                 data-mask="password"
+                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
                 required
               />
               <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>

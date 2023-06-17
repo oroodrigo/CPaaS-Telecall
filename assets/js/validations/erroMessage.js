@@ -2,8 +2,8 @@ export const tiposDeErro = [
   "valueMissing",
   "tooShort",
   "customError",
-  "typeMissmatch",
-  "patternMissmatch",
+  "typeMismatch",
+  "patternMismatch",
   "tooLong",
   "badInput",
 ];
@@ -52,10 +52,12 @@ export const mensagens = {
     valueMissing: "O campo de login não pode estar vazio.",
     tooShort: "O campo de login deve ter 6 caractéres.",
     customError: "O login escolhido ja está em uso.",
+    patternMismatch: "O campo de login não pode conter números.",
   },
   senha: {
     valueMissing: "O campo de senha não pode estar vazio.",
     tooShort: "O campo de senha deve ter 8 caractéres.",
+    patternMismatch: "O campo de senha não pode conter números.",
   },
   confirma_senha: {
     valueMissing: "O campo de senha não pode estar vazio.",
