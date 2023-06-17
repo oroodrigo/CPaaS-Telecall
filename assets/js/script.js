@@ -12,12 +12,10 @@ const dropdownIcon = document.getElementById("dropdownIcon");
 
 dropdown.addEventListener("click", () => {
   if (menudropdown.classList.contains("hidden")) {
-    dropdownIcon.style.transform = "rotate(180deg)";
     menudropdown.classList.remove("hidden");
     return;
   }
   menudropdown.classList.add("hidden");
-  dropdownIcon.style.transform = "rotate(0deg)";
 });
 
 //dark-mode

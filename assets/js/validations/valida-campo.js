@@ -5,6 +5,7 @@ import validaLogin from "./valida-login.js";
 
 export default function verificaCampo(campo, erro) {
   let mensagem = "";
+  console.log(campo.validity);
   campo.setCustomValidity("");
 
   if (campo.name == "cpf" && campo.value.length >= 11) {
