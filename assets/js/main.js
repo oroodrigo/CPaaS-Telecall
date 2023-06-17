@@ -35,6 +35,6 @@ camposDoFormulario.forEach((campo) => {
   campo.addEventListener("focusout", () => verificaCampo(campo));
   campo.addEventListener("invalid", (evento) => {
     evento.preventDefault();
-    // verificaCampo(campo);
+    verificaCampo(campo);
   });
 });
