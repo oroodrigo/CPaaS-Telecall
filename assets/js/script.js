@@ -81,3 +81,14 @@ function trocarLoginButton(loginState) {
 }
 
 trocarLoginButton(loginState);
+
+//page acess validity
+if (
+  loginState == "false" &&
+  (window.location.pathname == "/pages/2fa.html" ||
+    window.location.pathname == "/pages/google-calls.html" ||
+    window.location.pathname == "/pages/numero-mascara.html" ||
+    window.location.pathname == "/pages/sms-programavel.html")
+) {
+  window.location.assign("./login.html");
+}
