@@ -17,7 +17,7 @@ dropdown.addEventListener("click", () => {
     return;
   }
   menudropdown.classList.add("aberto");
-  menudropdown.style.maxHeight = "200px";
+  menudropdown.style.maxHeight = "250px";
 });
 
 //dark-mode
