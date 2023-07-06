@@ -18,6 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <style>
+      #menudropdown {
+        max-height: 200px;
+        overflow: hidden;
+      }
+
+      #menudropdown.aberto {
+        background-color: #222 !important;
+        max-height: 500px;
+        transition: max-height 1s ease 5s;
+      }
+    </style> -->
   </head>
   <body class="bg-slate-200 flex flex-col font-Poppins dark:bg-dark-bg">
     <header
@@ -58,7 +70,7 @@
               </p>
               <div
                 id="menudropdown"
-                class="w-[170px] md:w-[250px] top-10 static md:absolute hidden bg-telecall-azul rounded"
+                class="w-[170px] md:w-[250px] max-h-0 top-10 static md:absolute bg-telecall-azul rounded overflow-hidden"
               >
                 <ul class="w-full p-2">
                   <li class="w-full">
