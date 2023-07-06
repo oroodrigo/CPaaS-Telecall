@@ -8,20 +8,16 @@ verificacaoInicial();
 //menu dropdown
 const dropdown = document.getElementById("dropdown");
 const menudropdown = document.getElementById("menudropdown");
-const dropdownIcon = document.getElementById("dropdownIcon");
 menudropdown.style.transition = "max-height 1s ease";
-dropdownIcon.style.transition = "all 0.5s ease";
 
 dropdown.addEventListener("click", () => {
   if (menudropdown.classList.contains("aberto")) {
     menudropdown.classList.remove("aberto");
-    // dropdownIcon.style.transform = "rotate(90deg)";
     menudropdown.style.maxHeight = "0px";
     return;
   }
   menudropdown.classList.add("aberto");
   menudropdown.style.maxHeight = "200px";
-  // dropdownIcon.style.transform = "rotate(0deg)";
 });
 
 //dark-mode
