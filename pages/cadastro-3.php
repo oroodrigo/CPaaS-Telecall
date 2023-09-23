@@ -25,7 +25,7 @@
       class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
     >
       <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.html"
+        <a href="../index.php"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="Logo da Telecall"
@@ -62,28 +62,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./2fa.html"
+                      href="./2fa.php"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./numero-mascara.html"
+                      href="./numero-mascara.php"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./google-calls.html"
+                      href="./google-calls.php"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./sms-programavel.html"
+                      href="./sms-programavel.php"
                       >SMS Programável</a
                     >
                   </li>
@@ -91,7 +91,7 @@
               </div>
             </li>
             <li>
-              <a class="text-white text-lg" href="../index.html#sobre">Sobre</a>
+              <a class="text-white text-lg" href="../index.php#sobre">Sobre</a>
             </li>
           </ul>
         </nav>
@@ -102,7 +102,7 @@
           ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./login.html"
+            href="./login.php"
             id="login-btn"
           >
             Entrar
@@ -130,7 +130,7 @@
       <nav class="p-5">
         <ul class="breadcrumb">
           <li class="text-md text-blue-500 dark:text-dark-text">
-            <a href="../index.html"> Início</a>
+            <a href="../index.php"> Início</a>
           </li>
           <li
             class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
@@ -159,7 +159,7 @@
           <img src="../assets/img/imagem_cadastro_3" alt="imagem cadatro 3" />
         </figure>
         <a
-          href="./login.html"
+          href="./login.php"
           class="block mx-auto text-center text-white bg-blue-500 rounded-md p-3 w-4/5 my-12 hover:bg-blue-800 duration-150 md:w-1/3 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
         >
           Login
@@ -181,28 +181,28 @@
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./2fa.html"
+              href="./2fa.php"
               >2FA</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./numero-mascara.html"
+              href="./numero-mascara.php"
               >Número Máscara</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./google-calls.html"
+              href="./google-calls.php"
               >Google Verified Calls</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./sms-programavel.html"
+              href="./sms-programavel.php"
               >SMS Programável</a
             >
           </li>

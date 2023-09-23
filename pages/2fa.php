@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE php>
+<php lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Número Máscara - CPaas</title>
+    <title>2FA - CPaas</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
     <link type="text/css" rel="stylesheet" href="../assets/css/styles.css" />
     <script
@@ -25,7 +25,7 @@
       class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
     >
       <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.html"
+        <a href="../index.php"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="Logo da Telecall"
@@ -62,28 +62,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./2fa.html"
+                      href="./2fa.php"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./numero-mascara.html"
+                      href="./numero-mascara.php"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./google-calls.html"
+                      href="./google-calls.php"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./sms-programavel.html"
+                      href="./sms-programavel.php"
                       >SMS Programável</a
                     >
                   </li>
@@ -91,7 +91,7 @@
               </div>
             </li>
             <li>
-              <a class="text-white text-lg" href="../index.html#sobre">Sobre</a>
+              <a class="text-white text-lg" href="../index.php#sobre">Sobre</a>
             </li>
           </ul>
         </nav>
@@ -102,7 +102,7 @@
           ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./login.html"
+            href="./login.php"
             id="login-btn"
           >
             Entrar
@@ -127,21 +127,20 @@
     </header>
 
     <main>
-      <article class="flex flex-col gap-10 m-5 p-3">
+      <article class="flex flex-col gap-10 my-5 p-3">
         <section class="flex justify-around py-6 w-full">
           <section
-            class="flex flex-col items-center justify-center gap-5 text-center w-full md:w-1/2 px-5"
+            class="flex flex-col items-center justify-center gap-5 w-full text-center md:w-1/2"
           >
             <h1
-              class="text-3xl text-telecall-azul-hover font-bold text-center dark:text-dark-title"
+              class="text-3xl text-telecall-azul-hover font-bold dark:text-dark-title"
             >
-              Número Máscara
+              2FA - Autenticação de dois fatores
             </h1>
             <h2
-              class="text-xl text-telecall-azul font-semibold text-center dark:text-dark-text"
+              class="text-xl text-telecall-azul font-semibold dark:text-dark-text"
             >
-              Garanta aos seus clientes a capacidade de fazer chamadas e enviar
-              mensagens sem expor seus números de telefone pessoais.
+              Reforçe sua estratégia de segurança empresarial.
             </h2>
           </section>
           <figure class="w-1/2 hidden md:flex justify-center">
@@ -153,28 +152,92 @@
           </figure>
         </section>
 
-        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+        <section class="flex flex-col gap-7 px-4 w-full">
           <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-1/5 dark:text-dark-text"
+            class="text-3xl text-telecall-azul font-bold titulo relative w-1/4 dark:text-dark-title"
           >
             Como funciona?
+          </h2>
+          <section
+            class="flex flex-wrap gap-6 justify-center lg:justify-between lg:w-4/5 mx-auto"
+          >
+            <div class="w-60 flex flex-col items-center gap-5">
+              <figure>
+                <img
+                  class="max-w-[200px]"
+                  src="../assets/img/2fa/computador 1.png"
+                  alt="icone de computador"
+                />
+              </figure>
+              <p class="text-md font-medium text-justify dark:text-dark-text">
+                Usuário acessa seu site o aplicativo e digita a senha cadastrada
+                para entrar em seu perfil ou completar uma transação.
+              </p>
+            </div>
+            <div class="w-60 flex flex-col items-center gap-5">
+              <figure>
+                <img
+                  class="max-w-[200px]"
+                  src="../assets/img/2fa/exclamacao vermelha.png"
+                  alt="exclamação vermelha"
+                />
+              </figure>
+              <p class="text-md font-medium text-justify dark:text-dark-text">
+                A Telecall recebe a tentativa de login e solicita que o usuário
+                insira seu número de telefone para autorizar o acesso.
+              </p>
+            </div>
+            <div class="w-60 flex flex-col items-center gap-5">
+              <figure>
+                <img
+                  class="max-w-[200px]"
+                  src="../assets/img/2fa/celular.png"
+                  alt="icone de celular"
+                />
+              </figure>
+              <p class="text-md font-medium text-justify dark:text-dark-text">
+                Após inserir seu número, a Telecall envia para o usuário por
+                SMS, chamada ou e-mail um código PIN de uso único.
+              </p>
+            </div>
+            <div class="w-60 flex flex-col items-center gap-5">
+              <figure>
+                <img
+                  class="max-w-[200px]"
+                  src="../assets/img/2fa/computador 2.png"
+                  alt="icone de computador"
+                />
+              </figure>
+              <p class="text-md font-medium text-justify dark:text-dark-text">
+                O usuário insere o código site ou aplicativo para concluir o
+                processo de verificação.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+          <h2
+            class="text-3xl text-telecall-azul font-bold titulo relative w-1/5 dark:text-dark-title"
+          >
+            Benefícios
           </h2>
           <section class="flex mt-5">
             <figure class="w-1/2 hidden md:flex justify-center">
               <img
-                class="max-w-[400px]"
-                src="../assets/img/numero-mascara/numero-mascara.png"
-                alt="desenho de celular para simbolizar segurança"
+                class="max-w-[350px]"
+                src="../assets/img/2fa/undraw_security_re_a2rk.svg"
+                alt="imagem para simbolizar segurança"
               />
             </figure>
-            <section class="md:w-1/2 md:ml-10">
-              <ul class="flex flex-col justify-evenly h-full gap-3">
+            <section class="md:w-1/2">
+              <ul class="flex flex-col justify-between h-full gap-3">
                 <li class="flex items-center gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
                   <p class="text-md font-medium dark:text-dark-text">
-                    Usuário faz uma chamada através de um aplicativo.
+                    Ofereça segurança aprimorada para seus clientes.
                   </p>
                 </li>
                 <li class="flex items-center gap-2">
@@ -182,7 +245,8 @@
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
                   <p class="text-md font-medium dark:text-dark-text">
-                    Plataforma mascara o número original.
+                    Reduza casos de fraude e invasões e evite o acesso a dados
+                    por invasores.
                   </p>
                 </li>
                 <li class="flex items-center gap-2">
@@ -190,7 +254,37 @@
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
                   <p class="text-md font-medium dark:text-dark-text">
-                    Ambas as partes são conectadas.
+                    Envio de OTP por meio de vários canais, incluindo SMS, voz
+                    ou e-mail.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Flexibilidade de canais garante que o usuário conseguirá
+                    completar a tarefa desejada mesmo quando tiver problema com
+                    um deles.
+                  </p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    API simples e de rápida implementação.
+                  </p>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Plataforma intuitiva que permite visualizar relatórios de
+                    uso por dia, mês ou ano e pesquisar usando diversos
+                    critérios de filtro
                   </p>
                 </li>
               </ul>
@@ -206,46 +300,60 @@
           </h2>
           <section>
             <ul
-              class="flex flex-col sm:flex-row flex-wrap gap-10 px-4 sm:justify-evenly sm:gap-2"
+              class="flex flex-col xs:flex-row flex-wrap gap-10 px-6 sm:justify-around sm:gap-0 md:justify-between"
             >
               <li class="flex flex-col items-center gap-2">
-                <i class="fa-solid fa-car text-5xl dark:text-dark-title"></i>
-                <p class="text-xl font-medium dark:text-dark-text">
-                  Transporte
-                </p>
+                <i class="fa-solid fa-coins text-5xl dark:text-dark-title"></i>
+                <p class="text-xl font-medium dark:text-dark-text">Finanças</p>
                 <figure>
                   <img
-                    src="../assets/img/icons/uber.png"
-                    alt="icone do app uber"
+                    src="../assets/img/icons/bradesco.png"
+                    alt="icone do app bradesco"
                   />
                 </figure>
                 <figure>
                   <img
-                    class="max-w-[100px]"
-                    src="../assets/img/icons/99.png"
-                    alt="icone do app 99"
+                    src="../assets/img/icons/picpay.png"
+                    alt="icone do app picpay"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/mercado pago.png"
+                    alt="icone do app mercado pago"
                   />
                 </figure>
               </li>
               <li class="flex flex-col items-center gap-2">
-                <i class="fa-solid fa-heart text-5xl dark:text-dark-title"></i>
-                <p class="text-xl font-medium dark:text-dark-text text-center">
-                  App de Relacionamento
-                </p>
+                <i
+                  class="fa-solid fa-heart-pulse text-5xl dark:text-dark-title"
+                ></i>
+                <p class="text-xl font-medium dark:text-dark-text">Saúde</p>
                 <figure>
                   <img
-                    src="../assets/img/icons/happn.png"
-                    alt="icone do app happn.png"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="../assets/img/icons/tinder.png"
-                    alt="icone do app tinder.png"
+                    src="../assets/img/icons/amil.png"
+                    alt="icone do app amil"
                   />
                 </figure>
               </li>
-
+              <li class="flex flex-col items-center gap-2">
+                <i
+                  class="fa-solid fa-plane -rotate-45 text-5xl dark:text-dark-title"
+                ></i>
+                <p class="text-xl font-medium dark:text-dark-text">Turismo</p>
+                <figure>
+                  <img
+                    src="../assets/img/icons/airbnb.png"
+                    alt="icone do app airbnb"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/booking.png"
+                    alt="icone do app booking"
+                  />
+                </figure>
+              </li>
               <li class="flex flex-col items-center gap-2">
                 <i
                   class="fa-solid fa-cart-shopping text-5xl dark:text-dark-title"
@@ -253,9 +361,14 @@
                 <p class="text-xl font-medium dark:text-dark-text">Varejo</p>
                 <figure>
                   <img
-                    class="max-w-[100px]"
-                    src="../assets/img/icons/ebay.png"
-                    alt="icone do app ebay.png"
+                    src="../assets/img/icons/amazon e apple store.png"
+                    alt="icone do app amazon e apple store.png"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/mercado livre.png"
+                    alt="icone do app mercado livre "
                   />
                 </figure>
               </li>
@@ -272,6 +385,30 @@
                   <img
                     src="../assets/img/icons/rappi.png"
                     alt="icone do app rappi"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/uber.png"
+                    alt="icone do app uber"
+                  />
+                </figure>
+              </li>
+              <li class="flex flex-col items-center gap-2">
+                <i
+                  class="fa-solid fa-building-columns text-5xl dark:text-dark-title"
+                ></i>
+                <p class="text-xl font-medium dark:text-dark-text">Governo</p>
+                <figure>
+                  <img
+                    src="../assets/img/icons/cnh digital.png"
+                    alt="icone do app cnh digital"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="../assets/img/icons/cpf digital.png"
+                    alt="icone do app cpf digital"
                   />
                 </figure>
               </li>
@@ -294,28 +431,28 @@
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./2fa.html"
+              href="./2fa.php"
               >2FA</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./numero-mascara.html"
+              href="./numero-mascara.php"
               >Número Máscara</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./google-calls.html"
+              href="./google-calls.php"
               >Google Verified Calls</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./sms-programavel.html"
+              href="./sms-programavel.php"
               >SMS Programável</a
             >
           </li>
@@ -375,4 +512,4 @@
 
     <script type="module" src="../assets/js/script.js"></script>
   </body>
-</html>
+</php>

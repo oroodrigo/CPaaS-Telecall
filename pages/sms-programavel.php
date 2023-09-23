@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Verified Calls - CPaas</title>
+    <title>SMS Programável - CPaas</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
     <link type="text/css" rel="stylesheet" href="../assets/css/styles.css" />
     <script
@@ -25,7 +25,7 @@
       class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
     >
       <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.html"
+        <a href="../index.php"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="Logo da Telecall"
@@ -62,28 +62,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./2fa.html"
+                      href="./2fa.php"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./numero-mascara.html"
+                      href="./numero-mascara.php"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./google-calls.html"
+                      href="./google-calls.php"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./sms-programavel.html"
+                      href="./sms-programavel.php"
                       >SMS Programável</a
                     >
                   </li>
@@ -91,7 +91,7 @@
               </div>
             </li>
             <li>
-              <a class="text-white text-lg" href="../index.html#sobre">Sobre</a>
+              <a class="text-white text-lg" href="../index.php#sobre">Sobre</a>
             </li>
           </ul>
         </nav>
@@ -102,7 +102,7 @@
           ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./login.html"
+            href="./login.php"
             id="login-btn"
           >
             Entrar
@@ -135,93 +135,24 @@
             <h1
               class="text-3xl text-telecall-azul-hover font-bold dark:text-dark-title"
             >
-              Google Verified Calls
+              SMS Programável
             </h1>
             <h2
               class="text-xl text-telecall-azul font-semibold text-center dark:text-dark-text"
             >
-              Identifique chamadas spam com esse recurso inovador do Google.
+              Conecte-se com seus clientes.
             </h2>
           </section>
           <figure class="w-1/2 hidden md:flex justify-center">
             <img
               class="max-w-[300px]"
-              src="../assets/img/google-verified-calls/undraw_verified_re_4io7.svg"
+              src="../assets/img/sms-programavel/undraw_personal_email_re_4lx7.svg  "
               alt=""
             />
           </figure>
         </section>
 
-        <section class="flex flex-col gap-5 px-4 w-full">
-          <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-2/5 dark:text-dark-title"
-          >
-            Chamadas Verificadas
-          </h2>
-          <p class="text-xl font-medium dark:text-dark-text">
-            Esse novo recurso do Google, exclusivo para telefones Android,
-            permite que empresas exibam para o cliente na hora da chamada sua
-            marca, logotipo e até mesmo o motivo da chamada.
-          </p>
-          <p class="text-xl font-medium dark:text-dark-text">
-            A Telecall é a primeira operadora de telecom no Brasil a oferecer
-            esse recurso do Google.
-          </p>
-        </section>
-
-        <section class="flex flex-col gap-7 px-4 w-full">
-          <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-1/4 dark:text-dark-title"
-          >
-            Como funciona?
-          </h2>
-          <section
-            class="flex flex-wrap gap-8 justify-center px-12 sm:justify-between w-full mx-auto"
-          >
-            <div class="w-60 flex flex-col items-center gap-5">
-              <figure>
-                <img
-                  class="max-w-[200px]"
-                  src="../assets/img/google-verified-calls/atendente.png"
-                  alt="icone de atendente"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                Uma chamada telefônica de uma empresa assinante é feita para um
-                cliente potencial ou existente.
-              </p>
-            </div>
-            <div class="w-60 flex flex-col items-center gap-5 mt-10">
-              <figure>
-                <img
-                  class="max-w-[500px]"
-                  src="../assets/img/google-verified-calls/engrenagem.png"
-                  alt="icone de engrenagem"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                A solicitação é encaminhada para a Telecall, a chamada é
-                processada e é adicionado as informações verificadas antes de
-                encaminhá-la ao destinatário.
-              </p>
-            </div>
-            <div class="w-60 flex flex-col items-center gap-5">
-              <figure>
-                <img
-                  class="max-w-[200px]"
-                  src="../assets/img/google-verified-calls/celular.png"
-                  alt="icone de celular"
-                />
-              </figure>
-              <p class="text-md font-medium text-justify dark:text-dark-text">
-                As informações aparecem na tela do celular do recipiente que
-                atenderá a ligação com uma chamada de voz normal.
-              </p>
-            </div>
-          </section>
-        </section>
-
-        <section class="flex flex-col gap-7 px-4 w-full mt-5">
+        <section class="flex flex-col gap-7 px-7 w-full mt-5">
           <h2
             class="text-3xl text-telecall-azul font-bold titulo relative w-1/5 dark:text-dark-title"
           >
@@ -231,46 +162,58 @@
             <figure class="w-1/2 hidden md:flex justify-center">
               <img
                 class="max-w-[350px]"
-                src="../assets/img/google-verified-calls/undraw_cloud_sync_re_02p1.svg"
+                src="../assets/img/sms-programavel/undraw_messages_re_qy9x.svg"
                 alt="imagem para simbolizar segurança"
               />
             </figure>
-            <section class="md:w-1/2 md:ml-10">
+            <section class="md:w-1/2 md:pl-28">
               <ul class="flex flex-col justify-between h-full gap-3">
                 <li class="flex gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p
-                    class="text-md font-medium text-justify dark:text-dark-text"
-                  >
-                    Estabeleça confiança, clientes são mais propensos a atender
-                    chamadas de organizações com os quais estão familiarizadas e
-                    com as quais já tem relação.
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Comunicação rápida, efetiva e escalável.
                   </p>
                 </li>
                 <li class="flex gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p
-                    class="text-md font-medium text-justify dark:text-dark-text"
-                  >
-                    Melhore a experiência do cliente, clientes são mais
-                    propensos a atender chamadas de organizações com os quais
-                    estão familiarizadas e com as quais já tem relação.
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Baixo custo.
                   </p>
                 </li>
                 <li class="flex gap-2">
                   <i
                     class="fa-solid fa-circle-check text-green-600 text-xl"
                   ></i>
-                  <p
-                    class="text-md font-medium text-justify dark:text-dark-text"
-                  >
-                    Agiliza a conexão, quando o motivo da chamada é claro, a
-                    chance de o cliente atender é muito maior e a conexão com
-                    ele mais rápida e eficiente.
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Personalização de data, hora e conteúdo.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Agendamento de campanhas.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Alta taxa de entrega e leitura.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Interação bidirecional: recebimento de respostas.
                   </p>
                 </li>
               </ul>
@@ -278,45 +221,64 @@
           </section>
         </section>
 
-        <section class="flex flex-col gap-7 px-6 w-full mt-5 relative">
+        <section class="flex flex-col gap-7 px-4 w-full mt-5">
           <h2
-            class="text-3xl text-telecall-azul font-bold titulo relative w-1/5 dark:text-dark-title"
+            class="text-3xl text-telecall-azul font-bold w-full pl-3 dark:text-dark-title"
           >
-            Casos de uso
+            Como funciona?
           </h2>
-          <section class="flex justify-between w-full">
-            <ul class="flex flex-col gap-5 md:w-1/2">
-              <li>
-                <p class="text-lg font-medium dark:text-dark-text">
-                  Aviso de problemas de fraude de cartão de crédito.
-                </p>
-              </li>
-              <li>
-                <p class="text-lg font-medium dark:text-dark-text">
-                  Aviso de atrasos e cancelamentos de voos.
-                </p>
-              </li>
-              <li>
-                <p class="text-lg font-medium dark:text-dark-text">
-                  Agendamentos de serviços, entregas, reparos e instalações.
-                </p>
-              </li>
-              <li>
-                <p class="text-lg font-medium dark:text-dark-text">
-                  Avisos sobre agendamentos, exames e resultados.
-                </p>
-              </li>
-              <li>
-                <p class="text-lg font-medium dark:text-dark-text">
-                  Oferecer uma melhor experiência de vendas e promoções.
-                </p>
-              </li>
-            </ul>
-            <figure class="w-1/2 hidden md:flex justify-end">
+          <section class="flex mt-5">
+            <section class="md:w-1/2 flex">
+              <ul class="flex flex-col justify-between h-full gap-3 md:pl-16">
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O cliente abre o aplicativo e faz o pedido.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O entregador chega ao restaurante e o cliente ja é avisado.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Assim que o entregador inicia a rota o cliente recebe um
+                    SMS.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    O cliente vai sendo atualizado sobre cada status do seu
+                    pedido.
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <i
+                    class="fa-solid fa-circle-check text-green-600 text-xl"
+                  ></i>
+                  <p class="text-md font-medium dark:text-dark-text">
+                    Assim que o pedido é entregue é enviado um recibo.
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <figure class="w-1/2 hidden md:flex justify-center ml-3 md:ml-5">
               <img
                 class="max-w-[300px]"
-                src="../assets/img/google-verified-calls/Picture1.png"
-                alt="icones diversos como aviao, caminhão pulso cardiaco, etc."
+                src="../assets/img/sms-programavel/undraw_online_groceries_a02y.svg"
+                alt="imagem para simbolizar segurança"
               />
             </figure>
           </section>
@@ -337,28 +299,28 @@
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./2fa.html"
+              href="./2fa.php"
               >2FA</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./numero-mascara.html"
+              href="./numero-mascara.php"
               >Número Máscara</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./google-calls.html"
+              href="./google-calls.php"
               >Google Verified Calls</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./sms-programavel.html"
+              href="./sms-programavel.php"
               >SMS Programável</a
             >
           </li>

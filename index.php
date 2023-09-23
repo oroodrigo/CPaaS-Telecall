@@ -24,7 +24,7 @@
       class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
     >
       <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.html"
+        <a href="../index.php"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="Logo da Telecall"
@@ -64,28 +64,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/2fa.html"
+                      href="./pages/2fa.php"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/numero-mascara.html"
+                      href="./pages/numero-mascara.php"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/google-calls.html"
+                      href="./pages/google-calls.php"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/sms-programavel.html"
+                      href="./pages/sms-programavel.php"
                       >SMS Programável</a
                     >
                   </li>
@@ -104,7 +104,7 @@
           ></i>
           <a
             class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./pages/login.html"
+            href="./pages/login.php"
             id="login-btn"
           >
             Entrar
@@ -192,7 +192,7 @@
               <p class="text-lg font-semibold">2FA</p>
               <a
                 class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/2fa.html"
+                href="./pages/2fa.php"
                 >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
               ></a>
             </div>
@@ -209,7 +209,7 @@
               <p class="text-lg font-semibold">Número Máscara</p>
               <a
                 class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/numero-mascara.html"
+                href="./pages/numero-mascara.php"
                 >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
               ></a>
             </div>
@@ -226,7 +226,7 @@
               <p class="text-lg font-semibold">Google Verified Calls</p>
               <a
                 class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/google-calls.html"
+                href="./pages/google-calls.php"
                 >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
               ></a>
             </div>
@@ -243,7 +243,7 @@
               <p class="text-lg font-semibold">SMS Programável</p>
               <a
                 class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/sms-programavel.html"
+                href="./pages/sms-programavel.php"
                 >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
               ></a>
             </div>
@@ -503,28 +503,28 @@
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/2fa.html"
+              href="./pages/2fa.php"
               >2FA</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/numero-mascara.html"
+              href="./pages/numero-mascara.php"
               >Número Máscara</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/google-calls.html"
+              href="./pages/google-calls.php"
               >Google Verified Calls</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/sms-programavel.html"
+              href="./pages/sms-programavel.php"
               >SMS Programável</a
             >
           </li>

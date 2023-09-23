@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - CPaaS</title>
+    <title>Cadastro - CPaaS</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
-    <link type="text/css" rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/9945e62804.js"
       crossorigin="anonymous"
@@ -18,14 +18,12 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    class="bg-slate-200 flex flex-col h-screen font-Poppins dark:bg-dark-bg"
-  >
+  <body class="bg-slate-200 font-Poppins dark:bg-dark-bg">
     <header
       class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
     >
       <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.html"
+        <a href="../index.php"
           ><img
             src="../assets/img/logo_telecall_branco_vermelho_p.png"
             alt="Logo da Telecall"
@@ -62,28 +60,28 @@
                   <li class="w-full">
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./2fa.html"
+                      href="./2fa.php"
                       >2FA</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./numero-mascara.html"
+                      href="./numero-mascara.php"
                       >Número Máscara</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./google-calls.html"
+                      href="./google-calls.php"
                       >Google Verified Calls</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./sms-programavel.html"
+                      href="./sms-programavel.php"
                       >SMS Programável</a
                     >
                   </li>
@@ -91,7 +89,7 @@
               </div>
             </li>
             <li>
-              <a class="text-white text-lg" href="../index.html#sobre">Sobre</a>
+              <a class="text-white text-lg" href="../index.php#sobre">Sobre</a>
             </li>
           </ul>
         </nav>
@@ -102,7 +100,7 @@
           ></i>
           <a
             class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./login.html"
+            href="./login.php"
             id="login-btn"
           >
             Entrar
@@ -126,85 +124,163 @@
       </div>
     </header>
 
-    <main class="flex-1 flex flex-col pb-10">
+    <main>
       <nav class="p-5">
         <ul class="breadcrumb">
           <li class="text-md text-blue-500 dark:text-dark-text">
-            <a href="../index.html">Início</a>
+            <a href="../index.php"> Início</a>
           </li>
           <li
             class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
           >
-            Login
+            Cadastro
           </li>
         </ul>
       </nav>
-
       <div
-        class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2 dark:bg-dark-container"
+        class="flex flex-col justify-center items-center w-3/4 bg-gray-100 shadow-lg mx-auto p-3 gap-3 rounded-md mb-10 sm:w-1/2 dark:bg-dark-container"
       >
-        <section
-          class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/2"
+        <figure>
+          <img
+            class="mt-5 mx-auto"
+            src="../assets/img/status-2.png"
+            alt="barra de estagio 2"
+          />
+        </figure>
+        <h1 class="text-center text-3xl font-semibold p-10">
+          Preencha os campos com seu endereço!
+        </h1>
+        <form
+          class="flex flex-col gap-2 w-full mx-auto justify-center items-center"
+          id="form_endereco"
         >
-          <h1 class="text-lg font-semibold pt-5 lg:mx-auto lg:text-xl">
-            Preencha os campos para acessar sua conta!
-          </h1>
-          <figure class="hidden lg:block">
-            <img
-              src="../assets/img/undraw_mobile_user_re_xta4.svg"
-              alt="menina sentada olhando celular"
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label for="cep">CEP</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+              id="cep"
+              name="cep"
+              type="text"
+              placeholder="Digite seu CEP"
+              minlength="8"
+              required
             />
-          </figure>
-        </section>
-        <section class="flex flex-col p-5 rounded-lg">
-          <form class="flex flex-col gap-5" id="form_login">
-            <fieldset class="flex flex-col gap-2">
-              <label class="font-medium" for="login">Login</label>
+            <span class="text-red-600 ml-2 mensagem_erro"></span>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label for="endereco">Endereço</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+              id="endereco"
+              name="endereco"
+              type="text"
+              placeholder="Digite seu endereço"
+              required
+            />
+            <span></span>
+          </fieldset>
+          <div class="flex flex-col gap-2 w-3/4 xl:flex-row xl:gap-20">
+            <fieldset class="flex flex-col gap-2 xl:w-3/4">
+              <label for="endereco_numero">Número</label>
               <input
-                class="border border-blue-500 rounded-md py-1 px-2 ml-2 w-full dark:border-dark-input-border dark:bg-dark-input-bg"
-                id="login"
-                name="login"
-                type="text"
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+                id="endereco_numero"
+                name="endereco_numero"
+                type="number"
+                placeholder="Número"
                 required
               />
-              <span class="mensagem_erro text-red-600 ml-2"></span>
+              <span></span>
             </fieldset>
-            <fieldset class="flex flex-col gap-2">
-              <label class="font-medium" for="senha">Senha</label>
-              <div
-                class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+            <fieldset class="flex flex-col gap-2 xl:w-3/4">
+              <label for="endereco_complemento">Complemento</label>
+              <input
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+                id="endereco_complemento"
+                name="endereco_complemento"
+                type="text"
+                placeholder="(opcional)"
+              />
+              <span></span>
+            </fieldset>
+          </div>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label for="bairro">Bairro</label>
+            <input
+              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+              id="bairro"
+              name="bairro"
+              type="text"
+              placeholder="Digite o seu bairro"
+              required
+            />
+            <span></span>
+          </fieldset>
+          <div class="flex flex-col gap-2 w-3/4 xl:flex-row xl:gap-20">
+            <fieldset class="flex flex-col gap-2 xl:w-3/4">
+              <label for="cidade">Cidade</label>
+              <input
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+                id="cidade"
+                name="cidade"
+                type="text"
+                placeholder="Digite a sua cidade"
+                required
+              />
+              <span></span>
+            </fieldset>
+            <fieldset class="flex flex-col gap-2 xl:w-3/4">
+              <label for="estado">Estado</label>
+              <select
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+                id="estado"
+                name="estado"
+                type="text"
+                placeholder="Complemento"
+                required
               >
-                <input
-                  class="border-none bg-transparent w-full focus:outline-none"
-                  id="senha"
-                  name="senha"
-                  type="password"
-                  autocomplete="off"
-                  required
-                />
-                <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>
-              </div>
-
-              <span class="mensagem_erro text-red-600 ml-2"></span>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
             </fieldset>
-            <span class="text-red-600" id="login_result"></span>
+          </div>
+          <div>
             <button
               id="enviar-btn"
-              class="text-white mx-auto bg-blue-500 rounded-md p-3 w-40 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
+              class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
               type="submit"
             >
-              Entrar
+              Avançar
             </button>
-          </form>
-          <p class="mt-2 font-medium">
-            Ainda não é cadastrado?
-            <a
-              class="text-blue-500 font-semibold block md:inline dark:text-dark-link"
-              href="./cadastro-1.html"
-              >cadastre-se</a
-            >
-          </p>
-        </section>
+            <span></span>
+          </div>
+        </form>
       </div>
     </main>
 
@@ -221,28 +297,28 @@
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./2fa.html"
+              href="./2fa.php"
               >2FA</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./numero-mascara.html"
+              href="./numero-mascara.php"
               >Número Máscara</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./google-calls.html"
+              href="./google-calls.php"
               >Google Verified Calls</a
             >
           </li>
           <li>
             <a
               class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./sms-programavel.html"
+              href="./sms-programavel.php"
               >SMS Programável</a
             >
           </li>
@@ -301,6 +377,7 @@
     </footer>
 
     <script type="module" src="../assets/js/script.js"></script>
-    <script type="module" src="../assets/js/login.js"></script>
+    <script type="module" src="../assets/js/validations/busca-cep.js"></script>
+    <script type="module" src="../assets/js/criar-usuario.js"></script>
   </body>
 </html>
