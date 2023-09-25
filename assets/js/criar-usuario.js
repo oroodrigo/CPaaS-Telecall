@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
     estado: e.target.elements["estado"].value,
   };
 
-  const userInfo = JSON.parse(sessionStorage.getItem("userInfo"));
+  // const userInfo = JSON.parse(sessionStorage.getItem("userInfo"));
   const novoUsuario = new User(userInfo);
   novoUsuario.endereco = userEndereco;
 

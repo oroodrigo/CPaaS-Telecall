@@ -3,7 +3,7 @@ import verificaCampo from "./validations/valida-campo.js";
 const camposDoFormulario = document.querySelectorAll("[required]");
 const form = document.getElementById("form_userInfo");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const userInfo = {
@@ -26,15 +26,27 @@ form.addEventListener("submit", (e) => {
     senha: e.target.elements["senha"].value,
   };
 
-  sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
+  console.log(userInfo);
 
-  window.location.assign("./cadastro-2.html");
-});
-
-camposDoFormulario.forEach((campo) => {
-  campo.addEventListener("focusout", () => verificaCampo(campo));
-  campo.addEventListener("invalid", (evento) => {
-    evento.preventDefault();
-    verificaCampo(campo);
+  const dados = await fetch("http://127.0.0.1/server/cadastrar.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userInfo),
   });
+
+  const res = await dados.json();
+  console.log(res);
 });
+// sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
+
+// window.location.assign("./cadastro-2.php");
+
+// camposDoFormulario.forEach((campo) => {
+//   campo.addEventListener("focusout", () => verificaCampo(campo));
+//   campo.addEventListener("invalid", (evento) => {
+//     evento.preventDefault();
+//     verificaCampo(campo);
+//   });
+// });
