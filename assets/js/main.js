@@ -28,7 +28,7 @@ form.addEventListener("submit", async (e) => {
 
   console.log(userInfo);
 
-  const dados = await fetch("http://127.0.0.1/server/cadastrar.php", {
+  const dados = await fetch("../server/cadastrar.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -43,10 +43,10 @@ form.addEventListener("submit", async (e) => {
 
 // window.location.assign("./cadastro-2.php");
 
-// camposDoFormulario.forEach((campo) => {
-//   campo.addEventListener("focusout", () => verificaCampo(campo));
-//   campo.addEventListener("invalid", (evento) => {
-//     evento.preventDefault();
-//     verificaCampo(campo);
-//   });
-// });
+camposDoFormulario.forEach((campo) => {
+  campo.addEventListener("focusout", () => verificaCampo(campo));
+  campo.addEventListener("invalid", (evento) => {
+    evento.preventDefault();
+    verificaCampo(campo);
+  });
+});

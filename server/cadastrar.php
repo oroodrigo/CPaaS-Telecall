@@ -1,6 +1,7 @@
 <?php
 
-// include_once "conexao.php";
+//conexão com o servidor 
+include_once "conexao.php";
 
 // Ler o JSON enviado no corpo da requisição
 $jsonData = file_get_contents('php://input');
@@ -15,11 +16,16 @@ if ($dados === null) {
   exit();
 }
 
-// Agora você pode acessar os dados como um array associativo
-
-// Restante das propriedades...
-
 // Faça o que precisa ser feito com os dados, como salvar no banco de dados
+$response;
+if (
+  $query = mysqli_query($conn, "INSERT INTO usuario (nome,data_nascimento,sexo,cpf,celular,telefone,nome_materno,login,senha) 
+  VALUES ('$dados->nome','$dados->nascimento','$dados->sexo','$dados->cpf','$dados->cel','$dados->tel','$dados->nomeMaterno','$dados->login','".md5($dados->senha)."')")
+  ){
+    $response = "Dados inseridos com sucesso!";
+  } else {
+    $response = "Ocorreu um erro!" . mysqli_error($conn);
+  }
 
 // Responder com um JSON (exemplo)
-echo json_encode(["success" => true, "message" => "Dados recebidos com sucesso.", "dados" => $dados, "nome" => $dados->nome]);
+echo json_encode(["success" => true, "response" => $response, "dados" => $dados, "nascimento" => $dados->nascimento ]);
