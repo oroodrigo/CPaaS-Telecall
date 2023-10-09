@@ -1,11 +1,11 @@
-import { dataBase } from "./dataBase.js";
 import verificaCampo from "./validations/valida-campo.js";
 
 const form = document.getElementById("form_login");
 const loginResult = document.getElementById("login_result");
 const camposDoFormulario = document.querySelectorAll("[required]");
 
-form.addEventListener("submit", (e) => {
+console.log("teste");
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const loginInfo = {
@@ -13,28 +13,26 @@ form.addEventListener("submit", (e) => {
     senha: e.target.elements["senha"].value,
   };
 
-  for (let i = 0; i <= dataBase.length; i++) {
-    if (
-      loginInfo.login == dataBase[i]?.login &&
-      loginInfo.senha == dataBase[i]?.senha
-    ) {
-      loginResult.style.color = "green";
-      loginResult.textContent = "Login concluido!";
-      sessionStorage.setItem("isLogged", true);
-      window.location.assign("../index.html");
-      break;
-    }
-    if (
-      loginInfo.login == dataBase[i]?.login ||
-      loginInfo.senha == dataBase[i]?.senha
-    ) {
-      loginResult.style.color = "red";
-      loginResult.textContent = "Login ou senha incorreto.";
-      sessionStorage.setItem("isLogged", false);
-      break;
-    }
+  const req = await fetch("../server/entrar.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(loginInfo),
+  });
+
+  const res = await req.json();
+  const { sucess, response } = res;
+  console.log(res);
+
+  if (sucess) {
+    loginResult.style.color = "green";
+    loginResult.textContent = response;
+    sessionStorage.setItem("isLogged", true);
+    window.location.assign("../index.html");
+  } else {
     loginResult.style.color = "red";
-    loginResult.textContent = "Cadastro não encontrado.";
+    loginResult.textContent = response;
     sessionStorage.setItem("isLogged", false);
   }
 });

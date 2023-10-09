@@ -1,587 +1,391 @@
 <!DOCTYPE html>
-<html class="" lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - CPaas</title>
-    <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
-    <link type="text/css" rel="stylesheet" href="./assets/css/styles.css" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-    <script
-      src="https://kit.fontawesome.com/9945e62804.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-slate-200 flex flex-col font-Poppins dark:bg-dark-bg">
-    <header
-      class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center"
-    >
-      <figure class="max-w-[150px] md:max-w-[200px]">
-        <a href="../index.php"
-          ><img
-            src="../assets/img/logo_telecall_branco_vermelho_p.png"
-            alt="Logo da Telecall"
-          />
-        </a>
-      </figure>
+<html lang="pt-br">
 
-      <section
-        class="gap-10 items-center justify-center hidden md:flex md:justify-around menu-mobile z-10"
-      >
-        <div class="md:hidden">
-          <i
-            class="fa-solid fa-xmark self-end text-white text-2xl absolute top-5 right-7"
-            id="close-menu-mobile"
-          ></i>
-        </div>
-        <nav>
-          <ul
-            class="flex flex-col items-center justify-around gap-10 md:flex-row"
-          >
-            <li class="relative flex flex-col items-center">
-              <p
-                id="dropdown"
-                class="text-white text-lg cursor-pointer select-none"
-              >
-                Serviços
-                <i
-                  class="fa-solid fa-chevron-down text-white text-lg"
-                  id="dropdownIcon"
-                ></i>
-              </p>
-              <div
-                id="menudropdown"
-                class="w-[170px] md:w-[250px] max-h-0 top-10 static md:absolute bg-telecall-azul rounded overflow-hidden"
-              >
-                <ul class="w-full p-2">
-                  <li class="w-full">
-                    <a
-                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/2fa.php"
-                      >2FA</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/numero-mascara.php"
-                      >Número Máscara</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/google-calls.php"
-                      >Google Verified Calls</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover"
-                      href="./pages/sms-programavel.php"
-                      >SMS Programável</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="text-white text-lg" href="#sobre">Sobre</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="flex flex-col gap-10 items-center md:flex-row">
-          <i
-            id="dark-btn"
-            class="fa-solid fa-moon text-white text-lg cursor-pointer"
-          ></i>
-          <a
-            class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            href="./pages/login.php"
-            id="login-btn"
-          >
-            Entrar
-            <i class="fa-solid fa-arrow-right ml-1 text-lg"></i
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início - CPaas</title>
+  <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
+  <link type="text/css" rel="stylesheet" href="./assets/css/styles.css" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <script src="https://kit.fontawesome.com/9945e62804.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
 
-          <button
-            class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150"
-            id="logout-btn"
-          >
-            Sair
-            <i class="fa-solid fa-arrow-right-to-bracket ml-1 text-lg"></i>
-          </button>
-        </section>
-      </section>
-      <div class="block md:hidden">
-        <i
-          class="fa-solid fa-bars text-white text-2xl"
-          id="open-menu-mobile"
-        ></i>
+<body class="bg-slate-200 flex flex-col font-Poppins dark:bg-dark-bg">
+  <header class="bg-telecall-azul flex justify-between py-3 px-5 md:px-10 items-center">
+    <figure class="max-w-[150px] md:max-w-[200px]">
+      <a href="../index.php"><img src="../assets/img/logo_telecall_branco_vermelho_p.png" alt="Logo da Telecall" />
+      </a>
+    </figure>
+
+    <section class="gap-10 items-center justify-center hidden md:flex md:justify-around menu-mobile z-10">
+      <div class="md:hidden">
+        <i class="fa-solid fa-xmark self-end text-white text-2xl absolute top-5 right-7" id="close-menu-mobile"></i>
       </div>
-    </header>
+      <nav>
+        <ul class="flex flex-col items-center justify-around gap-10 md:flex-row">
+          <li class="relative flex flex-col items-center">
+            <p id="dropdown" class="text-white text-lg cursor-pointer select-none">
+              Serviços
+              <i class="fa-solid fa-chevron-down text-white text-lg" id="dropdownIcon"></i>
+            </p>
+            <div id="menudropdown" class="w-[170px] md:w-[250px] max-h-0 top-10 static md:absolute bg-telecall-azul rounded overflow-hidden">
+              <ul class="w-full p-2">
+                <li class="w-full">
+                  <a class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover" href="./pages/2fa.php">2FA</a>
+                </li>
+                <li>
+                  <a class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover" href="./pages/numero-mascara.php">Número Máscara</a>
+                </li>
+                <li>
+                  <a class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover" href="./pages/google-calls.php">Google Verified Calls</a>
+                </li>
+                <li>
+                  <a class="text-white text-lg block rounded py-1 px-2 hover:bg-telecall-azul-hover" href="./pages/sms-programavel.php">SMS Programável</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="text-white text-lg" href="#sobre">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="flex flex-col gap-10 items-center md:flex-row">
+        <i id="dark-btn" class="fa-solid fa-moon text-white text-lg cursor-pointer"></i>
+        <a class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" href="./pages/login.php" id="login-btn">
+          Entrar
+          <i class="fa-solid fa-arrow-right ml-1 text-lg"></i></a>
 
-    <main>
-      <article class="flex flex-col gap-16 p-3">
-        <section class="flex justify-around py-6 mt-6 w-full mx-auto">
-          <section class="flex flex-col gap-5">
-            <h1
-              class="text-5xl font-bold text-telecall-azul titulo relative dark:text-dark-title"
-            >
-              Plataforma CPaaS
-            </h1>
-            <div class="flex flex-col gap-3">
-              <p class="text-3xl font-semibold dark:text-dark-text">
-                Escalável.
-              </p>
-              <p class="text-3xl font-semibold dark:text-dark-text">Seguro.</p>
-              <p class="text-3xl font-semibold dark:text-dark-text">
-                Flexível.
-              </p>
-              <p class="text-3xl font-semibold dark:text-dark-text">
-                Autêntico.
-              </p>
-            </div>
+        <button class="text-white text-lg hidden bg-telecall-vemelho rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" id="logout-btn">
+          Sair
+          <i class="fa-solid fa-arrow-right-to-bracket ml-1 text-lg"></i>
+        </button>
+      </section>
+    </section>
+    <div class="block md:hidden">
+      <i class="fa-solid fa-bars text-white text-2xl" id="open-menu-mobile"></i>
+    </div>
+  </header>
 
-            <div class="flex items-center justify-center w-full mt-10">
-              <a
-                href="#cpaas"
-                class="bg-telecall-azul hover:bg-telecall-azul-hover h-[60px] w-[60px] rounded-full justify-center items-center flex dark:hover:bg-dark-btn-azul-hover animate-bounce duration-150"
-              >
-                <i class="fa-solid fa-arrow-down-long text-xl text-white"></i>
-              </a>
-            </div>
-          </section>
-          <figure class="hidden md:block">
-            <img
-              src="./assets/img/foto_index_1-removebg-preview.png"
-              alt="imagem com serviços dos CPaaS"
-            />
-          </figure>
-        </section>
-
-        <section
-          id="servicos"
-          class="flex flex-col w-full items-center gap-8 mt-6"
-        >
-          <h2
-            class="text-3xl font-bold text-telecall-azul-hover dark:text-dark-title"
-          >
-            Serviços
-          </h2>
-          <section
-            class="flex flex-wrap gap-7 justify-center lg:justify-between w-4/5"
-          >
-            <div
-              class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container"
-            >
-              <figure>
-                <img
-                  class="max-w-[81px]"
-                  src="/assets/img/icons/2fa.png"
-                  alt="icone-2FA"
-                />
-              </figure>
-              <p class="text-lg font-semibold">2FA</p>
-              <a
-                class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/2fa.php"
-                >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
-              ></a>
-            </div>
-            <div
-              class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container"
-            >
-              <figure>
-                <img
-                  class="max-w-[80px]"
-                  src="/assets/img/icons/numero_mascara.png"
-                  alt="icone-numero mascara"
-                />
-              </figure>
-              <p class="text-lg font-semibold">Número Máscara</p>
-              <a
-                class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/numero-mascara.php"
-                >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
-              ></a>
-            </div>
-            <div
-              class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container"
-            >
-              <figure>
-                <img
-                  class="max-w-[78px]"
-                  src="/assets/img/icons/google_verified_calls.png"
-                  alt="icone-google-verified-calls"
-                />
-              </figure>
-              <p class="text-lg font-semibold">Google Verified Calls</p>
-              <a
-                class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/google-calls.php"
-                >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
-              ></a>
-            </div>
-            <div
-              class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container"
-            >
-              <figure>
-                <img
-                  class="max-w-[80px]"
-                  src="/assets/img/icons/sms_programavel.png"
-                  alt="icone-sms-ptogramavel"
-                />
-              </figure>
-              <p class="text-lg font-semibold">SMS Programável</p>
-              <a
-                class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-                href="./pages/sms-programavel.php"
-                >Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i
-              ></a>
-            </div>
-          </section>
-        </section>
-
-        <section id="cpaas" class="flex justify-around py-6 mt-6 w-full">
-          <figure class="hidden w-3/5 items-center justify-center lg:flex">
-            <img
-              class="max-w-[400px]"
-              src="/assets/img/foto_cpaas_2-removebg-preview.png"
-              alt="imagem servicos CPaaS 2"
-            />
-          </figure>
-          <section class="flex flex-col gap-5 items-center lg:w-1/2">
-            <h2
-              class="text-3xl font-bold text-telecall-azul dark:text-dark-title"
-            >
-              CPaaS: O que é?
-            </h2>
-
-            <div class="text-xl font-medium flex flex-col gap-6 w-4/5">
-              <p class="sm:text-justify dark:text-dark-text">
-                É uma solução de software de comunicação que atua como uma base
-                sobre a qual desenvolvedores podem integrar uma variedade de
-                aplicativos.
-              </p>
-              <p class="sm:text-justify dark:text-dark-text">
-                Métodos de comunicação típicos, como voz, chamadas de vídeo ou
-                mensagens de texto SMS, podem ser incorporados em outros
-                sistemas por meio de APIs que se conectam à plataforma CPaaS.
-              </p>
-              <p class="sm:text-justify dark:text-dark-text">
-                O CPaaS, com sua escalabilidade, flexibilidade, autenticação e
-                segurança aprimoradas, está revolucionando o modo como as
-                empresas habilitadas em nuvem implementam comunicações de voz,
-                SMS e vídeo.
-              </p>
-            </div>
-          </section>
-        </section>
-
-        <section class="flex flex-col justify-between lg:flex-row p-5 gap-5">
-          <div class="w-full lg:w-1/2" id="sobre">
-            <h2
-              class="text-3xl font-bold titulo relative w-1/5 text-telecall-azul dark:text-dark-title"
-            >
-              Sobre
-            </h2>
-            <section class="flex flex-col gap-3 mt-5">
-              <p
-                class="text-xl font-medium sm:text-justify dark:text-dark-text"
-              >
-                A Telecall é uma operadora de telecomunicações brasileira que
-                oferece a seus clientes o mais alto padrão de qualidade,
-                velocidade e acessibilidade em soluções de comunicação.
-              </p>
-              <p
-                class="text-xl font-medium sm:text-justify dark:text-dark-text"
-              >
-                Serviços que incluem uma ampla gama de valores agregados,
-                oferecendo aos clientes operações mais produtivas, inovadoras e
-                eficazes.
-              </p>
-              <p
-                class="text-xl font-medium sm:text-justify dark:text-dark-text"
-              >
-                Com mais de 20 anos de experiência na indústria global, a
-                Telecall hoje é sinônimo de qualidade e eficiência.
-              </p>
-            </section>
+  <main>
+    <article class="flex flex-col gap-16 p-3">
+      <section class="flex justify-around py-6 mt-6 w-full mx-auto">
+        <section class="flex flex-col gap-5">
+          <h1 class="text-5xl font-bold text-telecall-azul titulo relative dark:text-dark-title">
+            Plataforma CPaaS
+          </h1>
+          <div class="flex flex-col gap-3">
+            <p class="text-3xl font-semibold dark:text-dark-text">
+              Escalável.
+            </p>
+            <p class="text-3xl font-semibold dark:text-dark-text">Seguro.</p>
+            <p class="text-3xl font-semibold dark:text-dark-text">
+              Flexível.
+            </p>
+            <p class="text-3xl font-semibold dark:text-dark-text">
+              Autêntico.
+            </p>
           </div>
-          <div>
-            <h2
-              class="text-3xl font-bold titulo relative sm:w-3/5 w-2/5 text-telecall-azul dark:text-dark-title"
-            >
-              Por que a Telecall?
-            </h2>
-            <ul class="flex flex-col text-xl font-medium gap-3 mt-5">
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-xl text-green-600"></i>
-                <p class="dark:text-dark-text">
-                  <span
-                    class="font-semibold text-telecall-azul dark:text-dark-span"
-                    >CONFIANÇA</span
-                  >
-                  Empresas que já conhecem e confiam no nosso trabalho
-                </p>
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-xl text-green-600"></i>
-                <p class="dark:text-dark-text">
-                  <span
-                    class="font-semibold text-telecall-azul dark:text-dark-span"
-                    >AGILIDADE</span
-                  >
-                  Aplicativos de rápida implementação para qualquer negócio
-                </p>
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-xl text-green-600"></i>
-                <p class="dark:text-dark-text">
-                  <span
-                    class="font-semibold text-telecall-azul dark:text-dark-span"
-                    >GARANTIA DE REDE</span
-                  >
-                  Rede própria de alta capacidade e controle total ponta a ponta
-                </p>
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-xl text-green-600"></i>
-                <p class="dark:text-dark-text">
-                  <span
-                    class="font-semibold text-telecall-azul dark:text-dark-span"
-                    >SUPORTE AO CLIENTE
-                  </span>
-                  Representantes locais de vendas e suporte
-                </p>
-              </li>
-              <li class="flex gap-2">
-                <i class="fa-solid fa-check text-xl text-green-600"></i>
-                <p class="dark:text-dark-text">
-                  <span
-                    class="font-semibold text-telecall-azul dark:text-dark-span"
-                    >PREÇO</span
-                  >
-                  PREÇO Melhor custo benefício para um conjunto completo de
-                  serviços
-                </p>
-              </li>
-            </ul>
+
+          <div class="flex items-center justify-center w-full mt-10">
+            <a href="#cpaas" class="bg-telecall-azul hover:bg-telecall-azul-hover h-[60px] w-[60px] rounded-full justify-center items-center flex dark:hover:bg-dark-btn-azul-hover animate-bounce duration-150">
+              <i class="fa-solid fa-arrow-down-long text-xl text-white"></i>
+            </a>
           </div>
         </section>
-        <section class="flex flex-col p-5 gap-4">
-          <h2
-            class="text-3xl font-bold titulo relative w-1/5 text-telecall-azul dark:text-dark-title"
-          >
-            Casos de uso
-          </h2>
-          <ul class="flex flex-col justify-between lg:flex-row gap-4">
-            <li class="flex flex-col items-center gap-3">
-              <figure>
-                <img src="./assets/img/icons/caixa.png" alt="icone atendente" />
-              </figure>
-              <h2
-                class="text-telecall-azul font-bold text-2xl dark:text-dark-title"
-              >
-                Logística
-              </h2>
-              <div class="flex flex-col items-center gap-2">
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Acesso seguro com 2FA.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Uso de números mascarados para proteção de funcionário e
-                  cliente.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Mantenha o cliente informado sobre entrega e serviços.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Verified calling para confirmação de entregas.
-                </p>
-              </div>
-            </li>
-            <li class="flex flex-col items-center gap-3">
-              <figure>
-                <img
-                  src="./assets/img/icons/carrinho_de_compra.png"
-                  alt="icone carrinho de compra"
-                />
-              </figure>
-              <h2
-                class="text-telecall-azul font-bold text-2xl dark:text-dark-title"
-              >
-                Varejo
-              </h2>
-              <div class="flex flex-col items-center gap-2">
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Compra segura com 2FA.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Avisos sobre compras e entregas.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Upsell com novas ofertas e vantagens via SMS ou Verified
-                  Calling.
-                </p>
-              </div>
-            </li>
-            <li class="flex flex-col items-center gap-3">
-              <figure>
-                <img
-                  src="./assets/img/icons/atendente.png"
-                  alt="icone atendente"
-                />
-              </figure>
-              <h2
-                class="text-telecall-azul font-bold text-2xl dark:text-dark-title"
-              >
-                Call Center
-              </h2>
-              <div class="flex flex-col items-center gap-2">
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Melhore taxas de abertura utilizando alertas SMS para
-                  confirmações.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Economia de números com o uso de um único número máscara por
-                  todos os agentes.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Verified Calling para confirmação de agendamentos.
-                </p>
-              </div>
-            </li>
+        <figure class="hidden md:block">
+          <img src="./assets/img/foto_index_1-removebg-preview.png" alt="imagem com serviços dos CPaaS" />
+        </figure>
+      </section>
 
-            <li class="flex flex-col items-center gap-3">
-              <figure>
-                <img src="/assets/img/icons/pulso.png" alt="icone coracao" />
-              </figure>
-              <h2
-                class="text-telecall-azul font-bold text-2xl dark:text-dark-title"
-              >
-                Saúde
-              </h2>
-              <div class="flex flex-col items-center gap-2">
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Acesso seguro com 2FA.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Melhore o agendamento e reduza faltas com lembretes por SMS.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Tokens de autorização para procedimentos com 2FA.
-                </p>
-                <p class="text-center text-xl font-medium dark:text-dark-text">
-                  Verified Calling para avisos de resultados e agendamentos.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </main>
-
-    <footer
-      class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3 flex-wrap"
-    >
-      <section
-        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
-      >
-        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+      <section id="servicos" class="flex flex-col w-full items-center gap-8 mt-6">
+        <h2 class="text-3xl font-bold text-telecall-azul-hover dark:text-dark-title">
           Serviços
         </h2>
-        <ul>
-          <li>
-            <a
-              class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/2fa.php"
-              >2FA</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/numero-mascara.php"
-              >Número Máscara</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/google-calls.php"
-              >Google Verified Calls</a
-            >
-          </li>
-          <li>
-            <a
-              class="text-white/80 text-sm sm:text-md hover:text-white"
-              href="./pages/sms-programavel.php"
-              >SMS Programável</a
-            >
-          </li>
-        </ul>
+        <section class="flex flex-wrap gap-7 justify-center lg:justify-between w-4/5">
+          <div class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container">
+            <figure>
+              <img class="max-w-[81px]" src="/assets/img/icons/2fa.png" alt="icone-2FA" />
+            </figure>
+            <p class="text-lg font-semibold">2FA</p>
+            <a class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover" href="./pages/2fa.php">Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i></a>
+          </div>
+          <div class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container">
+            <figure>
+              <img class="max-w-[80px]" src="/assets/img/icons/numero_mascara.png" alt="icone-numero mascara" />
+            </figure>
+            <p class="text-lg font-semibold">Número Máscara</p>
+            <a class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover" href="./pages/numero-mascara.php">Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i></a>
+          </div>
+          <div class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container">
+            <figure>
+              <img class="max-w-[78px]" src="/assets/img/icons/google_verified_calls.png" alt="icone-google-verified-calls" />
+            </figure>
+            <p class="text-lg font-semibold">Google Verified Calls</p>
+            <a class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover" href="./pages/google-calls.php">Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i></a>
+          </div>
+          <div class="flex flex-col justify-evenly bg-gray-100 shadow-md p-5 items-center rounded-lg w-60 h-[350px] dark:bg-dark-container">
+            <figure>
+              <img class="max-w-[80px]" src="/assets/img/icons/sms_programavel.png" alt="icone-sms-ptogramavel" />
+            </figure>
+            <p class="text-lg font-semibold">SMS Programável</p>
+            <a class="text-white mx-auto bg-blue-500 rounded-md p-3 mb-2 hover:bg-blue-600 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover" href="./pages/sms-programavel.php">Saiba Mais <i class="fa-solid fa-arrow-right ml-2 text-lg"></i></a>
+          </div>
+        </section>
       </section>
-      <section
-        class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start"
-      >
-        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
-          Contato
-        </h2>
-        <ul class="flex flex-col gap-1">
-          <li class="text-white/80 text-sm sm:text-md">(21) 3030-1010</li>
-          <li class="text-white/80 text-sm sm:text-md">0800 030 2016</li>
-          <li class="text-white/80 text-sm sm:text-md">suporte@telecall.com</li>
-        </ul>
-      </section>
-      <section class="flex flex-col w-full items-center gap-3 xs:w-auto">
-        <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
-          Redes Sociais
-        </h2>
-        <ul class="flex justify-between w-2/4 xs:w-full">
-          <li>
-            <a
-              class="text-white/80 text-2xl hover:text-blue-700 duration-150"
-              href="https://www.facebook.com/TelecallBr"
-              target="_blank"
-              ><i class="fa-brands fa-square-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="text-white/80 text-2xl hover:text-fuchsia-700 duration-150"
-              href="https://www.instagram.com/telecallbr/"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="text-white/80 text-2xl hover:text-sky-600 duration-150"
-              href="https://www.linkedin.com/company/telecall/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-        <a href="https://telecall.com" target="_blank" class="max-w-[130px]">
-          <img
-            src="../assets/img/logo_telecall_branco_vermelho_p.png"
-            alt="logo da telecall"
-          />
-        </a>
-      </section>
-    </footer>
 
-    <script type="module" src="../assets/js/script.js"></script>
-  </body>
+      <section id="cpaas" class="flex justify-around py-6 mt-6 w-full">
+        <figure class="hidden w-3/5 items-center justify-center lg:flex">
+          <img class="max-w-[400px]" src="/assets/img/foto_cpaas_2-removebg-preview.png" alt="imagem servicos CPaaS 2" />
+        </figure>
+        <section class="flex flex-col gap-5 items-center lg:w-1/2">
+          <h2 class="text-3xl font-bold text-telecall-azul dark:text-dark-title">
+            CPaaS: O que é?
+          </h2>
+
+          <div class="text-xl font-medium flex flex-col gap-6 w-4/5">
+            <p class="sm:text-justify dark:text-dark-text">
+              É uma solução de software de comunicação que atua como uma base
+              sobre a qual desenvolvedores podem integrar uma variedade de
+              aplicativos.
+            </p>
+            <p class="sm:text-justify dark:text-dark-text">
+              Métodos de comunicação típicos, como voz, chamadas de vídeo ou
+              mensagens de texto SMS, podem ser incorporados em outros
+              sistemas por meio de APIs que se conectam à plataforma CPaaS.
+            </p>
+            <p class="sm:text-justify dark:text-dark-text">
+              O CPaaS, com sua escalabilidade, flexibilidade, autenticação e
+              segurança aprimoradas, está revolucionando o modo como as
+              empresas habilitadas em nuvem implementam comunicações de voz,
+              SMS e vídeo.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="flex flex-col justify-between lg:flex-row p-5 gap-5">
+        <div class="w-full lg:w-1/2" id="sobre">
+          <h2 class="text-3xl font-bold titulo relative w-1/5 text-telecall-azul dark:text-dark-title">
+            Sobre
+          </h2>
+          <section class="flex flex-col gap-3 mt-5">
+            <p class="text-xl font-medium sm:text-justify dark:text-dark-text">
+              A Telecall é uma operadora de telecomunicações brasileira que
+              oferece a seus clientes o mais alto padrão de qualidade,
+              velocidade e acessibilidade em soluções de comunicação.
+            </p>
+            <p class="text-xl font-medium sm:text-justify dark:text-dark-text">
+              Serviços que incluem uma ampla gama de valores agregados,
+              oferecendo aos clientes operações mais produtivas, inovadoras e
+              eficazes.
+            </p>
+            <p class="text-xl font-medium sm:text-justify dark:text-dark-text">
+              Com mais de 20 anos de experiência na indústria global, a
+              Telecall hoje é sinônimo de qualidade e eficiência.
+            </p>
+          </section>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold titulo relative sm:w-3/5 w-2/5 text-telecall-azul dark:text-dark-title">
+            Por que a Telecall?
+          </h2>
+          <ul class="flex flex-col text-xl font-medium gap-3 mt-5">
+            <li class="flex gap-2">
+              <i class="fa-solid fa-check text-xl text-green-600"></i>
+              <p class="dark:text-dark-text">
+                <span class="font-semibold text-telecall-azul dark:text-dark-span">CONFIANÇA</span>
+                Empresas que já conhecem e confiam no nosso trabalho
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-check text-xl text-green-600"></i>
+              <p class="dark:text-dark-text">
+                <span class="font-semibold text-telecall-azul dark:text-dark-span">AGILIDADE</span>
+                Aplicativos de rápida implementação para qualquer negócio
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-check text-xl text-green-600"></i>
+              <p class="dark:text-dark-text">
+                <span class="font-semibold text-telecall-azul dark:text-dark-span">GARANTIA DE REDE</span>
+                Rede própria de alta capacidade e controle total ponta a ponta
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-check text-xl text-green-600"></i>
+              <p class="dark:text-dark-text">
+                <span class="font-semibold text-telecall-azul dark:text-dark-span">SUPORTE AO CLIENTE
+                </span>
+                Representantes locais de vendas e suporte
+              </p>
+            </li>
+            <li class="flex gap-2">
+              <i class="fa-solid fa-check text-xl text-green-600"></i>
+              <p class="dark:text-dark-text">
+                <span class="font-semibold text-telecall-azul dark:text-dark-span">PREÇO</span>
+                PREÇO Melhor custo benefício para um conjunto completo de
+                serviços
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="flex flex-col p-5 gap-4">
+        <h2 class="text-3xl font-bold titulo relative w-1/5 text-telecall-azul dark:text-dark-title">
+          Casos de uso
+        </h2>
+        <ul class="flex flex-col justify-between lg:flex-row gap-4">
+          <li class="flex flex-col items-center gap-3">
+            <figure>
+              <img src="./assets/img/icons/caixa.png" alt="icone atendente" />
+            </figure>
+            <h2 class="text-telecall-azul font-bold text-2xl dark:text-dark-title">
+              Logística
+            </h2>
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Acesso seguro com 2FA.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Uso de números mascarados para proteção de funcionário e
+                cliente.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Mantenha o cliente informado sobre entrega e serviços.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Verified calling para confirmação de entregas.
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col items-center gap-3">
+            <figure>
+              <img src="./assets/img/icons/carrinho_de_compra.png" alt="icone carrinho de compra" />
+            </figure>
+            <h2 class="text-telecall-azul font-bold text-2xl dark:text-dark-title">
+              Varejo
+            </h2>
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Compra segura com 2FA.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Avisos sobre compras e entregas.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Upsell com novas ofertas e vantagens via SMS ou Verified
+                Calling.
+              </p>
+            </div>
+          </li>
+          <li class="flex flex-col items-center gap-3">
+            <figure>
+              <img src="./assets/img/icons/atendente.png" alt="icone atendente" />
+            </figure>
+            <h2 class="text-telecall-azul font-bold text-2xl dark:text-dark-title">
+              Call Center
+            </h2>
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Melhore taxas de abertura utilizando alertas SMS para
+                confirmações.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Economia de números com o uso de um único número máscara por
+                todos os agentes.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Verified Calling para confirmação de agendamentos.
+              </p>
+            </div>
+          </li>
+
+          <li class="flex flex-col items-center gap-3">
+            <figure>
+              <img src="/assets/img/icons/pulso.png" alt="icone coracao" />
+            </figure>
+            <h2 class="text-telecall-azul font-bold text-2xl dark:text-dark-title">
+              Saúde
+            </h2>
+            <div class="flex flex-col items-center gap-2">
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Acesso seguro com 2FA.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Melhore o agendamento e reduza faltas com lembretes por SMS.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Tokens de autorização para procedimentos com 2FA.
+              </p>
+              <p class="text-center text-xl font-medium dark:text-dark-text">
+                Verified Calling para avisos de resultados e agendamentos.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="bg-zinc-800 flex justify-between py-4 px-12 mt-5 gap-3 flex-wrap">
+    <section class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start">
+      <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+        Serviços
+      </h2>
+      <ul>
+        <li>
+          <a class="text-white/80 text-sm sm:text-md hover:text-white" href="./pages/2fa.php">2FA</a>
+        </li>
+        <li>
+          <a class="text-white/80 text-sm sm:text-md hover:text-white" href="./pages/numero-mascara.php">Número Máscara</a>
+        </li>
+        <li>
+          <a class="text-white/80 text-sm sm:text-md hover:text-white" href="./pages/google-calls.php">Google Verified Calls</a>
+        </li>
+        <li>
+          <a class="text-white/80 text-sm sm:text-md hover:text-white" href="./pages/sms-programavel.php">SMS Programável</a>
+        </li>
+      </ul>
+    </section>
+    <section class="flex flex-col w-full items-center gap-2 xs:w-auto xs:items-start">
+      <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+        Contato
+      </h2>
+      <ul class="flex flex-col gap-1">
+        <li class="text-white/80 text-sm sm:text-md">(21) 3030-1010</li>
+        <li class="text-white/80 text-sm sm:text-md">0800 030 2016</li>
+        <li class="text-white/80 text-sm sm:text-md">suporte@telecall.com</li>
+      </ul>
+    </section>
+    <section class="flex flex-col w-full items-center gap-3 xs:w-auto">
+      <h2 class="text-white text-md font-semibold tracking-wide sm:text-lg">
+        Redes Sociais
+      </h2>
+      <ul class="flex justify-between w-2/4 xs:w-full">
+        <li>
+          <a class="text-white/80 text-2xl hover:text-blue-700 duration-150" href="https://www.facebook.com/TelecallBr" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        <li>
+          <a class="text-white/80 text-2xl hover:text-fuchsia-700 duration-150" href="https://www.instagram.com/telecallbr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a class="text-white/80 text-2xl hover:text-sky-600 duration-150" href="https://www.linkedin.com/company/telecall/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <a href="https://telecall.com" target="_blank" class="max-w-[130px]">
+        <img src="../assets/img/logo_telecall_branco_vermelho_p.png" alt="logo da telecall" />
+      </a>
+    </section>
+  </footer>
+
+  <script type="module" src="../assets/js/script.js"></script>
+</body>
+
 </html>

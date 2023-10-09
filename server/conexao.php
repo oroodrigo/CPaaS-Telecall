@@ -5,11 +5,8 @@ $DATABASE = "telecall";
 $USER = "root";
 $PASS = "";
 
-$conn = new mysqli ($HOSTNAME,$USER,$PASS,$DATABASE);
+$conn = new mysqli($HOSTNAME, $USER, $PASS, $DATABASE);
 
-if($conn->connect_error){
-  echo"Falha ao conectar:(".$conn->connect_error.")".$conn->connect_error; 
+if ($conn->connect_error) {
+  echo json_encode(["sucess" => false, "error" => $conn->connect_error]);
 }
-
-
-

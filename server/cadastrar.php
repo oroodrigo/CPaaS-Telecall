@@ -19,13 +19,13 @@ if ($dados === null) {
 // Faça o que precisa ser feito com os dados, como salvar no banco de dados
 $response;
 if (
-  $query = mysqli_query($conn, "INSERT INTO usuario (nome,data_nascimento,sexo,cpf,celular,telefone,nome_materno,login,senha) 
-  VALUES ('$dados->nome','$dados->nascimento','$dados->sexo','$dados->cpf','$dados->cel','$dados->tel','$dados->nomeMaterno','$dados->login','".md5($dados->senha)."')")
-  ){
-    $response = "Dados inseridos com sucesso!";
-  } else {
-    $response = "Ocorreu um erro!" . mysqli_error($conn);
-  }
+  $query = mysqli_query($conn, "INSERT INTO usuario (nome,data_nascimento,sexo,cpf,celular,telefone,nome_materno,login,hash_senha,cep) 
+  VALUES ('$dados->nome','$dados->nascimento','$dados->sexo','$dados->cpf','$dados->cel','$dados->tel','$dados->nomeMaterno','$dados->login','" . md5($dados->senha) . "', '$dados->cep')")
+) {
+  $response = "Dados inseridos com sucesso!";
+} else {
+  $response = "Ocorreu um erro!" . mysqli_error($conn);
+}
 
 // Responder com um JSON (exemplo)
-echo json_encode(["success" => true, "response" => $response, "dados" => $dados, "nascimento" => $dados->nascimento ]);
+echo json_encode(["success" => true, "response" => $response]);
