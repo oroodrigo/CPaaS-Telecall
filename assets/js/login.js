@@ -4,7 +4,6 @@ const form = document.getElementById("form_login");
 const loginResult = document.getElementById("login_result");
 const camposDoFormulario = document.querySelectorAll("[required]");
 
-console.log("teste");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -22,14 +21,14 @@ form.addEventListener("submit", async (e) => {
   });
 
   const res = await req.json();
-  const { sucess, response } = res;
-  console.log(res);
 
-  if (sucess) {
+  const { success, response } = res;
+
+  if (success) {
     loginResult.style.color = "green";
     loginResult.textContent = response;
     sessionStorage.setItem("isLogged", true);
-    window.location.assign("../index.html");
+    window.location.assign("../index.php");
   } else {
     loginResult.style.color = "red";
     loginResult.textContent = response;

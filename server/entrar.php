@@ -32,13 +32,14 @@ if (
   unset($_SESSION["nome"]);
 
   $response = "Login ou senha incorreto.";
+  echo json_encode(["success" => false, "response" => $response, "dados" => $dados]);
 } else {
   $_SESSION["login"] = $row->login;
   $_SESSION["role"] = $row->role;
   $_SESSION["nome"] = $row->nome;
 
-  $response = "Login feito com sucesso com sucesso!";
+  $response = "Login feito com sucesso!";
+  echo json_encode(["success" => true, "response" => $response, "dados" => $dados]);
 }
 
 // Responder com um JSON (exemplo)
-echo json_encode(["success" => true, "response" => $response, "dados" => $dados]);
