@@ -2,9 +2,34 @@ import verificaCampo from "./validations/valida-campo.js";
 
 const camposDoFormulario = document.querySelectorAll("[required]");
 const form = document.getElementById("form_userInfo");
+const btnAvancar = document.getElementById("avançar-btn");
+const barraDeEstagio = document.getElementById("barraDeEstagio");
+console.log(barraDeEstagio);
+btnAvancar.addEventListener("click", () => {
+  const sectionDeInformacaoPessoal = document.getElementById("cadastro1");
+  const sectionDeEndereco = document.getElementById("cadastro2");
+  const camposValidos = [];
+
+  camposDoFormulario.forEach((campo) => {
+    if (campo.checkValidity()) {
+      camposValidos.push(campo);
+    }
+  });
+
+  if (camposValidos.length === 13) {
+    barraDeEstagio.src = "http://localhost/assets/img/status-2.png";
+    barraDeEstagio.alt = "barra de estagio 2";
+
+    sectionDeInformacaoPessoal.classList.add("hidden");
+    sectionDeEndereco.classList.remove("hidden");
+    sectionDeEndereco.classList.add("flex");
+  }
+});
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+  console.log("enviou");
 
   const userInfo = {
     nome: e.target.elements["nome"].value,
@@ -24,6 +49,7 @@ form.addEventListener("submit", async (e) => {
       .replace(/(-\d{8,9})(\d+?$)/, "$1"),
     login: e.target.elements["login_cadastro"].value,
     senha: e.target.elements["senha"].value,
+    cep: e.target.elements["cep"].value,
   };
 
   console.log(userInfo);
@@ -38,10 +64,9 @@ form.addEventListener("submit", async (e) => {
 
   const res = await dados.json();
   console.log(res);
-});
-// sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
 
-// window.location.assign("./cadastro-2.php");
+  // window.location.assign("./cadastrado.php");
+});
 
 camposDoFormulario.forEach((campo) => {
   campo.addEventListener("focusout", () => verificaCampo(campo));
