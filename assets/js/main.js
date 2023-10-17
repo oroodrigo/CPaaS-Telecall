@@ -4,7 +4,7 @@ const camposDoFormulario = document.querySelectorAll("[required]");
 const form = document.getElementById("form_userInfo");
 const btnAvancar = document.getElementById("avançar-btn");
 const barraDeEstagio = document.getElementById("barraDeEstagio");
-console.log(barraDeEstagio);
+
 btnAvancar.addEventListener("click", () => {
   const sectionDeInformacaoPessoal = document.getElementById("cadastro1");
   const sectionDeEndereco = document.getElementById("cadastro2");
@@ -65,7 +65,7 @@ form.addEventListener("submit", async (e) => {
   const res = await dados.json();
   console.log(res);
 
-  // window.location.assign("./cadastrado.php");
+  window.location.assign("./cadastrado.php");
 });
 
 camposDoFormulario.forEach((campo) => {

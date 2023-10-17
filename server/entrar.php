@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //conexão com o servidor 
 include_once "conexao.php";
 
@@ -27,10 +27,6 @@ $row = $result->fetch_object();
 if (
   mysqli_num_rows($result) < 1
 ) {
-  unset($_SESSION["login"]);
-  unset($_SESSION["role"]);
-  unset($_SESSION["nome"]);
-
   $response = "Login ou senha incorreto.";
   echo json_encode(["success" => false, "response" => $response, "dados" => $dados]);
 } else {
@@ -39,7 +35,7 @@ if (
   $_SESSION["nome"] = $row->nome;
 
   $response = "Login feito com sucesso!";
-  echo json_encode(["success" => true, "response" => $response, "dados" => $dados]);
+  echo json_encode(["success" => true, "response" => $response, "dados" => $dados, "session_nome" => $_SESSION["nome"]]);
 }
 
 // Responder com um JSON (exemplo)

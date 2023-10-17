@@ -6,6 +6,7 @@ const cidade = document.getElementById("cidade");
 const estado = document.getElementById("estado");
 const numero = document.getElementById("endereco_numero");
 const complemento = document.getElementById("endereco_complemento");
+console.log(cidade);
 
 const buscaCep = async (cepValue) => {
   const cepConvertido = cepValue.replace(/-/g, "");
