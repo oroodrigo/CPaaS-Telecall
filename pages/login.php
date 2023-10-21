@@ -62,7 +62,9 @@
           Entrar
           <i class="fa-solid fa-arrow-right ml-1 text-lg"></i></a>
 
-        <a class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" id="logout-btn">
+        <a 
+        href="../server/sair.php"
+        class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" id="logout-btn">
           Sair
           <i class="fa-solid fa-arrow-right-to-bracket ml-1 text-lg"></i>
         </a>

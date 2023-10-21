@@ -69,4 +69,7 @@ export const mensagens = {
     tooShort: "CEP inválido. Tente novamente!",
     customError: "CEP inválido. Tente novamente!",
   },
+  endereco_numero: {
+    valueMissing: "O campo de número não pode estar vazio.",
+  },
 };

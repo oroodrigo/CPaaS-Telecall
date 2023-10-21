@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro - CPaaS</title>
+    <title>Verificação de dois fatores - CPaaS</title>
     <link rel="icon" href="../assets/img/favicon.png" sizes="192x192" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <script
@@ -134,38 +134,54 @@
             <a href="../index.php"> Início</a>
           </li>
           <li
-            class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text"
+            class="text-md text-blue-500  dark:text-dark-text"
           >
-            Cadastro
+            <a href="./login.php"> Login</a>
+          </li>
+          <li class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text">
+            2FA
           </li>
         </ul>
       </nav>
       <div
         class="bg-gray-100 shadow-lg mx-auto w-1/2 p-3 rounded-md mb-24 mt-auto dark:bg-dark-container"
       >
-        <figure>
-          <img
-            class="my-5 mx-auto"
-            src="../assets/img/status-3.png"
-            alt="barra de estagio 3"
-          />
-        </figure>
-        <h1 class="text-lg md:text-2xl text-black font-semibold ml-3 my-2">
-          Sucesso!
+        
+        <h1 class="text-lg md:text-2xl text-black text-center font-semibold ml-3 my-4">
+          Verificação de duas etapas!
         </h1>
-        <p class="tex-md text-black font-semibold text-lg md:2xl ml-3 mb-10">
-          Você finalizou seu cadastro!
+        <p class="tex-md text-black font-semibold text-center text-lg md:2xl ml-3 my-8">
+          Nos ajude a manter a sua conta segura com uma verificação de segurança.
         </p>
-        <figure class="hidden max-w-[250px] mx-auto sm:block">
-          <img src="../assets/img/imagem_cadastro_3" alt="imagem finalização de cadastro" />
-        </figure>
-        <a
-          href="./login.php"
-          class="block mx-auto text-center text-white bg-blue-500 rounded-md p-3 w-4/5 my-12 hover:bg-blue-800 duration-150 md:w-1/3 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-        >
-          Login
-          <i class="fa-solid fa-arrow-right ml-2 md:ml-5 text-white"></i>
-        </a>
+        <form class="flex flex-col gap-4 w-full mx-auto justify-center items-center " id="form_2fa">
+          <fieldset class="flex flex-col justify-center gap-2 w-3/4">
+            <label class="text-md text-center md:text-left" for="pergunta_secreta">Selecione uma das perguntas abaixo.</label>
+            <select
+                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
+                id="pergunta_secreta"
+                name="pergunta_secreta"
+                type="text"
+                required
+              >
+                <option value="nome_materno">Qual o nome da sua mãe?</option>
+                <option value="data_nascimento">Qual a data do seu nascimento?</option>
+                <option value="cep">Qual o CEP do seu endereço?</option>
+            </select>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="text-md text-center md:text-left" for="resposta_secreta">Digite a resposta abaixo.</label>
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="resposta_secreta" name="resposta_secreta" type="text" required>  
+            <span class="mensagem_erro text-red-600 ml-2"></span>
+          </fieldset>
+          <section class="flex flex-col justify-center items-center gap-2 w-full md:flex-row">
+            <button id="enviar-btn" class="text-white font-normal bg-blue-500 rounded-md p-3 w-full sm:w-1/2 md:w-30 lg:w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
+            Enviar
+          </button>
+          <a href ="./login.php" id="voltar-btn" class="text-white text-center font-normal bg-blue-500 rounded-md p-3 w-full sm:w-1/2  md:w-30 lg:w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
+            Voltar
+          </a>
+          </section>
+          </form>
       </div>
     </main>
 

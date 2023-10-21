@@ -167,7 +167,7 @@
           <span class="mensagem_erro text-red-600 ml-2"></span>
         </fieldset>
         <div>
-          <button id="avançar-btn" class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
+          <button type="button" id="avançar-btn" class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
             Avançar
           </button>
           <span></span>
@@ -210,7 +210,7 @@
                 placeholder="Número"
                 required
               />
-              <span></span>
+              <span class="text-red-600 ml-2 mensagem_erro"></span>
             </fieldset>
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="endereco_complemento">Complemento</label>

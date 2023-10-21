@@ -4,19 +4,13 @@ const camposDoFormulario = document.querySelectorAll("[required]");
 const form = document.getElementById("form_userInfo");
 const btnAvancar = document.getElementById("avançar-btn");
 const barraDeEstagio = document.getElementById("barraDeEstagio");
+const camposForm1 = Array.from(camposDoFormulario).slice(0, 12);
 
 btnAvancar.addEventListener("click", () => {
   const sectionDeInformacaoPessoal = document.getElementById("cadastro1");
   const sectionDeEndereco = document.getElementById("cadastro2");
-  const camposValidos = [];
 
-  camposDoFormulario.forEach((campo) => {
-    if (campo.checkValidity()) {
-      camposValidos.push(campo);
-    }
-  });
-
-  if (camposValidos.length === 13) {
+  if (camposForm1.every((campo) => campo.checkValidity())) {
     barraDeEstagio.src = "http://localhost/assets/img/status-2.png";
     barraDeEstagio.alt = "barra de estagio 2";
 
@@ -26,7 +20,11 @@ btnAvancar.addEventListener("click", () => {
   }
 });
 
-form.addEventListener("submit", async (e) => {
+
+
+
+
+
   e.preventDefault();
 
   console.log("enviou");
