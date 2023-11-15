@@ -7,11 +7,13 @@ const barraDeEstagio = document.getElementById("barraDeEstagio");
 const camposForm1 = Array.from(camposDoFormulario).slice(0, 12);
 
 btnAvancar.addEventListener("click", () => {
+  camposForm1.forEach((campo) => verificaCampo(campo));
+
   const sectionDeInformacaoPessoal = document.getElementById("cadastro1");
   const sectionDeEndereco = document.getElementById("cadastro2");
 
   if (camposForm1.every((campo) => campo.checkValidity())) {
-    barraDeEstagio.src = "http://localhost/assets/img/status-2.png";
+    barraDeEstagio.src = "/assets/img/status-2.png";
     barraDeEstagio.alt = "barra de estagio 2";
 
     sectionDeInformacaoPessoal.classList.add("hidden");
@@ -20,14 +22,8 @@ btnAvancar.addEventListener("click", () => {
   }
 });
 
-
-
-
-
-
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-
-  console.log("enviou");
 
   const userInfo = {
     nome: e.target.elements["nome"].value,
@@ -68,8 +64,7 @@ btnAvancar.addEventListener("click", () => {
 
 camposDoFormulario.forEach((campo) => {
   campo.addEventListener("focusout", () => verificaCampo(campo));
-  campo.addEventListener("invalid", (evento) => {
-    evento.preventDefault();
-    verificaCampo(campo);
+  campo.addEventListener("invalid", (e) => {
+    e.preventDefault();
   });
 });

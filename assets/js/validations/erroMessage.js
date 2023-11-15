@@ -72,4 +72,7 @@ export const mensagens = {
   endereco_numero: {
     valueMissing: "O campo de número não pode estar vazio.",
   },
+  resposta_secreta: {
+    valueMissing: "O campo de pergunta secreta nao pode estar vazio.",
+  },
 };

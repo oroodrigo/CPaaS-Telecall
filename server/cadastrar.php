@@ -22,11 +22,10 @@ if (
   $query = mysqli_query($conn, "INSERT INTO usuarios (nome,data_nascimento,sexo,cpf,celular,telefone,nome_materno,login,hash_senha,cep) 
   VALUES ('$userData->nome','$userData->nascimento','$userData->sexo','$userData->cpf','$userData->cel','$userData->tel','$userData->nomeMaterno','$userData->login','" . md5($userData->senha) . "', '$userData->cep')")
 ) {
-  // Responder com um JSON (exemplo)
+  // Responder com um JSON
   $response = "Dados inseridos com sucesso!";
   echo json_encode(["success" => true, "response" => $response]);
 } else {
   $response = "Ocorreu um erro!" . mysqli_error($conn);
   echo json_encode(["success" => false, "response" => $response]);
 }
-

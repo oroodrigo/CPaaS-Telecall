@@ -24,24 +24,18 @@ $result = $conn->query($query) or die($conn->error);
 
 $row = $result->fetch_object();
 
-if (
-  mysqli_num_rows($result) < 1 //Registro não encontrado
-) {
-  // Responder com um JSON
-  $response = "Login ou senha incorreto.";
-  echo json_encode(["success" => false, "response" => $response]);
-} else {
-  if ($row->role === "admin") {
-    //  Inicia uma sessão
-    $_SESSION["login"] = $row->login;
-    $_SESSION["role"] = $row->role;
-    $_SESSION["nome"] = $row->nome;
 
-    // Responder com um JSON
-    $response = "Login feito com sucesso!";
-    echo json_encode(["success" => true, "response" => $response, 'role' => $row->role]);
-  } else {
-    $response = "Verificar pergunta de secreta.";
-    echo json_encode(["success" => true, "response" => $response, 'role' => $row->role]);
-  }
+if ($row->{$dados->perguntaSecreta} === $dados->respostaSecreta) {
+  // //  Inicia uma sessão
+  $_SESSION["login"] = $row->login;
+  $_SESSION["role"] = $row->role;
+  $_SESSION["nome"] = $row->nome;
+
+  // Responder com um JSON
+  $response = "Login feito com sucesso!";
+  echo json_encode(["success" => true, "response" => $response]);
+} else {
+  // Responder com um JSON
+  $response = "Resposta errada.";
+  echo json_encode(["success" => false, "response" => $response]);
 }

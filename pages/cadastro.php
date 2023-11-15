@@ -60,12 +60,10 @@
           Entrar
           <i class="fa-solid fa-arrow-right ml-1 text-lg"></i></a>
 
-        <a 
-          href="../server/sair.php"
-          class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" id="logout-btn">
+        <button class="text-white text-lg bg-telecall-vemelho hidden rounded-md px-3 py-1 hover:bg-telecall-vemelho-hover duration-150" id="logout-btn">
           Sair
           <i class="fa-solid fa-arrow-right-to-bracket ml-1 text-lg"></i>
-        </a>
+        </button>
       </section>
     </section>
     <div class="block md:hidden">
@@ -92,173 +90,125 @@
         Preencha os campos abaixo para criar sua conta!
       </h1>
       <form class="flex flex-col gap-2 w-full mx-auto justify-center items-center" id="form_userInfo">
-      <section id="cadastro1" class="flex flex-col justify-center items-center">
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="nome">Nome</label>
-          <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nome" name="nome" type="text" placeholder="Ex: Hemiliano da Silva Figueiredo" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" minlength="15" maxlength="60" required />
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <div class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32">
-          <fieldset class="flex flex-col xl:w-3/4 gap-2">
-            <label class="font-medium text-md" for="nascinemnto">Nascimento</label>
-            <input class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nascimento" name="nascimento" type="date" required />
+        <section id="cadastro1" class="flex flex-col justify-center items-center">
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="nome">Nome</label>
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nome" name="nome" type="text" placeholder="Ex: Hemiliano da Silva Figueiredo" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" minlength="15" maxlength="60" required />
             <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
-          <fieldset class="flex flex-col items-start gap-2 xl:w-3/4 2xl:items-center">
-            <legend class="font-medium text-md">Sexo</legend>
-            <div class="flex flex-col gap-2 self-start flex-wrap ml-2 mt-2 2xl:flex-row">
-              <div class="flex gap-1">
-                <input id="feminino" name="sexo" value="feminino" type="radio" required />
-                <label class="font-normal" for="feminino">Feminino</label>
+          <div class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32">
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="nascinemnto">Nascimento</label>
+              <input class="border border-blue-500 border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nascimento" name="nascimento" type="date" required />
+              <span class="mensagem_erro text-red-600 ml-2"></span>
+            </fieldset>
+            <fieldset class="flex flex-col items-start gap-2 xl:w-3/4 2xl:items-center">
+              <legend class="font-medium text-md">Sexo</legend>
+              <div class="flex flex-col gap-2 self-start flex-wrap ml-2 mt-2 2xl:flex-row">
+                <div class="flex gap-1">
+                  <input id="feminino" name="sexo" value="feminino" type="radio" required />
+                  <label class="font-normal" for="feminino">Feminino</label>
+                </div>
+                <div class="flex gap-1">
+                  <input id="masculino" name="sexo" value="masculino" type="radio" required />
+                  <label class="font-normal" for="masculino">Masculino</label>
+                </div>
+                <div class="flex gap-1">
+                  <input id="prefiro_nao_responder" name="sexo" value="prefiro_nao_responder" type="radio" required />
+                  <label class="font-normal" for="prefiro_nao_responder">Prefiro não responder</label>
+                </div>
               </div>
-              <div class="flex gap-1">
-                <input id="masculino" name="sexo" value="masculino" type="radio" required />
-                <label class="font-normal" for="masculino">Masculino</label>
-              </div>
-              <div class="flex gap-1">
-                <input id="prefiro_nao_responder" name="sexo" value="prefiro_nao_responder" type="radio" required />
-                <label class="font-normal" for="prefiro_nao_responder">Prefiro não responder</label>
-              </div>
+              <span class="mensagem_erro text-red-600 ml-2"></span>
+            </fieldset>
+          </div>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="nome_materno">Nome Materno</label>
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nome_materno" name="nome_materno" type="text" placeholder="Ex: Maria das Dores da Silva" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required />
+            <span class="mensagem_erro text-red-600 ml-2"></span>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="cpf">CPF</label>
+            <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" minlength="11" id="cpf" name="cpf" type="text" data-mask="cpf" placeholder="000.000.000-00" pattern="\d{3}\.?\d{3}\.?\d{3}\.?-?\d{2}" autocomplete="off" required />
+            <span class="mensagem_erro text-red-600 ml-2"></span>
+          </fieldset>
+          <div class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32">
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="celular">Celular</label>
+              <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="celular" name="celular" type="text" data-mask="phone" placeholder="xx-xxxxxxxxx" required />
+              <span class="mensagem_erro text-red-600 ml-2"></span>
+            </fieldset>
+            <fieldset class="flex flex-col xl:w-3/4 gap-2">
+              <label class="font-medium text-md" for="telefone">Telefone</label>
+              <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="telefone" name="telefone" type="text" data-mask="phone" placeholder="xx-xxxxxxxx" required />
+              <span class="mensagem_erro text-red-600 ml-2"></span>
+            </fieldset>
+          </div>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="login">Login</label>
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="login_cadastro" name="login_cadastro" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" minlength="6" maxlength="6" required />
+            <span class="mensagem_erro text-red-600 ml-2"></span>
+          </fieldset>
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="senha">Senha</label>
+            <div class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg">
+              <input class="w-full bg-transparent border-none focus:outline-none" id="senha" name="senha" type="password" minlength="8" autocomplete="off" data-mask="password" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required />
+              <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>
             </div>
             <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
-        </div>
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="nome_materno">Nome Materno</label>
-          <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="nome_materno" name="nome_materno" type="text" placeholder="Ex: Maria das Dores da Silva" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required />
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="cpf">CPF</label>
-          <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" minlength="11" id="cpf" name="cpf" type="text" data-mask="cpf" placeholder="000.000.000-00" pattern="\d{3}\.?\d{3}\.?\d{3}\.?-?\d{2}" autocomplete="off" required />
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <div class="flex flex-col gap-2 w-3/4 lg:flex-row lg:gap-20 xl:gap-32">
-          <fieldset class="flex flex-col xl:w-3/4 gap-2">
-            <label class="font-medium text-md" for="celular">Celular</label>
-            <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="celular" name="celular" type="text" data-mask="phone" placeholder="xx-xxxxxxxxx" required />
+          <fieldset class="flex flex-col gap-2 w-3/4">
+            <label class="font-medium text-md" for="confirma_senha">Confirmar Senha</label>
+            <div class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg">
+              <input class="w-full bg-transparent border-none focus:outline-none" id="confirma_senha" name="confirma_senha" type="password" minlength="8" autocomplete="off" data-mask="password" required />
+              <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>
+            </div>
             <span class="mensagem_erro text-red-600 ml-2"></span>
           </fieldset>
-          <fieldset class="flex flex-col xl:w-3/4 gap-2">
-            <label class="font-medium text-md" for="telefone">Telefone</label>
-            <input class="mask border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="telefone" name="telefone" type="text" data-mask="phone" placeholder="xx-xxxxxxxx" required />
-            <span class="mensagem_erro text-red-600 ml-2"></span>
-          </fieldset>
-        </div>
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="login">Login</label>
-          <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="login_cadastro" name="login_cadastro" type="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" minlength="6" maxlength="6" required />
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="senha">Senha</label>
-          <div class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg">
-            <input class="w-full bg-transparent border-none focus:outline-none" id="senha" name="senha" type="password" minlength="8" autocomplete="off" data-mask="password" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required />
-            <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>
+          <div>
+            <button type="button" id="avançar-btn" class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
+              Avançar
+            </button>
+            <span></span>
           </div>
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <fieldset class="flex flex-col gap-2 w-3/4">
-          <label class="font-medium text-md" for="confirma_senha">Confirmar Senha</label>
-          <div class="flex items-center border bg-white border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 gap-2 dark:border-dark-input-border dark:bg-dark-input-bg">
-            <input class="w-full bg-transparent border-none focus:outline-none" id="confirma_senha" name="confirma_senha" type="password" minlength="8" autocomplete="off" data-mask="password" required />
-            <i class="fa-solid fa-eye text-lg cursor-pointer show-btn"></i>
-          </div>
-          <span class="mensagem_erro text-red-600 ml-2"></span>
-        </fieldset>
-        <div>
-          <button type="button" id="avançar-btn" class="text-white font-normal bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover">
-            Avançar
-          </button>
-          <span></span>
-        </div>
         </section>
+
         <section id="cadastro2" class="flex-col justify-center items-center hidden">
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="cep">CEP</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-              id="cep"
-              name="cep"
-              type="text"
-              placeholder="Digite seu CEP"
-              minlength="8"
-              required
-            />
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="cep" name="cep" type="text" placeholder="Digite seu CEP" minlength="8" required />
             <span class="text-red-600 ml-2 mensagem_erro"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="endereco">Endereço</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-              id="endereco"
-              name="endereco"
-              type="text"
-              placeholder="Digite seu endereço"
-              required
-            />
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="endereco" name="endereco" type="text" placeholder="Digite seu endereço" required />
             <span></span>
           </fieldset>
           <div class="flex flex-col gap-2 w-3/4 xl:flex-row xl:gap-20">
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="endereco_numero">Número</label>
-              <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-                id="endereco_numero"
-                name="endereco_numero"
-                type="number"
-                placeholder="Número"
-                required
-              />
+              <input class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="endereco_numero" name="endereco_numero" type="number" placeholder="Número" required />
               <span class="text-red-600 ml-2 mensagem_erro"></span>
             </fieldset>
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="endereco_complemento">Complemento</label>
-              <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-                id="endereco_complemento"
-                name="endereco_complemento"
-                type="text"
-                placeholder="(opcional)"
-              />
+              <input class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="endereco_complemento" name="endereco_complemento" type="text" placeholder="(opcional)" />
               <span></span>
             </fieldset>
           </div>
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="bairro">Bairro</label>
-            <input
-              class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-              id="bairro"
-              name="bairro"
-              type="text"
-              placeholder="Digite o seu bairro"
-              required
-            />
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="bairro" name="bairro" type="text" placeholder="Digite o seu bairro" required />
             <span></span>
           </fieldset>
           <div class="flex flex-col gap-2 w-3/4 xl:flex-row xl:gap-20">
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="cidade">Cidade</label>
-              <input
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-                id="cidade"
-                name="cidade"
-                type="text"
-                placeholder="Digite a sua cidade"
-                required
-              />
+              <input class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="cidade" name="cidade" type="text" placeholder="Digite a sua cidade" required />
               <span></span>
             </fieldset>
             <fieldset class="flex flex-col gap-2 xl:w-3/4">
               <label for="estado">Estado</label>
-              <select
-                class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg"
-                id="estado"
-                name="estado"
-                type="text"
-                placeholder="Complemento"
-                required
-              >
+              <select class="border border-blue-500 w-full border-[1] rounded-md py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="estado" name="estado" type="text" placeholder="Complemento" required>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -291,11 +241,7 @@
             </fieldset>
           </div>
           <div>
-            <button
-              id="enviar-btn"
-              class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover"
-              type="submit"
-            >
+            <button id="enviar-btn" class="text-white bg-blue-500 rounded-md p-3 w-40 my-4 hover:bg-blue-800 duration-150 dark:bg-dark-btn-azul dark:hover:bg-dark-btn-azul-hover" type="submit">
               Avançar
             </button>
             <span></span>

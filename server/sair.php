@@ -1,8 +1,9 @@
 <?php
-  session_start();
-  unset($_SESSION["login"]);
-  unset($_SESSION["nome"]);
-  unset($_SESSION["role"]);
-  session_destroy();
-  header("Location: ../index.php");
-  exit;
+session_start();
+$_SESSION = array();
+session_destroy();
+
+if (empty($_SESSION)) {
+  echo json_encode(["success" => true, "response" => 'Session destroyed.']);
+}
+exit;

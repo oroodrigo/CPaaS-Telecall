@@ -59,11 +59,20 @@ const logoutBtn = document.getElementById("logout-btn");
 
 let loginState = JSON.parse(sessionStorage.getItem("isLogged")) || "false";
 
-logoutBtn.addEventListener("click", () => {
-  sessionStorage.setItem("isLogged", JSON.stringify(false));
-  loginState = sessionStorage.getItem("isLogged");
+logoutBtn.addEventListener("click", async () => {
+  const req = await fetch("../server/sair.php", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 
-  trocarLoginButton(loginState);
+  const res = await req.json();
+
+  if (res.success) {
+    sessionStorage.setItem("isLogged", JSON.stringify(false));
+    loginState = sessionStorage.getItem("isLogged");
+    trocarLoginButton(loginState);
+  }
 });
 
 function trocarLoginButton(loginState) {
@@ -83,14 +92,3 @@ function trocarLoginButton(loginState) {
 }
 
 trocarLoginButton(loginState);
-
-//page acess validity
-if (
-  loginState == "false" &&
-  (window.location.pathname == "/pages/2fa.html" ||
-    window.location.pathname == "/pages/google-calls.html" ||
-    window.location.pathname == "/pages/numero-mascara.html" ||
-    window.location.pathname == "/pages/sms-programavel.html")
-) {
-  window.location.assign("./login.html");
-}
