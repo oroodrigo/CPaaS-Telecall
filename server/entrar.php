@@ -19,7 +19,7 @@ if ($dados === null) {
 // Verifica se as credencias passadas com as informações no banco de dados
 $response;
 
-$query = "SELECT * FROM usuarios WHERE login = '$dados->login' AND hash_senha= '" . md5($dados->senha) . "'";
+$query = "SELECT * FROM usuarios WHERE login = '$dados->login' AND senha= '$dados->senha'";
 $result = $conn->query($query) or die($conn->error);
 
 $row = $result->fetch_object();
@@ -36,6 +36,10 @@ if (
     $_SESSION["login"] = $row->login;
     $_SESSION["role"] = $row->role;
     $_SESSION["nome"] = $row->nome;
+    $_SESSION["nomeMaterno"] = $row->nome_materno;
+    $_SESSION["cpf"] = $row->cpf;
+    $_SESSION["cep"] = $row->cep;
+    $_SESSION['id'] = $row->id;
 
     // Responder com um JSON
     $response = "Login feito com sucesso!";
