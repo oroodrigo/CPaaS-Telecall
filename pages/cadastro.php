@@ -303,7 +303,7 @@
   </footer>
 
   <script type="module" src="../assets/js/script.js"></script>
-  <script type="module" src="../assets/js/main.js"></script>
+  <script type="module" src="../assets/js/cadastrar.js"></script>
   <script type="module" src="../assets/js/validations/busca-cep.js"></script>
 </body>
 
