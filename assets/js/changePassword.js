@@ -21,7 +21,6 @@ formNovaSenha.addEventListener("submit", async (e) => {
   });
   const res = await req.json();
 
-  console.log(res);
   const { success, response } = res;
 
   if (success) {
