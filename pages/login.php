@@ -141,7 +141,7 @@
         </fieldset>
         <fieldset class="flex flex-col gap-2 w-3/4">
           <label class="text-md text-center md:text-left" for="resposta_secreta">Digite a resposta abaixo.</label>
-          <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="resposta_secreta" name="resposta_secreta" type="text" required>
+          <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="resposta_secreta" name="resposta_secreta" type="text" autocomplete="off" required>
           <span class="mensagem_erro login_result text-red-600 ml-2"></span>
         </fieldset>
 
