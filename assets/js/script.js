@@ -56,6 +56,8 @@ mobileButtons.forEach((element) => {
 // change login/logout
 const loginBtn = document.getElementById("login-btn");
 const logoutBtn = document.getElementById("logout-btn");
+// alternar "DASHBOARD/PERFIL"
+const botaoAreaUnica = document.getElementById("botao-area-unica");
 
 let loginState = JSON.parse(sessionStorage.getItem("isLogged")) || "false";
 
@@ -72,6 +74,7 @@ logoutBtn.addEventListener("click", async () => {
     sessionStorage.setItem("isLogged", JSON.stringify(false));
     loginState = sessionStorage.getItem("isLogged");
     trocarLoginButton(loginState);
+    window.location.assign("../index.php");
   }
 });
 
@@ -82,12 +85,18 @@ function trocarLoginButton(loginState) {
 
     logoutBtn.classList.remove("block");
     logoutBtn.classList.add("hidden");
+
+    botaoAreaUnica?.classList.remove("block");
+    botaoAreaUnica?.classList.add("hidden");
   } else {
     logoutBtn.classList.remove("hidden");
     logoutBtn.classList.add("block");
 
     loginBtn.classList.remove("block");
     loginBtn.classList.add("hidden");
+
+    botaoAreaUnica.classList.remove("hidden");
+    botaoAreaUnica.classList.add("block");
   }
 }
 

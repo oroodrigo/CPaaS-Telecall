@@ -34,6 +34,15 @@ if (empty($_SESSION["login"])) {
       </div>
       <nav>
         <ul class="flex flex-col items-center justify-around gap-10 md:flex-row">
+          <li id="botao-area-unica">
+            <?php
+            if ($_SESSION['role'] === "admin") {
+              echo '<a class="text-white text-lg block rounded py-1 px-2" href="/pages/dashboard.php">Dashboard</a>';
+            } else {
+              echo '<a class="text-white text-lg block rounded py-1 px-2" href="/pages/perfil.php">Perfil</a>';
+            }
+            ?>
+          </li>
           <li class="relative flex flex-col items-center">
             <p id="dropdown" class="text-white text-lg cursor-pointer select-none">
               Serviços
