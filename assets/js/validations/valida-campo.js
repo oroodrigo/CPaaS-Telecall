@@ -1,7 +1,6 @@
 import { mensagens, tiposDeErro } from "./erroMessage.js";
 import validaCPF from "./valida-cpf.js";
 import validaSenha from "./valida-senha.js";
-import validaLogin from "./valida-login.js";
 
 export default function verificaCampo(campo, erro) {
   let mensagem = "";
@@ -15,9 +14,6 @@ export default function verificaCampo(campo, erro) {
   }
   if (campo.name == "cep" && campo.value.length >= 1 && erro) {
     campo.setCustomValidity("CEP inválido. Tente novamente.");
-  }
-  if (campo.name == "login_cadastro") {
-    validaLogin(campo);
   }
 
   tiposDeErro.forEach((error) => {
