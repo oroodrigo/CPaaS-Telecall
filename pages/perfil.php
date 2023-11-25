@@ -96,7 +96,7 @@
       </ul>
     </nav>
 
-    <section id="box-login" class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2 dark:bg-dark-container">
+    <section class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2 dark:bg-dark-container">
       <section class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/2">
         <h1 class="text-lg font-semibold pt-5 lg:mx-auto lg:text-xl">
           Veja e edite os dados da sua conta!
