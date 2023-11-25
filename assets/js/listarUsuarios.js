@@ -57,6 +57,7 @@ async function renderizarUsuarios() {
       listaUsuarios.appendChild(novaLinha);
     });
   } else {
+    tabelaUsuarios.parentNode.removeChild(tabelaUsuarios);
     const mensagem = document.createElement("span");
     mensagem.innerHTML = `<p class="text-lg text-center font-medium">${response}</p>`;
 
