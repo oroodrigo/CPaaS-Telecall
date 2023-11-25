@@ -13,7 +13,7 @@ formNovaSenha.addEventListener("submit", async (e) => {
   };
 
   const req = await fetch("../server/trocarSenha.php", {
-    method: "POST",
+    method: "UPDATE",
     headers: {
       "Content-Type": "application/json",
     },
