@@ -3,6 +3,7 @@ import verificaCampo from "./validations/valida-campo.js";
 const camposDoFormulario = document.querySelectorAll("[required]");
 const form = document.getElementById("form_userInfo");
 const btnAvancar = document.getElementById("avançar-btn");
+const btnEnviar = document.getElementById("enviar-btn");
 const barraDeEstagio = document.getElementById("barraDeEstagio");
 const camposForm1 = Array.from(camposDoFormulario).slice(0, 12);
 
@@ -20,6 +21,10 @@ btnAvancar.addEventListener("click", () => {
     sectionDeEndereco.classList.remove("hidden");
     sectionDeEndereco.classList.add("flex");
   }
+});
+
+btnEnviar.addEventListener("click", () => {
+  camposDoFormulario.forEach((campo) => verificaCampo(campo));
 });
 
 form.addEventListener("submit", async (e) => {
