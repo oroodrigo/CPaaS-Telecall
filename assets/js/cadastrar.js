@@ -46,18 +46,13 @@ form.addEventListener("submit", async (e) => {
     cep: e.target.elements["cep"].value,
   };
 
-  console.log(userInfo);
-
-  const dados = await fetch("../server/cadastrar.php", {
+  await fetch("../server/cadastrar.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(userInfo),
   });
-
-  const res = await dados.json();
-  console.log(res);
 
   window.location.assign("./cadastrado.php");
 });
