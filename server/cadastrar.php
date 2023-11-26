@@ -20,7 +20,7 @@ if ($userData === null) {
 $response;
 if (
   $query = mysqli_query($conn, "INSERT INTO usuarios (nome,data_nascimento,sexo,cpf,celular,telefone,nome_materno,login,senha,cep) 
-  VALUES ('$userData->nome','$userData->nascimento','$userData->sexo','$userData->cpf','$userData->cel','$userData->tel','$userData->nomeMaterno','$userData->login','$userData->senha)', '$userData->cep')")
+  VALUES ('$userData->nome','$userData->nascimento','$userData->sexo','$userData->cpf','$userData->cel','$userData->tel','$userData->nomeMaterno','$userData->login','$userData->senha', '$userData->cep')")
 ) {
   // Responder com um JSON
   $response = "Dados inseridos com sucesso!";

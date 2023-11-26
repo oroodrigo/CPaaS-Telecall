@@ -28,7 +28,7 @@
       </div>
       <nav>
         <ul class="flex flex-col items-center justify-around gap-10 md:flex-row">
-          <li id="botao-area-unica">
+          <li class="hidden" id="botao-area-unica">
             <?php
             session_start();
             if ($_SESSION['role'] === "admin") {

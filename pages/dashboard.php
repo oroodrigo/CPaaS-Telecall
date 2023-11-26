@@ -91,23 +91,24 @@
             ">Início</a>
         </li>
         <li class="text-md text-blue-500 font-semibold cursor-pointer dark:text-dark-text">
-          Perfil
+          Dashboard
         </li>
       </ul>
     </nav>
 
-    <section class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-4/5 p-3 gap-3 rounded-md my-auto lg:flex-row sm:w-1/2 dark:bg-dark-container">
-      <section class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/2">
-        <h1 class="text-lg font-semibold pt-5 lg:mx-auto lg:text-xl">
-          Veja e edite os dados da sua conta!
-        </h1>
-        <figure class="hidden lg:block">
-          <img src="../assets/img/undraw_control_panel_re_y3ar.svg" alt="Homem mexendo em um painel de controle." />
-        </figure>
-      </section>
-      <section class="flex flex-col p-5 rounded-lg" id="account_info">
-        <?php
-        echo "
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-between px-10">
+      <section class="flex justify-evenly flex-col items-center bg-gray-100 shadow-lg mx-auto w-full p-3 gap-3 rounded-md my-auto lg:flex-row dark:bg-dark-container">
+        <section class="flex flex-col justify-center items-center pl-2 gap-10 lg:w-1/3">
+          <h1 class="text-lg font-semibold pt-5 lg:mx-auto lg:text-xl">
+            Veja e edite os dados da sua conta!
+          </h1>
+          <figure class="hidden lg:block">
+            <img src="../assets/img/undraw_control_panel_re_y3ar.svg" alt="Homem mexendo em um painel de controle." />
+          </figure>
+        </section>
+        <section class="flex flex-col w-full lg:w-2/3 p-5 rounded-lg" id="account_info">
+          <?php
+          echo "
           <fieldset class='flex flex-col gap-2 mt-5'>
             <label class='font-medium' for='nome'>Nome</label>
             <input class='rounded-md py-1 px-2 ml-2 w-full dark:bg-dark-input-bg focus:outline-none' id='nome' name='nome' type='text' readonly value='{$_SESSION['nome']}' />
@@ -141,7 +142,28 @@
             <span class='mensagem_erro text-red-600 ml-2'></span>
           </form>
           ";
-        ?>
+          ?>
+        </section>
+      </section>
+
+      <section class="flex flex-col bg-gray-100 shadow-lg w-full p-3 gap-3 rounded-md dark:bg-dark-container">
+        <h1 class="text-lg font-semibold py-3 text-center lg:text-xl">
+          Veja e administre os usuarios aqui.
+        </h1>
+
+        <span id="feedback_message" class="font-bold ml-2"></span>
+        <section class="w-full rounded-lg overflow-auto max-h-[454px]" id="view_user_section">
+          <table class="hidden w-full rounded-lg" id="user_table">
+            <thead class="text-white sticky top-0 bg-telecall-azul w-full">
+              <th class="text-left p-4">Id</th>
+              <th class="text-center p-4">Nome</th>
+              <th class="text-left p-4">Role</th>
+              <th class="text-left p-4">Ações</th>
+            </thead>
+            <tbody id="user_list">
+            </tbody>
+          </table>
+        </section>
       </section>
     </section>
   </main>
@@ -200,6 +222,7 @@
 
   <script type="module" src="../assets/js/script.js"></script>
   <script type="module" src="../assets/js/changePassword.js"></script>
+  <script type="module" src="../assets/js/listarUsuarios.js"></script>
 </body>
 
 </html>

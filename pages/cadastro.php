@@ -175,7 +175,7 @@
         <section id="cadastro2" class="flex-col justify-center items-center hidden">
           <fieldset class="flex flex-col gap-2 w-3/4">
             <label for="cep">CEP</label>
-            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="cep" name="cep" type="text" placeholder="Digite seu CEP" minlength="8" required />
+            <input class="border border-blue-500 border-[1] rounded-md w-full py-1 px-2 ml-2 dark:border-dark-input-border dark:bg-dark-input-bg" id="cep" name="cep" type="text" placeholder="Digite seu CEP (somente numero)" minlength="8" required />
             <span class="text-red-600 ml-2 mensagem_erro"></span>
           </fieldset>
           <fieldset class="flex flex-col gap-2 w-3/4">
